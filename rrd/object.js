@@ -7,34 +7,36 @@
 /* OBJECT STRUCTURES */
 
 function Landscape(background, terrainColorFar, terrainColorMid, terrainColorNear,
-                   mainTheme, battleTheme, objectFrequency) {
+                   mainTheme, battleTheme, landmarkFrequency) {
     this.background = background;
     this.terrainColorFar = terrainColorFar;
     this.terrainColorMid = terrainColorMid;
     this.terrainColorNear = terrainColorNear;
 
+    this.name = ["Unknown", "Неизвестно"];
+
     this.mainTheme = mainTheme;
     this.battleTheme = battleTheme;
 
-    this.objectFrequency = objectFrequency;     // average pixel difference between objects
-    this.objectTypes = [];                      // object type generation data
+    this.landmarkFrequency = landmarkFrequency;     // average pixel difference between landmarks
+    this.landmarkTypes = [];                        // landmarks type generation data
 
-    this.objectsMin = 2 * W / objectFrequency;  // objects to be present on the layer simultaneously
+    this.landmarksMin = 2 * W / landmarkFrequency;  // landmarks to be present on the layer simultaneously
 
-    for (var i = 0; i < 3; i++) { objectsOnLayer[i] = 0; }
-    farthestObjects[FAR] = (new FieldObject(FAR, 600, 0, null));
-    farthestObjects[MID] = (new FieldObject(MID, 600, 0, null));
-    farthestObjects[NEAR] = (new FieldObject(NEAR, 600, 0, null));
+    for (var i = 0; i < 3; i++) { landmarksOnLayer[i] = 0; }
+    farthestLandmarks[FAR] = (new Landmark(FAR, 600));
+    farthestLandmarks[MID] = (new Landmark(MID, 600));
+    farthestLandmarks[NEAR] = (new Landmark(NEAR, 600));
 
     this.type = "Landscape";    // type definition
     this.deletable = false;     // universal deletability flag
 
-    this.addObjectType = function(objectType) {
-        this.objectTypes.push(objectType);
+    this.addLandmarkType = function(landmarkType) {
+        this.landmarkTypes.push(landmarkType);
     };
 
-    this.clearObjectTypes = function () {
-        this.objectTypes.length = 0;
+    this.clearLandmarkTypes = function () {
+        this.landmarkTypes.length = 0;
     };
 
     this.defineActualize = function (actualize) {
@@ -42,14 +44,15 @@ function Landscape(background, terrainColorFar, terrainColorMid, terrainColorNea
     };
 
     /*
-     * This function is meant to reinstall object type data based on the global variables,
+     * This function is meant to reinstall landmark type data based on the global variables,
      * i.e. actualize landscape state
      */
     this.actualize = function () { };
 
     this.resetTerrain = function () {
-        clearObjectType("Terrain");
+        clearObjectType("Landmark");
         clearObjectType("Decoration");
+        clearObjectType("Terrain");
         reaches[FAR] = new Terrain(FAR, this.terrainColorFar,
             -200, Math.floor(random() * 120) + 130);
         reaches[MID] = new Terrain(MID, this.terrainColorMid,
@@ -96,31 +99,43 @@ function Landscape(background, terrainColorFar, terrainColorMid, terrainColorNea
     this.generateUpperDecoration = function () {};
 
     this.manifest = function () {
-        if (this.objectTypes.length > 0) {
+        var newLandmarkPosition;
+        var newLandmark;
+        if (this.landmarkTypes.length == 1) {
+            while (landmarksOnLayer[MID] < 1) {
+                newLandmarkPosition = farthestLandmarks[MID].position
+                    + this.landmarkFrequency * (0.5 + Math.random());
+                newLandmark = this.landmarkTypes[0].generateLandmark(MID, newLandmarkPosition);
+                newLandmark.landmarkType = this.landmarkTypes[currentLandmarkTypeId];
+                registerObject(pathToObjectLayer(MID) + newLandmark.layerOffset, newLandmark);
+                landmarksOnLayer[MID]++;
+                farthestLandmarks[MID] = newLandmark;
+            }
+        } else if (this.landmarkTypes.length > 1) {
             for (var path = 0; path < 3; path++) {
-                while (objectsOnLayer[path] < this.objectsMin) {
-                    var newObjectPosition = farthestObjects[path].position
-                        + this.objectFrequency * (0.5 + Math.random());
+                while (landmarksOnLayer[path] < this.landmarksMin) {
+                    newLandmarkPosition = farthestLandmarks[path].position
+                        + this.landmarkFrequency * (0.5 + Math.random());
                     var probabilityScale = 0;
-                    for (var i = 0; i < this.objectTypes.length; i++) {
-                        probabilityScale += !this.objectTypes[i].available() ? 0 : this.objectTypes[i].chanceToAppear;
+                    for (var i = 0; i < this.landmarkTypes.length; i++) {
+                        probabilityScale += !this.landmarkTypes[i].available() ? 0 : this.landmarkTypes[i].chanceToAppear;
                     }
                     var chanceRoll = Math.random() * probabilityScale;
-                    var currentObjectTypeId = 0;
-                    var chanceArea = this.objectTypes[currentObjectTypeId].chanceToAppear;
-                    while ((currentObjectTypeId + 1 < this.objectTypes.length) && (chanceArea < chanceRoll)) {
-                        currentObjectTypeId++;
-                        chanceArea += !this.objectTypes[currentObjectTypeId].available()
-                            ? 0 : this.objectTypes[currentObjectTypeId].chanceToAppear;
+                    var currentLandmarkTypeId = 0;
+                    var chanceArea = this.landmarkTypes[currentLandmarkTypeId].chanceToAppear;
+                    while ((currentLandmarkTypeId + 1 < this.landmarkTypes.length) && (chanceArea < chanceRoll)) {
+                        currentLandmarkTypeId++;
+                        chanceArea += !this.landmarkTypes[currentLandmarkTypeId].available()
+                            ? 0 : this.landmarkTypes[currentLandmarkTypeId].chanceToAppear;
                     }
-                    var newObject = this.objectTypes[currentObjectTypeId].generateObject(path, newObjectPosition);
-                    newObject.objectType = this.objectTypes[currentObjectTypeId];
-                    if (this.objectTypes[currentObjectTypeId].singletonId != null) {
-                        singletonIds.push(this.objectTypes[currentObjectTypeId].singletonId);
+                    newLandmark = this.landmarkTypes[currentLandmarkTypeId].generateLandmark(path, newLandmarkPosition);
+                    newLandmark.landmarkType = this.landmarkTypes[currentLandmarkTypeId];
+                    if (this.landmarkTypes[currentLandmarkTypeId].singletonId != null) {
+                        singletonIds.push(this.landmarkTypes[currentLandmarkTypeId].singletonId);
                     }
-                    registerObject(pathToObjectFrontLayer(path) + newObject.layerOffset, newObject);
-                    objectsOnLayer[path]++;
-                    farthestObjects[path] = newObject;
+                    registerObject(pathToObjectLayer(path) + newLandmark.layerOffset, newLandmark);
+                    landmarksOnLayer[path]++;
+                    farthestLandmarks[path] = newLandmark;
                 }
             }
         }
@@ -138,7 +153,7 @@ function Landscape(background, terrainColorFar, terrainColorMid, terrainColorNea
     this.move = function () { };
 
     this.destroy = function() {
-        clearObjectType("FieldObject");
+        clearObjectType("Landmark");
         this.deletable = true;
     };
 }
@@ -233,9 +248,17 @@ function Sequence() {
     this.move = function() {};
 
     this.addAction = function(action, layer) {
-        this.sequence.push({
-            action: action, layer: (layer === undefined) ? GUI_EVENT : layer
-        });
+        if (!(action instanceof Array)) {
+            this.sequence.push({
+                action: action, layer: (layer === undefined) ? GUI_EVENT : layer
+            });
+        } else {
+            for (var i = 0; i < action.length; i++) {
+                this.sequence.push({
+                    action: action[i], layer: (layer === undefined) ? GUI_EVENT : layer
+                });
+            }
+        }
     };
 }
 
@@ -335,9 +358,8 @@ function Hero() {
     this.animationFrame = 0;
 
     // TODO: temporary filled skills and items!
-    this.availableSkills = [SKL_JAB, SKL_CHARGE, SKL_COUNTERATTACK, SKL_GUARDEDSTRIKE, SKL_RATRIDERDANCE,
-        SKL_DEEPBREATH, SKL_EVADE, SKL_NETCAST, SKL_DOUBLESTRIKE];
-    this.availableAuraSkills = [SKL_ACEOFSPADES];
+    this.availableSkills = [SKL_DEEPBREATH];
+    this.availableAuraSkills = [];
     this.activeSkills = [SKL_ATTACK, SKL_DEFEND];
     this.activeAuraSkills = [];
 
@@ -346,6 +368,10 @@ function Hero() {
         {id: ITM_DEFUP1, charges: 3}, {id: ITM_AGIUP1, charges: 3}, {id: ITM_RFXUP1, charges: 3},
         {id: ITM_DMG1, charges: 3}, {id: ITM_GUARD1, charges: 5}, {id: ITM_TALISMAN1, charges: 1}];
     this.activeItems = [];
+
+    this.codexEntries = [{id: CDX_CH00HOUSE, read: false}, {id: CDX_CH00HOTSPRING, read: false}, {id: CDX_CH00INN, read: false},
+        {id: CDX_CH00SMITHY, read: false}, {id: CDX_CH00DOJO, read: false}, {id: CDX_CH00CHRONICLER, read: false},
+        {id: CDX_CH00LIBRARY, read: false}, {id: CDX_CH00TRADINGPOST, read: false}, {id: CDX_CH00MILESTONE, read: false}];
 
     this.skillSet = [];
     this.battleGaugeArtifacts = [];
@@ -423,8 +449,10 @@ function Hero() {
 
     this.useSkill = function (skill, position) {
         if (this.getRightmostCooldown() >= skill.getLeftCooldown(position)) {
+            playSfx(SFX_GUI_BOROK);
             registerObject(GUI_COMMON, procureGuiEffectAction(GFX_HERO_BATTLEGAUGE_FLASH, "#FF6060", null));
         } else if (this.sp < skill.spCost) {
+            playSfx(SFX_GUI_BOROK);
             registerObject(GUI_COMMON, procureGuiEffectAction(GFX_HERO_SPGAUGE_FLASH, "#FF6060", null));
         } else {
 
@@ -446,10 +474,13 @@ function Hero() {
 
     this.useAuraSkill = function (skill, position) {
         if (this.getRightmostCooldown() >= skill.getLeftCooldown(position)) {
+            playSfx(SFX_GUI_BOROK);
             registerObject(GUI_COMMON, procureGuiEffectAction(GFX_HERO_BATTLEGAUGE_FLASH, "#FF6060", null));
         } else if (this.sp < skill.spCost) {
+            playSfx(SFX_GUI_BOROK);
             registerObject(GUI_COMMON, procureGuiEffectAction(GFX_HERO_SPGAUGE_FLASH, "#FF6060", null));
         } else if (this.ap < 1) {
+            playSfx(SFX_GUI_BOROK);
             registerObject(GUI_COMMON, procureGuiEffectAction(GFX_HERO_APGAUGE_FLASH, "#FF6060", null));
         } else {
             /* ATTRIBUTE INCREASE FOR AGILITY */
@@ -475,8 +506,10 @@ function Hero() {
         if (this.activeItems[itemChoice] != null) {
             var item = obtainItem(this.activeItems[itemChoice].id);
             if (this.getRightmostCooldown() >= item.getLeftCooldown(position)) {
+                playSfx(SFX_GUI_BOROK);
                 registerObject(GUI_COMMON, procureGuiEffectAction(GFX_HERO_BATTLEGAUGE_FLASH, "#FF6060", null));
             } else {
+
                 /* ATTRIBUTE INCREASE FOR AGILITY */
                 var enemyAgilityModifier = enemy.attrAgility / hero.attrAgility;
                 var agilityIncreaseMultiplier = 100 / (item.getLeftCooldown(position) - this.getRightmostCooldown() + 50);
@@ -487,12 +520,15 @@ function Hero() {
                     this.activeItems[itemChoice] = null;
                 }
                 var artifactData = item.getArtifacts(position);
-                for (var i = 0; i < artifactData.length; i++) {
-                    // Fuck you, Javascript!
-                    this.battleGaugeArtifacts.push(artifactData[i]);
+                if (artifactData != null) {
+                    for (var i = 0; i < artifactData.length; i++) {
+                        this.battleGaugeArtifacts.push(artifactData[i]);
+                    }
+                    registerObject(GUI_COMMON,
+                        procureGuiEffectAction(GFX_HERO_BATTLEGAUGE_FLASH_FILL, "#FFFFFF", null));
+                } else {
+                    playSfx(SFX_GUI_BOROK);
                 }
-                registerObject(GUI_COMMON,
-                    procureGuiEffectAction(GFX_HERO_BATTLEGAUGE_FLASH_FILL, "#FFFFFF", null));
             }
         }
     };
@@ -537,8 +573,8 @@ function Hero() {
         }
     };
 
-    this.strike = function (power, evadable, apGain, inflictData) {
-        registerImpact(hero, enemy, power, evadable, apGain, inflictData);
+    this.strike = function (power, evadable, apGain, inflictData, impactAnimationData) {
+        registerImpact(hero, enemy, power, evadable, apGain, inflictData, impactAnimationData);
         registerObject(GUI_COMMON,
             procureGuiEffectAction(GFX_HERO_BATTLEGAUGE_FLASH_FILL, "#FF4040", null));
         this.setAnimationState(AN_ATTACK);
@@ -610,13 +646,13 @@ function Hero() {
     this.getAttribute = function (attribute) {
         switch (attribute) {
             case ATTR_ATTACK:
-                return hero.attrAttack;
+                return this.attrAttack;
             case ATTR_DEFENSE:
-                return hero.attrDefense;
+                return this.attrDefense;
             case ATTR_AGILITY:
-                return hero.attrAgility;
+                return this.attrAgility;
             case ATTR_REFLEXES:
-                return hero.attrReflexes;
+                return this.attrReflexes;
             default:
                 return null;
         }
@@ -627,19 +663,19 @@ function Hero() {
         switch (attribute) {
             case ATTR_ATTACK:
                 intGain = Math.floor(hero.attrAttack + increment) - Math.floor(hero.attrAttack);
-                hero.attrAttack += increment;
+                this.attrAttack += increment;
                 break;
             case ATTR_DEFENSE:
                 intGain = Math.floor(hero.attrDefense + increment) - Math.floor(hero.attrDefense);
-                hero.attrDefense += increment;
+                this.attrDefense += increment;
                 break;
             case ATTR_AGILITY:
                 intGain = Math.floor(hero.attrAgility + increment) - Math.floor(hero.attrAgility);
-                hero.attrAgility += increment;
+                this.attrAgility += increment;
                 break;
             case ATTR_REFLEXES:
                 intGain = Math.floor(hero.attrReflexes + increment) - Math.floor(hero.attrReflexes);
-                hero.attrReflexes += increment;
+                this.attrReflexes += increment;
                 break;
         }
         if (intGain > 0) {
@@ -648,15 +684,36 @@ function Hero() {
         }
     };
 
+    this.increaseMaxHp = function (increment) {
+        this.attrMaxHp += increment;
+        registerObject(GUI_COMMON, procureHpGaugeTextAction(hero, "#30E030",
+            [TXT_MAXHP[LANG_ENG] + " +" + Math.floor(increment), TXT_MAXHP[LANG_RUS] + " +" + Math.floor(increment)]).authorizeMenuPlay());
+    };
+
+    this.increaseMaxSp = function (increment) {
+        this.attrMaxSp += increment;
+        registerObject(GUI_COMMON, procureHpGaugeTextAction(hero, "#30E030",
+            [TXT_MAXSP[LANG_ENG] + " +" + Math.floor(increment), TXT_MAXSP[LANG_RUS] + " +" + Math.floor(increment)]).authorizeMenuPlay());
+    };
+
+    this.hasSkill = function (skillId) {
+        return (this.availableSkills.indexOf(skillId) >= 0) || (this.availableAuraSkills.indexOf(skillId) >= 0)
+            || (this.activeSkills.indexOf(skillId) >= 0);
+    };
+
     this.gainSkill = function (skillId) {
-        if ((this.availableSkills.indexOf(skillId) >= 0) && (this.activeSkills.indexOf(skillId) >= 0)) {
+        if (!this.hasSkill(skillId)) {
             this.availableSkills.push(skillId);
+            menuState = MS_SKILL_GAINED;
+            registerObject(GUI_EVENT, procureSkillGainedSequence(skillId));
         }
     };
 
     this.gainAuraSkill = function (skillId) {
-        if ((this.availableAuraSkills.indexOf(skillId) >= 0) && (this.activeSkills.indexOf(skillId) >= 0)) {
+        if (!this.hasSkill(skillId)) {
             this.availableAuraSkills.push(skillId);
+            menuState = MS_SKILL_GAINED;
+            registerObject(GUI_EVENT, procureAuraSkillGainedSequence(skillId));
         }
     };
 
@@ -668,6 +725,24 @@ function Hero() {
         this.availableItems.push(itemRecord);
         menuState = MS_ITEM_OBTAINED;
         registerObject(GUI_EVENT, procureItemObtainedSequence(itemRecord));
+    };
+
+    this.hasCodexEntry = function (entryId) {
+        var hasEntry = false;
+        for (var i = 0; i < this.codexEntries.length; i++) {
+            if ((this.codexEntries[i] != null) && (this.codexEntries[i].id == entryId)) {
+                hasEntry = true;
+            }
+        }
+        return hasEntry;
+    };
+
+    this.obtainCodexEntry = function (entryId) {
+        if (!this.hasCodexEntry(entryId)) {
+            this.codexEntries.push({id: entryId, read: false});
+            menuState = MS_NEW_CODEX_ENTRY;
+            registerObject(GUI_EVENT, procureNewCodexEntrySequence(entryId));
+        }
     };
 
     this.setAnimationState = function (animationState) {
@@ -687,7 +762,7 @@ function Hero() {
     this.manifest = function() {
         if (menuState == MS_NONE) {
             if (moving) {
-                var optimalHeight = getOptimalHeight(this.path, this.position) + 30;
+                var optimalHeight = getOptimalHeight(this.path, this.position) + 70;
                 var heightOffset = optimalHeight - this.height;
                 if (Math.abs(heightOffset) > 4) {
                     heightOffset = 4 * heightOffset / Math.abs(heightOffset);
@@ -768,7 +843,7 @@ function Hero() {
     this.move = function() {};
 }
 
-function Enemy(attrAttack, attrDefense, attrAgility, attrReflexes, attrMaxHp, animationObject) {
+function Enemy(attrAttack, attrDefense, attrAgility, attrReflexes, attrMaxHp, animationObject, codexEntry) {
     this.attrAttack = attrAttack;
     this.attrDefense = attrDefense;
     this.attrAgility = attrAgility;
@@ -784,6 +859,8 @@ function Enemy(attrAttack, attrDefense, attrAgility, attrReflexes, attrMaxHp, an
     this.effReflect = 1;
 
     this.animationObject = animationObject;
+
+    this.codexEntry = codexEntry != undefined ? codexEntry : null;
 
     this.battleGaugeArtifacts = [];
 
@@ -842,12 +919,8 @@ function Enemy(attrAttack, attrDefense, attrAgility, attrReflexes, attrMaxHp, an
 
     this.useSkill = function (skill, position) {
         var artifactData = skill.getArtifacts(position);
-        if (this.getRightmostCooldown() >= skill.getLeftCooldown(position)) {
-            // Maybe some special behavior will go here
-        } else {
-            for (var i = 0; i < artifactData.length; i++) {
-                this.battleGaugeArtifacts.push(artifactData[i]);
-            }
+        for (var i = 0; i < artifactData.length; i++) {
+            this.battleGaugeArtifacts.push(artifactData[i]);
         }
     };
 
@@ -1020,7 +1093,7 @@ function BattleGaugeArtifact(position, leftCooldown, rightCooldown) {
     this.sketch = function (position, character) {};
 }
 
-function ObjectType(chanceToAppear) {
+function LandmarkType(chanceToAppear) {
     this.chanceToAppear = chanceToAppear;
     this.singletonId = null;    // singleton means that this object can only be present single on the field
                                 // singletonId is used to track the object's presence
@@ -1029,28 +1102,34 @@ function ObjectType(chanceToAppear) {
         return (this.singletonId == null) || (singletonIds.indexOf(this.singletonId) < 0);
     };
 
-    this.defineGenerateObject = function(generateObject) {
-        this.generateObject = generateObject;
+    this.defineGenerateLandmark = function(generateLandmark) {
+        this.generateLandmark = generateLandmark;
     };
 
-    this.generateObject = function(path, position) {};
+    this.generateLandmark = function(path, position) {};
 }
 
-function FieldObject(path, position, offset, defaultImage) {
+function Landmark(path, position, defaultImage) {
     this.defaultImage = defaultImage;   // image in a default state
     this.path = path;                   // path layer
     this.layerOffset = 0;               // layer offset
     this.position = position;           // center position
-    this.offset = offset;               // offset from the center position
-    this.objectType = null;             // object type that generated this object
+    this.landmarkType = null;           // landmark type that generated this landmark
 
     this.finished = false;              // trigger finish flag
     this.scale = getPathScale(this.path);
 
+    // offset from the center position
+    if (defaultImage != undefined) {
+        this.offset = 80 - this.defaultImage.height * this.scale + this.defaultImage.width * this.scale / 5;
+    } else {
+        this.offset = 0;
+    }
+
     this.animationState = AN_STAND;
     this.animationFrame = 0;
 
-    this.type = "FieldObject";  // type definition
+    this.type = "Landmark";     // type definition
     this.deletable = false;     // universal deletability flag
 
     this.setAnimationState = function(animationState) {
@@ -1104,14 +1183,26 @@ function FieldObject(path, position, offset, defaultImage) {
     this.move = function() {
         this.position -= movementCoefficient;
         if (this.position < -this.defaultImage.width * this.scale) {
-            objectsOnLayer[this.path]--;
+            landmarksOnLayer[this.path]--;
             this.deletable = true;
-            if (this.objectType != null) {
-                var singletonIdIndex = singletonIds.indexOf(this.objectType.singletonId);
+            if (this.landmarkType != null) {
+                var singletonIdIndex = singletonIds.indexOf(this.landmarkType.singletonId);
                 if (singletonIdIndex >= 0) {
                     singletonIds[singletonIdIndex] = null;
                 }
             }
         }
     };
+}
+
+function CodexEntry(title, category, image) {
+    this.title = title;
+    this.category = category;
+    this.image = image !== undefined ? image : null;
+    this.text = "No text defined.";
+
+    this.defineText = function (text) {
+        this.text = text;
+        return this;
+    }
 }

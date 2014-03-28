@@ -12,8 +12,8 @@ var chroniclersNames = [
 ];
 
 var houseInhabitants = [
-    ["An elderly couple", "A lonely young hogman", "A hogwoman with three sons", "A rugged wolf"],
-    ["Пожилая пара", "Одинокий молодой кабан", "Кабаниха с трёмя сыновьями", "Суровый волк"]
+    ["An elderly couple", "A lonely young hogman", "A hogwoman with three sons", "A rugged wolfman"],
+    ["Пожилая пара", "Одинокий молодой кабанолюд", "Кабаниха с трёмя сыновьями", "Суровый волколюд"]
 ];
 
 var houseTasks = [
@@ -41,8 +41,9 @@ var CH00_TUTORIAL_MENU_STATS = 12;      // tutorial message: escape menu - stats
 var CH00_TUTORIAL_MENU_SKILLS = 13;     // tutorial message: escape menu - skills
 var CH00_TUTORIAL_MENU_ITEMS = 14;      // tutorial message: escape menu - items
 var CH00_TUTORIAL_MENU_CODEX = 15;      // tutorial message: escape menu - codex
-var CH00_LIBRARY_VISIT = 16;            // library visit count
-var CH00_BANDIT_RINGLEADER_BEATEN = 17; // bandit ringleader beaten flag
+var CH00_CONVERSATION_CAVE = 16;        // conversation: serpent cave
+var CH00_BANDIT_RINGLEADER_QUEST = 17;  // bandit ringleader quest flag
+var CH00_ARMADILLO_VITYAZ_QUEST = 18;   // armadillo vityaz quest flag
 
 /* TEXT DATA */
 
@@ -50,16 +51,14 @@ var CH00_TITLE = ["Prologue: Hero's Karma <br> ", "Пролог: Карма Ге
 
 var CH00_TUTORIAL_MENU_ROOT_TXT = [
     "This is the pause menu. Here you can manage Dominique's skills and items, view statistics data "
-        + "and codex entries. <br> <br> You can access the pause menu anytime outside of battle.",
+        + "and codex entries. <br> <br> You can access the pause menu almost anytime outside of battle.",
     "Это меню паузы. Здесь Вы можете настраивать навыки и предметы Доминика, просматривать статистику и "
-        + "записи в кодексе. <br> <br> Вы можете заходить в меню паузы в любой момент вне боя."
+        + "записи в кодексе. <br> <br> Вы можете заходить в меню паузы почти в любой момент вне боя."
 ];
 
 var CH00_TUTORIAL_MENU_STATS_TXT = [
-    "On this screem you can view your character stats and game statistics and browse through your "
-        + "destinies. Not that there is ANYTHING on the screen now...",
-    "На этом экране Вы можете увидеть информацию о персонаже и игровую статистику, а также просмотреть "
-        + "Ваши судьбы. Не то, что бы сейчас на экране ВООБЩЕ что-либо отображалось..."
+    "On this screem you can view your character stats and game statistics and browse through your destinies.",
+    "На этом экране Вы можете увидеть информацию о персонаже и игровую статистику, а также просмотреть Ваши судьбы."
 ];
 
 var CH00_TUTORIAL_MENU_SKILLS_TXT = [
@@ -96,9 +95,9 @@ var CH00_TUTORIAL_MENU_ITEMS_TXT_02 = [
 ];
 
 var CH00_TUTORIAL_MENU_CODEX_TXT = [
-    "Codex is a record of things known to you about this world. Each entry provides information about an object, "
+    "Codex is a record of things known to you about this world. Each entry provides information about a landmark, "
         + "an enemy, your quest or a lore topic. Entries are organized into categories for your convenience.",
-    "Кодекс - это летопись всего, что Вам известно об этом мире. Каждая запись даёт информацию об объекте, "
+    "Кодекс - это летопись всего, что Вам известно об этом мире. Каждая запись даёт информацию об объекте на местности, "
         + "враге, Ваших поисках или некие отвлечённые знания. Записи организованы в категории для Вашего удобства."
 ];
 
@@ -265,11 +264,11 @@ var CH00_ARMORSMITH_05 = [
 ];
 
 var CH00_DOJO_01 = [
-    "Dominique stands before one of many training halls around these parts. The doorkeeper greets him with a bow and "
+    "Dominique stands before one of many dojos around these parts. The doorkeeper greets him with a bow and "
         + "seeing that he knows his way around in a fight, invites him to train with the adepts. Being admitted "
         + "into an inner circle of a fighting guild should not be taken lightly, for it takes a toll on the karma. "
         + " <br> <br> Training with these adepts will grant Dominique a ",
-    "Доминик стоит перед одним из многих тренировочных залов этих мест. Дверник приветствует его поклоном и, видя, "
+    "Доминик стоит перед одним из многих додзё этих мест. Дверник приветствует его поклоном и, видя, "
         + "что он не новичок в бою, приглашает потренироваться с адептами. Допуск ко внутреннему кругу "
         + "бойцовской гильдии - серьёзный шаг, который скажется на карме."
         + " <br> <br> Тренировка с этими адептами даст Доминику "
@@ -320,6 +319,34 @@ var CH00_RFXDOJO_05 = [
     "Dominique takes some wedgewing instead of training. Well, that's also a way.",
     "Доминик берёт немного клинокрыла вместо того, чтобы тренироваться. Ну, что ж, это тоже вариант."
 ];
+
+var CH00_LIBRARY_01 = [
+    "A majestic building stands tall before Dominique and Sallinger, its spire rising to the sky. " +
+        "This is a library, a temple of learning, where all are free to dive into the world's knowledge. It's probably a great " +
+        "place to spend time and improve oneself, since new things may be learnt here, and even if they are not immediately " +
+        "useful, broadening horizons contributes to one's karmic wealth. <br> <br> Would you like to stay?",
+    "Величественное здание с уходящим в небо шпилем возвышается над Домиником и Сэллинджером. Это библиотека, храм " +
+        "познания, где все могут абсолютно свободно нырнуть в мир знаний. Это отличное место, где можно провести время " +
+        "и стать лучше, ибо здесь узнаётся много нового, и даже если оно не будет полезным сразу, расширение горизонтов " +
+        "вносит лепту в кармическое богатство. <br> <br> Желаете остановиться?"];
+
+var CH00_LIBRARY_02_1 = [
+    "Walking in the seemingly infinite bookshelf labyrinth, Dominique looks through the books and finally picks one. " +
+        "He silently sits by the table in the corner and starts delving into its contents, taking notes in his codex.",
+    "Бродя в кажущимся бесконечным лабиринте книжных полок, Доминик осматривает книги и, наконец, выбирает одну. Тихо сев " +
+        "в уголок за письменный стол, он начинает погружаться в её содержимое и попутно делать заметки в своём кодексе."];
+var CH00_LIBRARY_02_2 = [
+    "Walking in the seemingly infinite bookshelf labyrinth, Dominique looks through the books and finally picks one. " +
+        "He silently sits by the table in the corner and starts delving into its contents, enjoying beautiful classic poetry.",
+    "Бродя в кажущимся бесконечным лабиринте книжных полок, Доминик осматривает книги и, наконец, выбирает одну. Тихо сев " +
+        "в уголок за письменный стол, он начинает погружаться в её содержимое и наслаждаться прекрасными классическими стихами."];
+var CH00_LIBRARY_02_3 = [
+    "Walking in the seemingly infinite bookshelf labyrinth, Dominique looks through the books and notices one titled " +
+        "\"The Art of Not Being Hit in the First Place\". He proceeds to carefully study its contents and concludes that he should " +
+        "try practicing what he just learned",
+    "Бродя в кажущимся бесконечным лабиринте книжных полок, Доминик осматривает книги и обнаруживает одну, озаглавленную " +
+        "\"Искусство не Попадать под Удары\". Он аккуратно изучает её содержимое и заключает, что ему неплохо бы " +
+        "попрактиковаться в том, что он только что освоил."];
 
 var CH00_HOUSE_REST_01 = [
     " greets Dominique by the house and invites inside to share a meal. Being a rat rider certainly has some "
@@ -390,6 +417,13 @@ var CH00_COMMON_CHEST_02_2 = [
 var CH00_COMMON_CHEST_02_3 = [
     "As Dominique opens the chest, a cloud of dust bursts from it! He starts feeling funny.",
     "Когда Доминик открыл сундук, из него вырвалось облако пыли! Доминику становится нехорошо."
+];
+
+var CH00_COMMON_CHEST_02_4 = [
+    "Dominique opens the chest and finds a hemp net with many pages of text describing different techniques of using " +
+        "it to ensnare enemies. This certainly seems useful.",
+    "Доминик открывает сундук и находит там пеньковую сеть с многостраничным описанием различных техник поимки в неё врагов. " +
+        "Определённо полезная вещь."
 ];
 
 var CH00_DESTROYED_HOUSE = [
@@ -473,57 +507,79 @@ var CH00_TUTORIAL_ARMADILLO_TXT = [
 
 var LSC_PROLOGUE = 1;
 function createPrologueLandscape() {
-    var prologueLandscape = createTitleLandscape();
+    var prologueLandscape = createGrasslandsLandscape();
+    prologueLandscape.name = ["Asqarra", "Аскарра"];
     prologueLandscape.defineActualize(function () {
-        this.clearObjectTypes();
-        this.addObjectType(describeChroniclersPavilionType(0.1));
-        this.addObjectType(describeHotspringType(0.1));
-        this.addObjectType(describeInnType(0.1));
-        this.addObjectType(describeHouseRestType(0.1));
-        this.addObjectType(describeHouseWorkType(0.1));
-        this.addObjectType(describeTradingPostType(0.1));
-        this.addObjectType(describeCommonChestType(0.1));
-        this.addObjectType(describeTrainerType(0.07));
+        this.clearLandmarkTypes();
+        this.addLandmarkType(describeChroniclersPavilionType(0.1));
+        this.addLandmarkType(describeHotspringType(0.1));
+        this.addLandmarkType(describeInnType(0.1));
+        this.addLandmarkType(describeHouseRestType(0.1));
+        this.addLandmarkType(describeHouseWorkType(0.1));
+        this.addLandmarkType(describeTradingPostType(0.1));
+        this.addLandmarkType(describeCommonChestType(0.1));
+        this.addLandmarkType(describeCodexLibraryType(0.1));
+        if (!hero.hasSkill(SKL_NETCAST)) {
+            this.addLandmarkType(describeCh00SkillChestType(0.05));
+        }
+        if (!hero.hasSkill(SKL_EVADE)) {
+            this.addLandmarkType(describeSkillLibraryType(0.05));
+        }
+        this.addLandmarkType(describeTrainerType(0.07));
         if (gst[CH00][CH00_PHASE] == 1) {
-            this.addObjectType(describeBanditType(0.15));
-            this.addObjectType(describeWolfType(0.15));
-            this.addObjectType(describeDestroyedHouseType(0.1));
+            this.addLandmarkType(describeBanditType(0.15));
+            this.addLandmarkType(describeWolfType(0.15));
+            this.addLandmarkType(describeDestroyedHouseType(0.1));
         } else if (gst[CH00][CH00_PHASE] == 2) {
-            this.addObjectType(describeBanditType(0.15));
-            this.addObjectType(describeWolfType(0.15));
-            this.addObjectType(describeMilestoneType(0.1));
+            this.addLandmarkType(describeBanditType(0.15));
+            this.addLandmarkType(describeWolfType(0.15));
+            this.addLandmarkType(describeMilestoneType(0.1));
         } else if (gst[CH00][CH00_PHASE] == 3) {
-            this.addObjectType(describeBanditType(0.15));
-            this.addObjectType(describeWolfType(0.15));
-            this.addObjectType(describeBrigandType(0.1));
-            this.addObjectType(describeWaspType(0.1));
-            this.addObjectType(describeMilestoneType(0.1));
+            this.addLandmarkType(describeBanditType(0.15));
+            this.addLandmarkType(describeWolfType(0.15));
+            this.addLandmarkType(describeBrigandType(0.1));
+            this.addLandmarkType(describeWaspType(0.1));
+            this.addLandmarkType(describeSeersHutType(0.1));
         } else if (gst[CH00][CH00_PHASE] == 4) {
-            this.addObjectType(describeBanditType(0.15));
-            this.addObjectType(describeWolfType(0.15));
-            this.addObjectType(describeBrigandType(0.15));
-            this.addObjectType(describeWaspType(0.15));
-            this.addObjectType(describeMilestoneType(0.1));
-        } else if (gst[CH00][CH00_PHASE] == 5) {
-            this.addObjectType(describeBanditType(0.1));
-            this.addObjectType(describeWolfType(0.1));
-            this.addObjectType(describeBrigandType(0.15));
-            this.addObjectType(describeWaspType(0.15));
-            this.addObjectType(describeRedWolfType(0.1));
-            this.addObjectType(describePoisonWaspType(0.1));
-            this.addObjectType(describeArmadilloKnightType(0.1));
-            this.addObjectType(describeBanditRingleaderType(0.05));
-            this.addObjectType(describeArmadilloVityazType(0.05));
-            this.addObjectType(describeGreenSerpentType(0.1));
+            this.addLandmarkType(describeBanditType(0.15));
+            this.addLandmarkType(describeWolfType(0.15));
+            this.addLandmarkType(describeBrigandType(0.15));
+            this.addLandmarkType(describeWaspType(0.15));
+            this.addLandmarkType(describeMilestoneType(0.1));
+        } else if (gst[CH00][CH00_PHASE] >= 5) {
+            this.addLandmarkType(describeBanditType(0.1));
+            this.addLandmarkType(describeWolfType(0.1));
+            this.addLandmarkType(describeBrigandType(0.15));
+            this.addLandmarkType(describeWaspType(0.15));
+            this.addLandmarkType(describeRedWolfType(0.1));
+            this.addLandmarkType(describePoisonWaspType(0.1));
+            this.addLandmarkType(describeArmadilloKnightType(0.1));
+            this.addLandmarkType(describeBanditRingleaderType(0.05));
+            this.addLandmarkType(describeArmadilloVityazType(0.05));
+            if (gst[CH00][CH00_PHASE] == 5) {
+                this.addLandmarkType(describeSerpentCaveType(0.2));
+            }
         }
     });
     return prologueLandscape;
 }
 
+var LSC_SERPENT_CAVE = 2;
+function createSerpentCaveLandscape() {
+    var serpentCaveLandscape = createCavesLandscape();
+    serpentCaveLandscape.name = ["Asqarra - Serpent cave", "Аскарра - Пещера змея"];
+    serpentCaveLandscape.mainTheme = MUS_FOREBODING;
+    serpentCaveLandscape.defineActualize(function () {
+        this.clearLandmarkTypes();
+        this.addLandmarkType(describeGreenSerpentType(1));
+    });
+    return serpentCaveLandscape;
+}
+
 /* SEQUENCES */
 
 function procureStartPrologueSequence() {
-    var enemyObject = new FieldObject(MID, 620, 50, getResource("imgEnemyBandit1Stand"));
+    var enemyObject = new Landmark(MID, 620, getResource("imgEnemyBandit1Stand"));
     enemyObject.setAttackImage(getResource("imgEnemyBandit1Attack"));
     var tutorialEnemy = enlistTutorialBandit(enemyObject);
     var startPrologue = new Sequence();
@@ -552,6 +608,11 @@ function procureStartPrologueSequence() {
             gst[CH00][CH00_TUTORIAL_POISON_WASP] = 1;
             gst[CH00][CH00_TUTORIAL_ARMADILLO] = 1;
             gst[CH00][CH00_TUTORIAL_DANGER] = 1;
+            gst[CH00][CH00_TUTORIAL_MENU_ROOT] = 1;
+            gst[CH00][CH00_TUTORIAL_MENU_STATS] = 1;
+            gst[CH00][CH00_TUTORIAL_MENU_SKILLS] = 1;
+            gst[CH00][CH00_TUTORIAL_MENU_ITEMS] = 1;
+            gst[CH00][CH00_TUTORIAL_MENU_CODEX] = 1;
         }
     }));
     startPrologue.addAction(procureCodeFragmentAction(function () {
@@ -559,13 +620,11 @@ function procureStartPrologueSequence() {
         // creating hero, enabling GUI
         clearObjectType("Hero");
         hero = new Hero();
-        registerObject(OBJECTS_MID, hero);
+        registerObject(OBJECTS_MID_HERO, hero);
 
         gst[CH00][CH00_PHASE] = 1;
 
         loadLandscape(LSC_PROLOGUE);
-        landscape.resetTerrain();
-        registerObject(GUI_EVENT, landscape);
         setControlMode(CM_FIELD);
 
         setEventMusic(null);
@@ -627,24 +686,30 @@ function procureStartPrologueSequence() {
                         + "тропами, условно называемыми дальней, средней и ближней."]));
             afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
                 ["To travel towards the farther path, press the 'W' key or the 'Up' key. To travel towards the nearer "
-                    + "path, press the 'S' key or the 'Down' key. But be cautious: such movement expends your stamina, "
-                    + "so too much of it and you will get tired very quickly.",
+                    + "path, press the 'S' key or the 'Down' key. But be cautious: such movement expends stamina, "
+                    + "so too much of it and I will get tired very quickly.",
                     "Чтобы путешествовать дальше, следует нажать 'W' или 'Вверх'. Чтобы путешествовать ближе, следует "
                         + "нажать 'S' или 'Вниз'. Но будь осторожен: такие перемещения тратят твою выносливость, так "
-                        + "что если будешь много петлять, быстро устанешь."]));
+                        + "что если будешь много петлять, я быстро устану."]));
             afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
                 ["Let's have a look around and see if someone has a task for a hero like you. "
-                    + "Keep an eye out for an exclamation mark over an object - such marks denote places of "
+                    + "Keep an eye out for an exclamation mark over a landmark - such marks denote places of "
                     + "special interest for us.",
                     "Давай осмотримся, нет ли здесь кого-нибудь, нуждающегося в помощи героя, вроде тебя. "
                         + "Обращай внимание на восклицательные знаки над объектами - такие знаки отмечают особо "
                         + "интересные для нас места."]));
+            afterbattleSequence.addAction(procureCodeFragmentAction(function () {
+                hero.obtainCodexEntry(CDX_JOU001_CH00P01);
+            }));
             afterbattleSequence.addAction(procureResumeAction());
             startPrologue.addAction(procureInitiateBattleAction(tutorialEnemy, afterbattleSequence));
         } else {
             startPrologue.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
                 ["Let's have a look around and see if someone has a task for a hero like you.",
                     "Давай осмотримся, нет ли здесь кого-нибудь, нуждающегося в помощи героя, вроде тебя."]));
+            startPrologue.addAction(procureCodeFragmentAction(function () {
+                hero.obtainCodexEntry(CDX_JOU001_CH00P01);
+            }));
             startPrologue.addAction(procureResumeAction());
         }
     }));
@@ -703,12 +768,12 @@ function processKarmaTutorial() {
     }
 }
 
-/* FIELD OBJECTS */
+/* LANDMARKS */
 
 function describeChroniclersPavilionType(chance) {
-    var chroniclersPavilionType = new ObjectType(chance);
-    chroniclersPavilionType.defineGenerateObject(function (path, position) {
-        var chroniclersPavilion = new FieldObject(path, position, 50, getResource("imgObjArbor"));
+    var chroniclersPavilionType = new LandmarkType(chance);
+    chroniclersPavilionType.defineGenerateLandmark(function (path, position) {
+        var chroniclersPavilion = new Landmark(path, position, getResource("imgObjChronicler"));
         chroniclersPavilion.defineTrigger(function () {
             var pavilionSequence = new Sequence();
             pavilionSequence.addAction(procureStopAction());
@@ -749,9 +814,9 @@ function describeChroniclersPavilionType(chance) {
 }
 
 function describeHotspringType(chance) {
-    var hotspringType = new ObjectType(chance);
-    hotspringType.defineGenerateObject(function (path, position) {
-        var hotspring = new FieldObject(path, position, 60, getResource("imgObjHotspring"));
+    var hotspringType = new LandmarkType(chance);
+    hotspringType.defineGenerateLandmark(function (path, position) {
+        var hotspring = new Landmark(path, position, getResource("imgObjHotspring"));
         hotspring.defineTrigger(function () {
             var hotspringSequence = new Sequence();
             hotspringSequence.addAction(procureStopAction());
@@ -803,9 +868,9 @@ function describeHotspringType(chance) {
 }
 
 function describeInnType(chance) {
-    var innType = new ObjectType(chance);
-    innType.defineGenerateObject(function (path, position) {
-        var inn = new FieldObject(path, position, 50, getResource("imgObjInn"));
+    var innType = new LandmarkType(chance);
+    innType.defineGenerateLandmark(function (path, position) {
+        var inn = new Landmark(path, position, getResource("imgObjInn"));
         inn.defineTrigger(function () {
             var innSequence = new Sequence();
             innSequence.addAction(procureStopAction());
@@ -857,11 +922,10 @@ function describeInnType(chance) {
 }
 
 function describeTrainerType(chance) {
-    var trainerType = new ObjectType(chance);
-    trainerType.defineGenerateObject(function (path, position) {
+    var trainerType = new LandmarkType(chance);
+    trainerType.defineGenerateLandmark(function (path, position) {
         var attribute = Math.floor(Math.random() * 4);
-        var trainer = new FieldObject(path, position, 50,
-            attribute < 2 ? getResource("imgObjSmith") : getResource("imgObjDojo"));
+        var trainer = new Landmark(path, position, attribute < 2 ? getResource("imgObjSmith") : getResource("imgObjDojo"));
         trainer.defineTrigger(function () {
             var trainerSequence = new Sequence();
             trainerSequence.addAction(procureStopAction());
@@ -998,10 +1062,9 @@ function describeTrainerType(chance) {
 }
 
 function describeHouseRestType(chance) {
-    var houseRestType = new ObjectType(chance);
-    houseRestType.defineGenerateObject(function (path, position) {
-        var houseRest = new FieldObject(path, position, 50,
-            getRandomObject([getResource("imgObjHouse1"), getResource("imgObjHouse2")]));
+    var houseRestType = new LandmarkType(chance);
+    houseRestType.defineGenerateLandmark(function (path, position) {
+        var houseRest = new Landmark(path, position, getRandomObject([getResource("imgObjHouse1"), getResource("imgObjHouse2")]));
         houseRest.defineTrigger(function () {
             var houseRestSequence = new Sequence();
             houseRestSequence.addAction(procureStopAction());
@@ -1039,10 +1102,9 @@ function describeHouseRestType(chance) {
 }
 
 function describeHouseWorkType(chance) {
-    var houseWorkType = new ObjectType(chance);
-    houseWorkType.defineGenerateObject(function (path, position) {
-        var houseWork = new FieldObject(path, position, 50,
-            getRandomObject([getResource("imgObjHouse1"), getResource("imgObjHouse2")]));
+    var houseWorkType = new LandmarkType(chance);
+    houseWorkType.defineGenerateLandmark(function (path, position) {
+        var houseWork = new Landmark(path, position, getRandomObject([getResource("imgObjHouse1"), getResource("imgObjHouse2")]));
         houseWork.defineTrigger(function () {
             var houseWorkSequence = new Sequence();
             houseWorkSequence.addAction(procureStopAction());
@@ -1103,9 +1165,9 @@ function describeHouseWorkType(chance) {
 }
 
 function describeTradingPostType(chance) {
-    var objectType = new ObjectType(chance);
-    objectType.defineGenerateObject(function (path, position) {
-        var object = new FieldObject(path, position, 50, getResource("imgObjTradingPost"));
+    var objectType = new LandmarkType(chance);
+    objectType.defineGenerateLandmark(function (path, position) {
+        var object = new Landmark(path, position, getResource("imgObjTradingPost"));
         object.defineTrigger(function () {
             var objectSequence = new Sequence();
             objectSequence.addAction(procureStopAction());
@@ -1147,11 +1209,95 @@ function describeTradingPostType(chance) {
     return objectType;
 }
 
+// TODO: do a good implementation of the library
+function describeCodexLibraryType(chance) {
+    var libraryType = new LandmarkType(chance);
+    libraryType.defineGenerateLandmark(function (path, position) {
+        var library = new Landmark(path, position, getResource("imgObjLibrary"));
+        library.defineTrigger(function () {
+            var librarySequence = new Sequence();
+            librarySequence.addAction(procureStopAction());
+            librarySequence.addAction(procureDisplayCenteredMessageAction(WW_MEDIUM, CH00_LIBRARY_01, true)
+                .addChoice(TXT_YES).addChoice(TXT_NO));
+            librarySequence.addAction(procureCodeFragmentAction(function () {
+                if (eventChoice == 0) {
+                    if (!hero.hasCodexEntry(CDX_LORE005_HUMANSOCIETY)) {
+                        librarySequence.addAction(
+                            procureDisplayCenteredMessageAction(WW_SMALL, CH00_LIBRARY_02_1, true));
+                        librarySequence.addAction(procureCodeFragmentAction(function () {
+                            var codexEntryGained = false;
+                            var i = 0;
+                            while (!codexEntryGained && (i < 5)) {
+                                if (!hero.hasCodexEntry(1001 + i)) {
+                                    hero.obtainCodexEntry(1001 + i);
+                                    codexEntryGained = true;
+                                }
+                                i++;
+                            }
+                        }));
+                    } else {
+                        librarySequence.addAction(
+                            procureDisplayCenteredMessageAction(WW_SMALL, CH00_LIBRARY_02_2, true));
+                    }
+                    librarySequence.addAction(procureCodeFragmentAction(function () {
+                        var karmaGained = 0;
+                        for (i = 0; i < hero.codexEntries.length; i++) {
+                            if ((hero.codexEntries[i] != null) && (hero.codexEntries[i].read)) {
+                                karmaGained++;
+                            }
+                        }
+                        karmaGained = Math.floor(karmaGained * (0.75 + 0.5 * Math.random()));
+                        hero.addKarma(karmaGained);
+                    }));
+                } else {
+                    librarySequence.addAction(
+                        procureDisplayCenteredMessageAction(WW_SMALL, TXT_SUIT_YOURSELF, true));
+                }
+                librarySequence.addAction(procureResumeAction());
+            }));
+            registerObject(GUI_EVENT, librarySequence);
+        });
+        return library;
+    });
+    return libraryType;
+}
+
+// TODO: do a good implementation of the skill library
+function describeSkillLibraryType(chance) {
+    var libraryType = new LandmarkType(chance);
+    libraryType.singletonId = "singleton: ch00_skill_evade";
+    libraryType.defineGenerateLandmark(function (path, position) {
+        var library = new Landmark(path, position, getResource("imgObjLibrary"));
+        library.defineTrigger(function () {
+            var librarySequence = new Sequence();
+            librarySequence.addAction(procureStopAction());
+            librarySequence.addAction(procureDisplayCenteredMessageAction(WW_MEDIUM, CH00_LIBRARY_01, true)
+                .addChoice(TXT_YES).addChoice(TXT_NO));
+            librarySequence.addAction(procureCodeFragmentAction(function () {
+                if (eventChoice == 0) {
+                    librarySequence.addAction(
+                        procureDisplayCenteredMessageAction(WW_SMALL, CH00_LIBRARY_02_3, true));
+                    librarySequence.addAction(procureCodeFragmentAction(function () {
+                        hero.gainSkill(SKL_EVADE);
+                        landscape.actualize();
+                    }));
+                } else {
+                    librarySequence.addAction(
+                        procureDisplayCenteredMessageAction(WW_SMALL, TXT_SUIT_YOURSELF, true));
+                }
+                librarySequence.addAction(procureResumeAction());
+            }));
+            registerObject(GUI_EVENT, librarySequence);
+        });
+        return library;
+    });
+    return libraryType;
+}
+
 function describeCommonChestType(chance) {
-    var objectType = new ObjectType(chance);
-    objectType.defineGenerateObject(function (path, position) {
-        var object = new FieldObject(path, position, 50, getResource("imgObjChest1"));
-        object.layerOffset = -2;
+    var objectType = new LandmarkType(chance);
+    objectType.defineGenerateLandmark(function (path, position) {
+        var object = new Landmark(path, position, getResource("imgObjChest1"));
         object.defineTrigger(function () {
             var objectSequence = new Sequence();
             objectSequence.addAction(procureStopAction());
@@ -1226,11 +1372,43 @@ function describeCommonChestType(chance) {
     return objectType;
 }
 
+// TODO: do a good implementation of the skill chest
+function describeCh00SkillChestType(chance) {
+    var objectType = new LandmarkType(chance);
+    objectType.singletonId = "singleton: ch00_skill_netcast";
+    objectType.defineGenerateLandmark(function (path, position) {
+        var object = new Landmark(path, position, getResource("imgObjChest1"));
+        object.defineTrigger(function () {
+            var objectSequence = new Sequence();
+            objectSequence.addAction(procureStopAction());
+            objectSequence.addAction(procureDisplayCenteredMessageAction(WW_MEDIUM, CH00_COMMON_CHEST_01, true)
+                .addChoice(TXT_YES).addChoice(TXT_NO));
+            objectSequence.addAction(procureCodeFragmentAction(function () {
+                if (eventChoice == 0) {
+                    objectSequence.addAction(
+                        procureDisplayCenteredMessageAction(WW_SMALL, CH00_COMMON_CHEST_02_4, true));
+                    objectSequence.addAction(procureCodeFragmentAction(function () {
+                        hero.gainSkill(SKL_NETCAST);
+                        landscape.actualize();
+                    }));
+                } else {
+                    objectSequence.addAction(
+                        procureDisplayCenteredMessageAction(WW_SMALL, TXT_SUIT_YOURSELF, true));
+                }
+                objectSequence.addAction(procureResumeAction());
+            }));
+            registerObject(GUI_EVENT, objectSequence);
+        });
+        return object;
+    });
+    return objectType;
+}
+
 function describeDestroyedHouseType(chance) {
-    var objectType = new ObjectType(chance);
+    var objectType = new LandmarkType(chance);
     objectType.singletonId = "singleton: ch00_phase01";
-    objectType.defineGenerateObject(function (path, position) {
-        var object = new FieldObject(path, position, 50, getResource("imgObjDestroyedHouse"));
+    objectType.defineGenerateLandmark(function (path, position) {
+        var object = new Landmark(path, position, getResource("imgObjDestroyedHouse"));
         var triggered = false;
         registerObject(pathToObjectLayer(path), procureFloatingImageAction(object, getResource("imgQuestMark"),
             function () {
@@ -1239,11 +1417,83 @@ function describeDestroyedHouseType(chance) {
         object.defineTrigger(function () {
             var objectSequence = new Sequence();
             objectSequence.addAction(procureStopAction());
-            objectSequence.addAction(procureDisplayCenteredMessageAction(WW_MEDIUM, CH00_DESTROYED_HOUSE, true));
+            objectSequence.addAction(procureDisplayCenteredMessageAction(WW_MEDIUM, [
+                "Dominique and Sallinger discover a house that was practically brought apart by something large and vicious. White tablecloth " +
+                    "is stained crimson with either wine or blood, or maybe even a mix of both. Half-eaten victims are lying on the floor. " +
+                    "Even though they are all commoners, they are dressed better than what one would expect. It seems that a party was held here.",
+                "Доминик и Сэллинджер обнаруживают дом, который был практически разобран на куски чем-то большим и жестоким. Белая скатерть " +
+                    "покрыта пятнами чего-то красного, вина или крови или даже смеси того и другого. На полу лежат наполовину съеденные жертвы. " +
+                    "Хотя все они незнатного происхождения, одеты они лучше, чем следовало бы ожидать. Видно, здесь проходило празднество."
+            ], true));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["This is... terrible. Who could have done that?", "Это... ужасно. Кто мог такое сотворить?"]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["Cannot say for sure, but it was definitely larger than your average denizen of these parts.",
+                    "Не могу сказать наверняка, но оно определённо было больше, чем среднестатистический житель этих мест."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["A large and powerful mythical creature, probably, winged and... *looks at the burnt wall* ...fire-breathing? " +
+                    "Is this what I think it is - the eternal rival of brave knights?",
+                    "Большое и могучее мифическое существо, вероятно, крылатое и... *смотрит на обгоревшие стены* ...огнедышащее? " +
+                        "Неужели это то, что я думаю, - извечный враг храбрых рыцарей?"]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["Pray that it was burned by fire from candles. If we encounter the dragon, we are toast.",
+                    "Молись, чтобы это был огонь от свеч. Если мы наткнёмся на дракона, нам конец."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["Have more faith in me, Sallinger!", "Тебе следует больше верить в меня, Сэллинджер!"]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["My faith in you is only rivaled by my realism. And... *spots something on the floor and proceeds to pick it up* " +
+                    "...my observation talent.",
+                    "Моя вера в тебя уступает только моему реализму. И... *замечает что-то на полу и направляется поднять его* " +
+                        "...моей наблюдательности."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["Certainly not by your modesty. What is it?", "Явно не скромности. Что это?"]));
+            objectSequence.addAction(procureDisplayCenteredMessageAction(WW_MEDIUM, [
+                "Sallinger gives Dominique an emerald scale.", "Сэллинджер отдаёт Доминику изумрудную чешуйку."
+            ], true));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["A scale? So I am not too far off, after all. But what do we do with it?",
+                    "Чешуйка? Значит, я не так уж и далёк от истины. Но что нам с ней делать?"]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["If it's really the body part of the culprit, we could use it to find the owner.",
+                    "Если это действительно часть тела виновника торжества, мы можем использовать её, чтобы найти её владельца."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["How do we do that?", "И как мы это сделаем?"]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["Every action leaves traces in nature. They are tiny karmic ripples in Natural Order that no creature can see. " +
+                    "Except for those that are attuned to it. The seers.",
+                    "Всякое действие оставляет в природе следы. Это слабая кармическая рябь в Естественном Порядке, " +
+                        "которую не может увидеть ни одно существо. Кроме тех, кто на них настроен. Провидцев."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["The seers? Aren't they all charlatans telling dwellers what they want to hear? How do we find the real one?",
+                    "Провидцы? Разве они все не шарлатаны, говорящие жителям то, что они хотят услышать? Как мы найдём настоящего?"]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["Our path will lead us straight to one. Dwellers are lead to false seers because what they wish to hear can only " +
+                    "be spoken by charlatans. They do not seek the truth. They actually run from it.",
+                    "Наш путь приведёт нас к нему. Жители находят фальшивых провидцев, потому что желаемое им могут сказать только " +
+                        "шарлатаны. Они не ищут правды. На самом деле, они бегут от неё."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["That is not the case with us. We need a seer for a very specific task that only a seer can accomplish. " +
+                    "Besides, with my high-fidelity scam sense I can tell the fake ones easily.",
+                    "В нашем случае это не так. Нам нужен провидец для вполне конкретного задания, которое по плечу только провидцу. " +
+                        "К тому же, с моим высокоточным чутьём подвоха я вмиг разоблачу любую фальшивку."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["Scam sense?.. Hmmm, what about that one occasion when I bought--",
+                    "Чутьё подвоха?.. Хммм, а как насчёт того случая, когда я купил--"]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["There are RULES, Dominique. I can only use it to further our mission or save us from imminent death. " +
+                    "That is how rat riders and their companions are.",
+                    "Есть ПРАВИЛА, Доминик. Я могу использовать его только для продвижения к нашей цели или чтобы спасти нас от " +
+                        "неминуемой гибели. Так заведено у крысиных всадников и их товарищей."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["Ah, right, right... I lead the way and make decisions. Well, then, it is time for Dominique and " +
+                    "Sallinger to enter the scene! Let us make haste to find the seer.",
+                    "Да, верно, верно... Я веду и принимаю решения. Ну, что ж, пришло время Доминику и Сэллинджеру " +
+                        "появиться на сцене! Поспешим же найти провидца."]));
             objectSequence.addAction(procureCodeFragmentAction(function () {
                 triggered = true;
                 gst[CH00][CH00_PHASE]++;
                 landscape.actualize();
+                hero.obtainCodexEntry(CDX_JOU002_CH00P02);
             }));
             objectSequence.addAction(procureResumeAction());
             registerObject(GUI_EVENT, objectSequence);
@@ -1253,11 +1503,152 @@ function describeDestroyedHouseType(chance) {
     return objectType;
 }
 
+function describeSeersHutType(chance) {
+    var objectType = new LandmarkType(chance);
+    objectType.singletonId = "singleton: ch00_phase03";
+    objectType.defineGenerateLandmark(function (path, position) {
+        var object = new Landmark(path, position, getResource("imgObjSeersHut"));
+        var triggered = false;
+        registerObject(pathToObjectLayer(path), procureFloatingImageAction(object, getResource("imgQuestMark"),
+            function () {
+                return triggered;
+            }));
+        object.defineTrigger(function () {
+            var objectSequence = new Sequence();
+            objectSequence.addAction(procureStopAction());
+            objectSequence.addAction(procureDisplayCenteredMessageAction(WW_MEDIUM, [
+                "Dominique and Sallinger find a characteristic ascetic hut. Just the place where one would expect to meet a seer. " +
+                    "Dominique dismounts and enters the hut with Sallinger.",
+                "Доминик и Сэллинджер находят характерную аскетичную хижину. Идеальное место обитания провидца. " +
+                    "Доминик спешивается и входит в хижину вместе с Сэллинджером."
+            ], true));
+            var seersName = ["Seer", "Провидец"];
+            objectSequence.addAction(procureDisplaySpeechMessageAction(seersName, null,
+                ["Walk quietly, knight. Your steps are heavy and loud in a way you know not.",
+                    "Ходи тише, рыцарь. Твои шаги тяжелы и громки в неизвестном тебе качестве."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["*quietly to Sallinger* Is this the real deal?", "*тихо обращаясь к Сэллинджеру* Он настоящий?"]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(seersName, null,
+                ["Oh please. Your distrust stinks all across Asqarra. And yet what you seek you could have received " +
+                    "from any peasant along the road.", "Ох, пожалуйста, давайте без этого. Твоё недоверие воняет на всю Аскарру. " +
+                    "И тем не менее, то, что ты ищешь, ты мог узнать у любого крестьянина по дороге."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["What does that mean? Do you imply to know why we are here?", "Что это ещё значит? Намекаете, что знаете, зачем мы здесь?"]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(seersName, null, ["So long as you do.", "Покуда знаете вы."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["You seem awfully full of yourself, seer. If there is weight to such attitude, why don't you tell us what we seek?",
+                    "Вы чрезвычайно самоуверенны, провидец. Если это чем-то обоснованно, почему бы вам не рассказать нам, что же мы ищем?"]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(seersName, null,
+                ["The hogman brought a part of Party Crasher with him. Party Crasher has been a horror to " +
+                    "these parts for as long as the oldest homesteads stand here.", "Кабанолюд принёс с собой часть Незваного Гостя. " +
+                    "Незваный Гость - ужас этих земель со времён первых построенных здесь усадеб."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(seersName, null,
+                ["Twice a year he leaves his lair to hunt and feast upon the dwellers. But more than living flesh he likes beverages. " +
+                    "That's why celebrations are very rare this time of year.",
+                    "Дважды в год он покидает своё логово, чтобы поохотиться и попировать над телами жителей. Но более, чем живую плоть, " +
+                        "он любит вина. Именно поэтому в это время года праздники - большая редкость."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["I guess we know how they end.", "Полагаю, мы знаем, чем они заканчиваются."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(seersName, null,
+                ["Yes, yes... You certainly won't be disappointed when you meet it. Go now and do what you've come to do.",
+                    "Да, да... Ты определённо не будешь разочарован, когда встретишь его. Иди же и делай то, зачем пришёл."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["*sarcastically* Would you be so kind as to tell us directions? That was why we sought you out in the first place, you know.",
+                    "*язвительно* Не будете ли так добры подсказать дорогу? Мы вроде как за этим и пришли."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(seersName, null,
+                ["Oh, right. But as I said, you could have asked pretty much anyone - just follow the snake path that brought you to me.",
+                    "А, точно. Но как я сказал, вы могли спросить это у кого угодно - просто идите по тропе змеи, которая привела вас ко мне."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["We owe you a thanks, good seer.", "Мы благодарны вам, добрый провидец."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(seersName, null,
+                ["I appreciate the sentiment, but you actually don't. My reward will find me another way. So long as you succeed.",
+                    "Я ценю это, но не за что. Моя награда найдёт меня иными путями. Покуда вы исполните задуманное."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["*leaving, to Dominique* I suppose that was a thanks for nothing. Really, he is one annoying fellow.",
+                    "*уходя, к Доминику* Вероятно, это было спасибо ни за что. Честно признаться, он меня весьма раздражает."]));
+            objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["Don't be too hard on him. It must be stressful to be one of few true seers, being forced to tell obvious things day after day.",
+                    "Не сердись на него. Наверное, непросто быть одним из немногих настоящих провидцев и говорить очевидные, казалось бы, вещи."]));
+            objectSequence.addAction(procureCodeFragmentAction(function () {
+                triggered = true;
+                gst[CH00][CH00_PHASE]++;
+                landscape.actualize();
+                hero.obtainCodexEntry(CDX_JOU003_CH00P03);
+            }));
+            objectSequence.addAction(procureResumeAction());
+            registerObject(GUI_EVENT, objectSequence);
+        });
+        return object;
+    });
+    return objectType;
+}
+
+function describeSerpentCaveType(chance) {
+    var objectType = new LandmarkType(chance);
+    objectType.singletonId = "singleton: ch00_phase05";
+    objectType.defineGenerateLandmark(function (path, position) {
+        var object = new Landmark(path, position, getResource("imgObjCave"));
+        var triggered = false;
+        registerObject(pathToObjectLayer(path), procureFloatingImageAction(object, getResource("imgQuestMark"),
+            function () {
+                return triggered;
+            }));
+        object.defineTrigger(function () {
+            var objectSequence = new Sequence();
+            objectSequence.addAction(procureStopAction());
+            if (gst[CH00][CH00_CONVERSATION_CAVE] == 0) {
+                gst[CH00][CH00_CONVERSATION_CAVE] = 1;
+                objectSequence.addAction(procureDisplayCenteredMessageAction(WW_MEDIUM, [
+                    "Dominique and Sallinger stand before the eerie entrance to the cave where Party Crasher, presumably lives. " +
+                        "Crude drawings of snakes and serpents \"adorn\" the walls as they fade into darkness of the lair.",
+                    "Доминик и Сэллинджер стоят перед жутковатым входом в пещеру, где, судя по всему, живёт Незваный Гость. " +
+                        "Корявые рисунки змей и змеев \"украшают\" стены, уходящие во тьму логова."
+                ], true));
+                objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                    ["Somehow I get a feeling that what we are going to be fighting now is not really a dragon...",
+                        "Что-то подсказывает мне, что мы сейчас будем не с драконом драться..."]));
+                objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                    ["Well, I glad you realized that. But somehow I get a feeling that it does not make it much easier... " +
+                        "You know you don't have to do it, right?", "Ну, я рад, что это понял. Но что-то подсказывает мне, что легче от " +
+                        "этого будет ненамного... Знаешь, тебе ведь необязательно это делать."]));
+                objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                    ["*sighs* I know there's no stopping you. Just please, make sure you are amply prepared before you head there, okay?",
+                        "*вздыхает* Я знаю, что тебя всё равно не остановить. Но, пожалуйста, убедись, что ты в полной мере готов, " +
+                            "прежде чем пойдёшь туда, хорошо?"]));
+                objectSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                    ["Sure.", "Конечно."]));
+                objectSequence.addAction(procureDisplayCenteredMessageAction(WW_MEDIUM,
+                    ["Would you like to enter the cave?", "Желаете войти в пещеру?"], true).addChoice(TXT_YES).addChoice(TXT_NO));
+            } else {
+                objectSequence.addAction(procureDisplayCenteredMessageAction(WW_MEDIUM,
+                    ["Dominique and Sallinger stand before the eerie entrance to the cave where Party Crasher, presumably lives. " +
+                        "Crude drawings of snakes and serpents \"adorn\" the walls as they fade into darkness of the lair. <br> <br> " +
+                        "Would you like to enter the cave?",
+                        "Доминик и Сэллинджер стоят перед жутковатым входом в пещеру, где, судя по всему, живёт Незваный Гость. " +
+                            "Корявые рисунки змей и змеев \"украшают\" стены, уходящие во тьму логова. <br> <br> Желаете войти в пещеру?"], true)
+                    .addChoice(TXT_YES).addChoice(TXT_NO));
+            }
+            objectSequence.addAction(procureCodeFragmentAction(function () {
+                if (eventChoice == 0) {
+                    triggered = true;
+                    gst[CH00][CH00_PHASE]++;
+                    objectSequence.addAction(procureLandscapeTransitionAction(LSC_SERPENT_CAVE, true), OBJECTS_NEAR_FRONT);
+                } else {
+                    objectSequence.addAction(procureResumeAction());
+                }
+            }));
+            registerObject(GUI_EVENT, objectSequence);
+        });
+        return object;
+    });
+    return objectType;
+}
+
 function describeMilestoneType(chance) {
-    var objectType = new ObjectType(chance);
+    var objectType = new LandmarkType(chance);
     objectType.singletonId = "singleton: ch00_milestone";
-    objectType.defineGenerateObject(function (path, position) {
-        var object = new FieldObject(path, position, 50, getResource("imgObjMilestone"));
+    objectType.defineGenerateLandmark(function (path, position) {
+        var object = new Landmark(path, position, getResource("imgObjMilestone"));
         var triggered = false;
         registerObject(pathToObjectLayer(path), procureFloatingImageAction(object, getResource("imgQuestMark"),
             function () {
@@ -1270,7 +1661,7 @@ function describeMilestoneType(chance) {
                 .addChoice(TXT_YES).addChoice(TXT_NO));
             objectSequence.addAction(procureCodeFragmentAction(function () {
                 if (eventChoice == 0) {
-                    terminated = true;
+                    triggered = true;
                     gst[CH00][CH00_PHASE]++;
                     landscape.actualize();
                     objectSequence.addAction(procureDisplayCenteredMessageAction(WW_MEDIUM, CH00_MILESTONE_02, true));
@@ -1285,7 +1676,7 @@ function describeMilestoneType(chance) {
                                 ["Hold on a second. I'm sure you've realized this by now, of course, but just in "
                                     + "case... Memento mori. If you fall in battle it's all over. So be careful and "
                                     + "talk to chroniclers often.",
-                                    "Погоди секунду. Я уверен, что ты это, конечно, уже осознал, но на всякий случай..."
+                                    "Погоди секунду. Я уверен, что ты это, конечно, уже осознал, но на всякий случай... "
                                         + "Мементо мори. Если ты падёшь в битве, всё кончено. Так что будь осторожен и "
                                         + "почаще общайся с летописцами."]));
                             dangerTutorialSequence.addAction(procureDisplaySpeechMessageAction(
@@ -1336,6 +1727,167 @@ function describeMilestoneType(chance) {
     return objectType;
 }
 
+function describeGreenSerpentType(chance) {
+    var encounterType = new LandmarkType(chance);
+    encounterType.singletonId = "singleton: " + "Green Serpent";
+    encounterType.defineGenerateLandmark(function (path, position) {
+        var enemyObject = new Landmark(path, position, getResource("imgEnemySerpent1Stand"));
+        enemyObject.setAttackImage(getResource("imgEnemySerpent1Attack"));
+        var enemy = enlistGreenSerpent(HS_BASE, HS_CH00, enemyObject);
+        enemyObject.defineTrigger(function () {
+            var encounterSequence = new Sequence();
+            encounterSequence.addAction(procureStopAction());
+            encounterSequence.addAction(procureDisplayCenteredMessageAction(WW_MEDIUM,
+                ["A huge serpentine creature rises before the rat rider, glaring menacingly at him. Bones and rotten chunks of meat are " +
+                    "lying all around it.", "Огромное змееподобное существо возвысилось над крысиным всадником, свирепо пожирая его " +
+                    "взглядом. Вокруг - кости и куски гнилого мяса."], true));
+            encounterSequence.addAction(procureDisplaySpeechMessageAction(["Party Crasher", "Незваный Гость"], null,
+                ["Well, well, well... *hisses* Vissitorsss?", "Так, так, так... *шипит* Посссетители?"]));
+            encounterSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["Oh no. I just hate talking monsters. They tend to demoralize you before you even start fighting.",
+                    "О нет. Ненавижу говорящих чудовищ. Они деморализуют тебя ещё до начала боя."]));
+            encounterSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["Hello, Mr. Serpent! Though it pains me to say it: thou must die!",
+                    "Здравствуйте, господин Змей! Мне не хочется этого говорить, но: вы должны умереть!"]));
+            encounterSequence.addAction(procureDisplaySpeechMessageAction(["Party Crasher", "Незваный Гость"], null,
+                ["Mmmm, yesss. Thosse who ssay ssuch wordsss tend to be... ssspicy!",
+                    "Мммм, превосссходно. Те, кто говорят такие ссслова обычно... оссстренькие!"]));
+            encounterSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["Get ready, Sallinger! Here it comes!", "Готовься, Сэллинджер! Он нападает!"]));
+            encounterSequence.addAction(procureCodeFragmentAction(function () {
+                setEventMusic(MUS_RELIEF);
+            }));
+
+            var afterbattleSequence = new Sequence();
+            afterbattleSequence.addAction(procureCodeFragmentAction(function () {
+                hero.gainAuraSkill(SKL_ACEOFSPADES);
+            }));
+            afterbattleSequence.addAction(procureDisplayCenteredMessageAction(WW_MEDIUM,
+                ["The serpent is lying on cold stones of the cavern. Everything has suddenly gone quiet.",
+                    "Змей лежит на холодных камнях пещеры. Всё внезапно затихло."], true));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["Dominique, do you realize what you just did?", "Доминик, ты понимаешь, что ты сейчас сделал?"]));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["My muscles would not move, but... I made my body deliver the finishing blow anyway! It - was - marvellous!",
+                    "Мои мышцы не двигались, но... я всё равно заставил своё тело нанести последний удар! Вос-хи-ти-тель-но!"]));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["It was aura. The material manifestation of a spirit. When you reached your limit, your spirit gained power " +
+                    "over the laws of physics.", "Это была аура. Материальное проявление духа. Когда ты находился на грани, " +
+                    "твой дух возымел власть над законами физики."]));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["They say everyone has the potential to unleash aura, but ones who actually do it are very few. " +
+                    "Even among experienced rat riders it's a rarity to come by, not to mention a newcomer like you.",
+                    "Говорят, что у каждого есть потенциал высвобождения ауры, но на практике это могут сделать единицы. " +
+                        "Даже среди опытных крысиных всадников это редкость, не говоря уже о новичке, вроде тебя."]));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["A newcomer?.. What do you mean?", "Новичке?.. Что ты имеешь ввиду?"]));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["Heck. Did I say it out loud?", "Чёрт. Я сказал это вслух?.."]));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["I am... Wait. When did I become a rat rider? Who was I before? Why can't I--",
+                    "Я же... Постой. Как давно я стал крысиным всадником? Кем я был до этого? Почему я не могу--"]));
+            afterbattleSequence.addAction(procureGuiEffectAction(GFX_SCREEN_FLASH, "white", null));
+            afterbattleSequence.addAction(procureCodeFragmentAction(function () {
+                hero.expendKarma(273);
+            }));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["Dominique... Stop, don't try to remember. It will be a violation of the contract, and we'll have to pay with karma.",
+                    "Доминик... Остановись, не пытайся вспоминать. Это будет нарушением сделки, и нам придётся заплатить за это кармой."]));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["You wanted to become a hero, and this is your chance. Just forget and live your new life.",
+                    "Ты хотел стать героем, и сейчас у тебя есть такая возможность. Просто забудь и живи своей новой жизнью."]));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["No, Sallinger! There is strange emptiness inside me, and I have finally perceived it! I... I don't remember where I am from, " +
+                    "where is my home... Tell me, what's going on?", "Нет, Сэллинджер! Внутри меня какая-то неведомая пустота, и я только " +
+                    "сейчас её ощутил! Я... я не помню, откуда я, и где мой дом... Объясни мне: что происходит?"]));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["*sighs* It seems, victory over Party Crasher netted us enough karma to allow your thoughts into the forbidden zone. Well, " +
+                    "then. If I continue, hero's destiny will elude you.", "*вздыхает* Видимо, победа над Незваным Гостем принесла нам " +
+                    "достаточно кармы, чтобы твоя мысль вошла в запретную зону. Ну, что ж. Если я продолжу, судьба героя ускользнёт от тебя."]));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["... So be it. I'd rather be whole Dominique, than a hollow hero. Speak.",
+                    "... Ну, и пусть. Я не хочу быть пустым героем. Лучше я буду просто Домиником, но целым. Говори."]));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["Suit yourself, Dominique. You struck a deal with the Peddler of Destinies. You gave up your past, its potential and memory " +
+                    "of it to become a warrior capable of carrying a weapon.", "Твоя воля, Доминик. Ты заключил сделку с Торговцем Судьбами. " +
+                    "Ты отдал своё прошлое, весь его потенциал и память о нём, чтобы стать воином, способным держать оружие."]));
+            afterbattleSequence.addAction(procureGuiEffectAction(GFX_SCREEN_FLASH, "white", null));
+            afterbattleSequence.addAction(procureCodeFragmentAction(function () {
+                hero.expendKarma(428);
+            }));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["My past...", "Моё прошлое..."]));
+            afterbattleSequence.addAction(procureCodeFragmentAction(function () {
+                displayGui = false;
+            }));
+            afterbattleSequence.addAction(procureMaskAction());
+            afterbattleSequence.addAction(procureDisplayFreeTextAction(400, 200, W - 900,
+                ["Hogville. Three years ago.", "Хогвилль. Три года назад."], true));
+            afterbattleSequence.addAction(procureDisplayFreeTextAction(200, 200, W - 400, [
+                "Dominique was a son of a Hogland noble, born to rule Hogville someday. He grew up reading tales of brave knights and for all " +
+                    "of his life he dreamed about heroic exploits. <br> <br> His younger brother, Vink, was a savant that studied cosmology " +
+                    "and ancient arts of mysticism and alchemy. <br> <br> While dreaming of valor and fame, Dominique nonetheless prepared " +
+                    "to inherit the power and studied organizational and city management basics, speechcraft and politics.",
+                "Доминик был сыном Хогледнского дворянина, будущим правителем Хогвилля. Он вырос на рыцарских сказаниях и всю сознательную " +
+                    "жизнь мечтал о подвигах. <br> <br> Его младший брат, Винк, был учёным и посвящал своё время изучению космологии и " +
+                    "древних искусств мистицизма и алхимии. <br> <br> Доминик, мечтая о доблести и славе, в то же время готовился принять " +
+                    "власть от отца и постигал основы организации и градоправления, ораторское искусство и политику."
+            ], true));
+            afterbattleSequence.addAction(procureDisplayFreeTextAction(200, 200, W - 400, [
+                "That is until Vink told him about a mysterious Peddler of Destinies, who can trade various fragments of dwellers' lives for " +
+                    "karma and karma for whatever life they wish for. \"Nothing is impossible!\" - Vink said. <br> <br> And so Dominique " +
+                    "became obsessed with exchanging the loathed destiny of a noble for incredible adventures. Especially since his " +
+                    "responsibility before the citizens grew with each passing day, and his father was about to retire.",
+                "Но так было до тех пор, пока Винк не рассказал ему, что существует некий Торговец Судьбами, способный обменивать самые разные " +
+                    "фрагменты жизни жителей на карму, а карму на такую жизнь, какую они пожелают. \"Нет ничего невозможного!\" - говорил Винк. " +
+                    "<br> <br> И Доминик стал грезить день и ночь о том, чтобы сменить претившую ему судьбу дворянина на невероятные " +
+                    "приключения. Ведь его ответственность перед горожанами росла с каждым днём, а отец готовился сложить свои полномочия."
+            ], true));
+            afterbattleSequence.addAction(procureDisplayFreeTextAction(200, 200, W - 400, [
+                "His naive wish turned frighteningly real, when he actually met this Peddler during one of his fruitless weapon training " +
+                    "sessions on the outskirts of a forest near Hogville... <br> <br> When dinner time came, not a single dweller in Hogville " +
+                    "remembered that there once lived a hogman by the name of Dominique who should have become a governor. Only Vink felt that " +
+                    "he lost something important and precious, but he could not understand what it was...",
+                "Наивное желание обернулось пугающей реальностью, когда в очередной раз безрезультатно тренируясь с оружием на опушке леса близ " +
+                    "Хогвилля, он встретил того самого Торговца... <br> <br> К обеду никто уже не помнил, что жил в Хогвилле когда-то кабанолюд " +
+                    "по имени Доминик, который должен был стать правителем. Лишь только Винк ощущал, будто он потерял что-то очень важное и " +
+                    "ценное, но никак не мог понять, что..."
+            ], true));
+            afterbattleSequence.addAction(procureUnmaskAction());
+            afterbattleSequence.addAction(procureGuiEffectAction(GFX_SCREEN_FLASH, "white", null));
+            afterbattleSequence.addAction(procureCodeFragmentAction(function () {
+                displayGui = true;
+                hero.expendKarma(1199);
+            }));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["... Hogville. So that's it. But how do you know of my contract with the Peddler of Destinies?",
+                    "... Хогвилль. Вот, значит, как оно. Но откуда ты знаешь о моей сделке с Торговцем Судьбами?"]));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["Let's say I made my own deal with him. But I did not give away my memory. I'm sorry, Dominique, but I cannot say more.",
+                    "Скажем так, я тоже заключил с ним сделку. Но я не отдавал ему свою память. " +
+                        "Извини, Доминик, но я не могу пока сказать больше."]));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["That is not important anyway. Sallinger. We... I am coming home.", "Да и неважно. Сэллинджер. Мы... Я отправляюсь домой."]));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                ["We, Dominique. We just broke your contract with the Peddler, but we have paid for it already. You are still a rat rider, and " +
+                    "I am your friend. Wherever you go, I go with you.", "Мы, Доминик. Мы только что нарушили твою сделку с Торговцем, но мы " +
+                    "уже заплатили за это. Ты по-прежнему крысиный всадник, а я твой друг. Куда ты, туда и я."]));
+            afterbattleSequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                ["*slightly smiling* Excellent. Then let us go.", "*слегка улыбаясь* Отлично. Тогда идём."]));
+            afterbattleSequence.addAction(procureLandscapeTransitionAction(LSC_PROLOGUE), OBJECTS_NEAR_FRONT);
+            afterbattleSequence.addAction(procureCodeFragmentAction(function () {
+                hero.obtainCodexEntry(CDX_JOU004_CH00P04)
+            }));
+
+            setBattleMusic(MUS_BOSS_BATTLE);
+            encounterSequence.addAction(procureInitiateBattleAction(enemy, afterbattleSequence));
+            registerObject(GUI_EVENT, encounterSequence);
+        });
+        return enemyObject;
+    });
+    return encounterType;
+}
+
 function describeBanditType(chance) {
     return describeCommonEncounter(chance, ["Bandit", "Разбойник"],
         getResource("imgEnemyBandit1Stand"), getResource("imgEnemyBandit1Attack"),
@@ -1358,21 +1910,21 @@ function describeWolfType(chance) {
 }
 
 function describeRedWolfType(chance) {
-    return describeCommonEncounter(chance, ["Red Wolf", "Бурый Волк"],
+    return describeCommonEncounter(chance, ["Red Wolf", "Бурый волк"],
         getResource("imgEnemyWolf2Stand"), getResource("imgEnemyWolf2Attack"),
         enlistRedWolf, HS_BASE, HS_CH00, CH00, CH00_TUTORIAL_RED_WOLF,
         procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait, CH00_TUTORIAL_RED_WOLF_TXT));
 }
 
 function describeWaspType(chance) {
-    return describeCommonEncounter(chance, ["Giant Wasp", "Гигантская Оса"],
+    return describeCommonEncounter(chance, ["Giant Wasp", "Гигантская оса"],
         getResource("imgEnemyWasp1Stand"), getResource("imgEnemyWasp1Attack"),
         enlistWasp, HS_BASE, HS_CH00, CH00, CH00_TUTORIAL_WASP,
         procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait, CH00_TUTORIAL_WASP_TXT));
 }
 
 function describePoisonWaspType(chance) {
-    return describeCommonEncounter(chance, ["Posion Wasp", "Ядовитая Оса"],
+    return describeCommonEncounter(chance, ["Posion Wasp", "Ядовитая оса"],
         getResource("imgEnemyWasp2Stand"), getResource("imgEnemyWasp2Attack"),
         enlistPoisonWasp, HS_BASE, HS_CH00, CH00, CH00_TUTORIAL_POISON_WASP,
         procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait, CH00_TUTORIAL_POISON_WASP_TXT));
@@ -1397,16 +1949,10 @@ function describeArmadilloVityazType(chance) {
         enlistArmadilloVityaz, HS_BASE, HS_CH00);
 }
 
-function describeGreenSerpentType(chance) {
-    return describeDangerEncounter(chance, ["Green Serpent", "Зелёный змей"],
-        getResource("imgEnemySerpent1Stand"), getResource("imgEnemySerpent1Attack"),
-        enlistGreenSerpent, HS_BASE, HS_CH00);
-}
-
 /* ENEMIES */
 
 function enlistTutorialBandit(animationObject) {
-    var bandit = new Enemy(6, 15, 10, 8, 250, animationObject);
+    var bandit = new Enemy(6, 15, 10, 8, 250, animationObject, CDX_CH00ENM_BANDIT);
     var attackSkill = gainAttackSkill();
     var defendSkill = gainDefendSkill();
     var opening = gainOpeningSkill(40, 0.5);
@@ -1614,7 +2160,8 @@ function enlistTutorialBandit(animationObject) {
 
 function enlistBandit(startingHeroStrength, maxHeroStrength, animationObject) {
     var strScale = getHeroStrengthScale(startingHeroStrength, maxHeroStrength);
-    var bandit = new Enemy(10 * strScale, 15 * strScale, 10 * strScale, 8 * strScale, 120 * strScale, animationObject);
+    var bandit = new Enemy(10 * strScale, 15 * strScale, 10 * strScale, 8 * strScale, 120 * strScale,
+        animationObject, CDX_CH00ENM_BANDIT);
     var attackSkill = gainAttackSkill();
     var defendSkill = gainDefendSkill();
     var opening = gainOpeningSkill(40, 0.5);
@@ -1646,7 +2193,8 @@ function enlistBandit(startingHeroStrength, maxHeroStrength, animationObject) {
 
 function enlistBrigand(startingHeroStrength, maxHeroStrength, animationObject) {
     var strScale = getHeroStrengthScale(startingHeroStrength, maxHeroStrength);
-    var brigand = new Enemy(12 * strScale, 13 * strScale, 11 * strScale, 10 * strScale, 130 * strScale, animationObject);
+    var brigand = new Enemy(11 * strScale, 13 * strScale, 11 * strScale, 10 * strScale, 130 * strScale,
+        animationObject, CDX_CH00ENM_BRIGAND);
     var powerAttack = gainPowerAttackSkill(200, 0.6, 1.7);
     var defenseSkill = gainEnemyDefenseSkill(300, 1.7);
     var attackSkill = gainAttackSkill();
@@ -1691,43 +2239,48 @@ function enlistBrigand(startingHeroStrength, maxHeroStrength, animationObject) {
 
 function enlistBanditRingleader(startingHeroStrength, maxHeroStrength, animationObject) {
     var strScale = getHeroStrengthScale(startingHeroStrength, maxHeroStrength);
-    var banditRingleader = new Enemy(14 * strScale, 17 * strScale, 11 * strScale, 9 * strScale, 400 * strScale, animationObject);
+    var banditRingleader = new Enemy(11 * strScale, 15 * strScale, 11 * strScale, 9 * strScale, 300 * strScale,
+        animationObject, CDX_CH00ENM_BANDITRINGLEADER);
     var powerAttack = gainPowerAttackSkill(200, 0.6, 1.9);
-    var doubleStrike = gainDoubleStrikeSkill();
+    var doubleStrike = gainLearnableDoubleStrikeSkill();
     var defenseSkill = gainEnemyDefenseSkill(200, 2.1);
     var attackSkill = gainAttackSkill();
     var jabSkill = gainJabSkill();
     banditRingleader.defineBehave(function (character, battleFrame) {
         var position;
         if (battleFrame == 0) {
+            if (gst[CH00][CH00_BANDIT_RINGLEADER_QUEST] < 1) {
+                gst[CH00][CH00_BANDIT_RINGLEADER_QUEST] = 1;
+                itemsLooted.push({id: ITM_MAXHPUP1, charges: 1});
+            }
             character.useSkill(gainOpenerSkill(10), 0);
             behaviorFluctuation = 1;
         } else if (character.getRightmostCooldown() < getAbsoluteArtifactPosition(200)) {
             if (behaviorFluctuation == 1) {
                 character.useSkill(defenseSkill, getStandardEnemyOffset(defenseSkill)
-                    + 20 +  Math.floor(20 * Math.random()));
+                    + 50 +  Math.floor(20 * Math.random()));
                 behaviorFluctuation += 1;
             } else if (behaviorFluctuation == 2) {
-                position = getStandardEnemyOffset(doubleStrike) + 10 + Math.floor(40 * Math.random());
+                position = getStandardEnemyOffset(doubleStrike) + 30 + Math.floor(40 * Math.random());
                 character.useSkill(doubleStrike,  position);
                 character.inflict([acquireLabelArtifact(getAbsoluteArtifactPosition(position),
                     ["Double strike", "Двойной удар"])]);
                 behaviorFluctuation += 1 + Math.floor(Math.random() * 2);
             } else if (behaviorFluctuation == 3) {
                 character.useSkill(jabSkill,  getStandardEnemyOffset(jabSkill)
-                    + 20 + Math.floor(10 * Math.random()));
+                    + 50 + Math.floor(10 * Math.random()));
                 character.useSkill(attackSkill,  getStandardEnemyOffset(attackSkill)
-                    + 20 + Math.floor(30 * Math.random()));
+                    + 50 + Math.floor(30 * Math.random()));
                 behaviorFluctuation = 5;
             } else if (behaviorFluctuation == 4) {
                 character.useSkill(attackSkill,  getStandardEnemyOffset(attackSkill)
-                    + 20 + Math.floor(30 * Math.random()));
+                    + 50 + Math.floor(30 * Math.random()));
                 character.useSkill(jabSkill,  getStandardEnemyOffset(jabSkill)
-                    + 20 + Math.floor(10 * Math.random()));
+                    + 50 + Math.floor(10 * Math.random()));
                 behaviorFluctuation = 5;
             } else if (behaviorFluctuation == 5) {
                 character.useSkill(powerAttack,  getStandardEnemyOffset(powerAttack)
-                    + 60 + Math.floor(40 * Math.random()));
+                    + 70 + Math.floor(40 * Math.random()));
                 behaviorFluctuation = 1;
             }
         }
@@ -1737,7 +2290,8 @@ function enlistBanditRingleader(startingHeroStrength, maxHeroStrength, animation
 
 function enlistWolf(startingHeroStrength, maxHeroStrength, animationObject) {
     var strScale = getHeroStrengthScale(startingHeroStrength, maxHeroStrength);
-    var wolf = new Enemy(7 * strScale, 14 * strScale, 12 * strScale, 9 * strScale, 90 * strScale, animationObject);
+    var wolf = new Enemy(7 * strScale, 14 * strScale, 12 * strScale, 9 * strScale, 90 * strScale,
+        animationObject, CDX_CH00ENM_WOLF);
     var attackSkill = gainAttackSkill();
     var defendSkill = gainDefendSkill();
     var fumbledAttackSkill = gainFumbledAttackSkill(40, 0.3);
@@ -1773,7 +2327,8 @@ function enlistWolf(startingHeroStrength, maxHeroStrength, animationObject) {
 
 function enlistRedWolf(startingHeroStrength, maxHeroStrength, animationObject) {
     var strScale = getHeroStrengthScale(startingHeroStrength, maxHeroStrength);
-    var redWolf = new Enemy(9 * strScale, 12 * strScale, 12 * strScale, 10 * strScale, 150 * strScale, animationObject);
+    var redWolf = new Enemy(9 * strScale, 12 * strScale, 12 * strScale, 10 * strScale, 150 * strScale,
+        animationObject, CDX_CH00ENM_REDWOLF);
     var attackSkill = gainAttackSkill();
     var defendSkill = gainDefendSkill();
     var opening = gainOpeningSkill(40, 0.4);
@@ -1823,7 +2378,8 @@ function enlistRedWolf(startingHeroStrength, maxHeroStrength, animationObject) {
 
 function enlistWasp(startingHeroStrength, maxHeroStrength, animationObject) {
     var strScale = getHeroStrengthScale(startingHeroStrength, maxHeroStrength);
-    var wasp = new Enemy(8 * strScale, 13 * strScale, 13 * strScale, 10 * strScale, 80 * strScale, animationObject);
+    var wasp = new Enemy(8 * strScale, 13 * strScale, 13 * strScale, 10 * strScale, 80 * strScale,
+        animationObject, CDX_CH00ENM_WASP);
     var jabSkill = gainEnemyAttackSkill(40, 0.6, 0.4);
     var evadeSkill = gainEnemyEvadeSkill(100, 0.2);
     var openingSkill = gainOpeningSkill(50, 0.8);
@@ -1872,7 +2428,7 @@ function enlistWasp(startingHeroStrength, maxHeroStrength, animationObject) {
 function enlistPoisonWasp(startingHeroStrength, maxHeroStrength, animationObject) {
     var strScale = getHeroStrengthScale(startingHeroStrength, maxHeroStrength);
     var poisonWasp = new Enemy(9 * strScale, 13 * strScale, 13 * strScale, 10 * strScale,
-        80 * strScale, animationObject);
+        80 * strScale, animationObject, CDX_CH00ENM_POISONWASP);
     var jabSkill = gainEnemyAttackSkill(40, 0.6, 0.4);
     var evadeSkill = gainEnemyEvadeSkill(100, 0.2);
     var poisonStingSkill = gainStatusAttackSkill(140, 0.7, acquirePoisonedStatus, 1.1, 1000, 30);
@@ -1922,7 +2478,7 @@ function enlistPoisonWasp(startingHeroStrength, maxHeroStrength, animationObject
 function enlistArmadilloKnight(startingHeroStrength, maxHeroStrength, animationObject) {
     var strScale = getHeroStrengthScale(startingHeroStrength, maxHeroStrength);
     var armadilloKnight = new Enemy(11 * strScale, 18 * strScale, 9 * strScale, 8 * strScale,
-        170 * strScale, animationObject);
+        170 * strScale, animationObject, CDX_CH00ENM_ARMADILLOKNIGHT);
     var attackSkill = gainAttackSkill();
     var defendSkill = gainDefendSkill();
     var fullguardAttack = gainFullguardAttackSkill(160, 1.7);
@@ -1963,8 +2519,8 @@ function enlistArmadilloKnight(startingHeroStrength, maxHeroStrength, animationO
 
 function enlistArmadilloVityaz(startingHeroStrength, maxHeroStrength, animationObject) {
     var strScale = getHeroStrengthScale(startingHeroStrength, maxHeroStrength);
-    var armadilloVityaz = new Enemy(14 * strScale, 20 * strScale, 9 * strScale, 8 * strScale,
-        370 * strScale, animationObject);
+    var armadilloVityaz = new Enemy(13 * strScale, 20 * strScale, 9 * strScale, 8 * strScale,
+        330 * strScale, animationObject, CDX_CH00ENM_ARMADILLOVITYAZ);
     var counterattack = gainCounterattackSkill();
     var guardedStrike = gainGuardedStrikeSkill();
     var defendSkill = gainDefendSkill();
@@ -1973,6 +2529,10 @@ function enlistArmadilloVityaz(startingHeroStrength, maxHeroStrength, animationO
     armadilloVityaz.defineBehave(function (character, battleFrame) {
         var position;
         if (battleFrame == 0) {
+            if (gst[CH00][CH00_ARMADILLO_VITYAZ_QUEST] < 1) {
+                gst[CH00][CH00_ARMADILLO_VITYAZ_QUEST] = 1;
+                itemsLooted.push({id: ITM_MAXSPUP1, charges: 1});
+            }
             character.useSkill(gainOpenerSkill(10), 0);
             behaviorFluctuation = 1;
         } else if (character.getRightmostCooldown() < getAbsoluteArtifactPosition(200)) {
@@ -2020,8 +2580,8 @@ function enlistArmadilloVityaz(startingHeroStrength, maxHeroStrength, animationO
 
 function enlistGreenSerpent(startingHeroStrength, maxHeroStrength, animationObject) {
     var strScale = getHeroStrengthScale(startingHeroStrength, maxHeroStrength);
-    var greenSerpent = new Enemy(14 * strScale, 18 * strScale, 13 * strScale, 11 * strScale,
-        800, animationObject);
+    var greenSerpent = new Enemy(13 * strScale, 18 * strScale, 13 * strScale, 11 * strScale,
+        600, animationObject, CDX_CH00ENM_GREENSERPENT);
     var attackSkill = gainEnemyAttackSkill(70, 0.7, 1);
     var powerAttack = gainPowerAttackSkill(200, 0.6, 1.6);
     var jabSkill = gainJabSkill();
@@ -2029,19 +2589,82 @@ function enlistGreenSerpent(startingHeroStrength, maxHeroStrength, animationObje
     var evadeSkill = gainEnemyEvadeSkill(100, 0.1);
     var poisonFangSkill = gainStatusAttackSkill(140, 0.9, acquirePoisonedStatus, 1.1, 2000, 40);
     var lieInWait = gainLieInWaitSkill(200, 0.5, 0.8);
+    var deathblow = gainDeathblowSkill(300, 0.5);
     greenSerpent.defineBehave(function (character, battleFrame) {
         if (battleFrame == 0) {
             character.inflict([acquireResponseArtifact(BGL_LEFT, 1, 1, BGL_COLOR, BGL_COLOR, function (dmg) {
                 if ((character.hp > character.attrMaxHp * 0.7) && (character.hp - dmg <= character.attrMaxHp * 0.7)) {
-                    registerObject(GUI_COMMON, procureStatusTextAction(character, TEXT_COLOR_INK,
-                        [TXT_ACTIVATED[LANG_ENG] + "Enraged", TXT_ACTIVATED[LANG_RUS] + "Разъярён"]));
                     behaviorFluctuation = 1;
+                    var battlePhase2Sequence = new Sequence();
+                    battlePhase2Sequence.addAction(procureStopAction());
+                    battlePhase2Sequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                        ["Heck. It was just playing with us. The real thing starts now!",
+                            "Чёрт. Он просто играл с нами. Сейчас начнётся самое оно!"]));
+                    battlePhase2Sequence.addAction(procureResumeAction());
+                    registerObject(GUI_EVENT, battlePhase2Sequence);
+                    return character.hp - dmg <= character.attrMaxHp * 0.5 ? character.hp - character.attrMaxHp * 0.5 : dmg;
+                } else if ((character.hp > character.attrMaxHp * 0.1) && (character.hp - dmg <= character.attrMaxHp * 0.1)) {
+                    behaviorFluctuation = 1;
+                    var battlePhase3Sequence = new Sequence();
+                    battlePhase3Sequence.addAction(procureStopAction());
+                    battlePhase3Sequence.addAction(procureCodeFragmentAction(function () {
+                        hero.battleGaugeArtifacts.length = 0;
+                        enemy.battleGaugeArtifacts.length = 0;
+                        var lockdown = [];
+                        for (var i = 0; i < 7; i++) {
+                            lockdown.push(
+                                acquireSlotLockArtifact(BGL_LEFT, 1, 1, BGL_COLOR, BGL_COLOR, false, i, true).perpetuate());
+                            if (i < 5) {
+                                lockdown.push(
+                                    acquireSlotLockArtifact(BGL_LEFT, 1, 1, BGL_COLOR, BGL_COLOR, true, i, true).perpetuate());
+                            }
+                        }
+                        hero.inflict(lockdown);
+                    }));
+                    battlePhase3Sequence.addAction(procureDisplaySpeechMessageAction(["Party Crasher", "Незваный Гость"], null,
+                        ["*hisses angrily* Enough of it!", "*зло шипит* Доссстаточно!"]));
+                    battlePhase3Sequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                        ["*writhes in pain* I... can't move!", "*корчится от боли* Я... не могу сдвинуться с места!"]));
+                    battlePhase3Sequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                        ["No way! Could it be poison?", "Быть не может! Неужели яд?"]));
+                    battlePhase3Sequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                        ["Must be... But I won't let it end this way!", "Должно быть... Но я не позволю этому так закончиться!"]));
+                    battlePhase3Sequence.addAction(procureDisplaySpeechMessageAction(["Party Crasher", "Незваный Гость"], null,
+                        ["Now begone with your vermin!", "Сссгинь ссо своими грызунами!"]));
+                    battlePhase3Sequence.addAction(procureDisplaySpeechMessageAction(CHR_DOMINIQUE.name, CHR_DOMINIQUE.portrait,
+                        ["Not so fast, you drunken monster...", "Не так быстро, пьяное чудовище..."]));
+                    battlePhase3Sequence.addAction(procureDisplaySpeechMessageAction(CHR_SALLINGER.name, CHR_SALLINGER.portrait,
+                        ["Dominique?..", "Доминик?.."]));
+                    battlePhase3Sequence.addAction(procureResumeAction());
+                    battlePhase3Sequence.addAction(procureCodeFragmentAction(function () {
+                        character.inflict([acquireResponseArtifact(BGL_LEFT, 1, 1,BGL_COLOR, BGL_COLOR, function () {
+                            hero.battleGaugeArtifacts.length = 0;
+                            return dmg < character.hp ? character.hp : dmg;
+                        }, true)]);
+                        hero.inflict([acquireGradualChangeArtifact(BGL_LEFT, 1, 500, BGL_COLOR, BGL_COLOR, ATTR_SP, 0, 100, 0, true)]);
+                        hero.inflict([acquireGradualChangeArtifact(BGL_LEFT, 1, 500, BGL_COLOR, BGL_COLOR, ATTR_AP, 0, 2.5, 0, true)]);
+                        hero.skillSet[7] = gainSkill(SKL_ACEOFSPADES);
+                        skillChoice = 7;
+                        var auraEffect = new Action();
+                        auraEffect.definePlayFrame(function (frame) {
+                            fc.beginPath();
+                            fc.arc(hero.position, hero.height, (frame * 20) % 500, 0, 2 * Math.PI);
+                            fc.lineWidth = frame % 25;
+                            fc.strokeStyle = "white";
+                            fc.stroke();
+                            return frame >= 150;
+                        });
+                        registerObject(OBJECTS_NEAR_FRONT, auraEffect);
+                    }));
+                    registerObject(GUI_EVENT, battlePhase3Sequence);
+                    return character.hp - dmg <= character.attrMaxHp * 0.05 ? character.hp - character.attrMaxHp * 0.05 : dmg;
                 }
                 return dmg;
             }, true).perpetuate()]);
             character.useSkill(gainOpenerSkill(10), 0);
             behaviorFluctuation = 1;
         } else if (character.getRightmostCooldown() < getAbsoluteArtifactPosition(200)) {
+            var position;
             if (character.hp > character.attrMaxHp * 0.7) {
                 if (behaviorFluctuation == 1) {
                     character.useSkill(evadeSkill, getStandardEnemyOffset(evadeSkill)
@@ -2110,12 +2733,26 @@ function enlistGreenSerpent(startingHeroStrength, maxHeroStrength, animationObje
                         + 20 + Math.floor(20 * Math.random()));
                     behaviorFluctuation = 9;
                 } else if (behaviorFluctuation == 9) {
-                    character.useSkill(lieInWait, getStandardEnemyOffset(lieInWait)
-                        + 30 + Math.floor(40 * Math.random()));
+                    position = getStandardEnemyOffset(lieInWait) + 30 + Math.floor(40 * Math.random());
+                    character.useSkill(lieInWait, position);
+                    character.inflict([acquireLabelArtifact(getAbsoluteArtifactPosition(position),
+                        ["Lie in wait", "Затаиться"])]);
                     behaviorFluctuation = 1;
+                }
+            } else {
+                if (behaviorFluctuation == 1) {
+                    position = getStandardEnemyOffset(deathblow);
+                    character.useSkill(deathblow, position);
+                    character.inflict([acquireLabelArtifact(getAbsoluteArtifactPosition(position),
+                        ["Deathblow", "Смертельный удар"])]);
+                    behaviorFluctuation += 1;
                 }
             }
         }
+    });
+    var baseKarma = greenSerpent.getKarma();
+    greenSerpent.defineGetKarma(function () {
+        return baseKarma + 2000;
     });
     return greenSerpent;
 }

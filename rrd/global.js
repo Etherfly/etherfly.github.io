@@ -38,18 +38,18 @@ var layers = [];    // global object storage
 var LANDSCAPE_FAR = 1;
 var OBJECTS_FAR_BG = 2;
 var OBJECTS_FAR = 3;
-var OBJECTS_FAR_FRONT = 4;
-var DECORATIONS_FAR = 5;
+var OBJECTS_FAR_HERO = 4;
+var OBJECTS_FAR_FRONT = 5;
 var LANDSCAPE_MID = 7;
 var OBJECTS_MID_BG = 8;
 var OBJECTS_MID = 9;
-var OBJECTS_MID_FRONT = 10;
-var DECORATIONS_MID = 11;
+var OBJECTS_MID_HERO = 10;
+var OBJECTS_MID_FRONT = 11;
 var LANDSCAPE_NEAR = 13;
 var OBJECTS_NEAR_BG = 14;
 var OBJECTS_NEAR = 15;
-var OBJECTS_NEAR_FRONT = 16;
-var DECORATIONS_NEAR = 17;
+var OBJECTS_NEAR_HERO = 16;
+var OBJECTS_NEAR_FRONT = 17;
 var GUI_COMMON = 19;
 var GUI_EVENT = 22;
 
@@ -73,8 +73,10 @@ var KEY_DOWN = 4;
 var KEY_ACTION = 5;
 var KEY_ESC = 6;
 var KEY_LANG = 7;
-var KEY_DEBUG = 8;
+var KEY_PLUS = 8;
+var KEY_MINUS = 9;
 var KEY_DIGIT_0 = 10;
+var KEY_DEBUG = 20;
 
 var keyPressed = KEY_NONE;
 var keyShift = false;
@@ -128,7 +130,7 @@ var ATTR_HP = 0;
 var ATTR_SP = 1;
 var ATTR_AP = 2;
 
-var SP_RECOVERY_BASIS = 0.05;
+var SP_RECOVERY_BASIS = 0.0005;
 var AP_DIMINISHING_BASIS = 0.0002;
 var AP_GAIN_FACTOR = 0.6;
 var PATH_CHANGE_SP_COST_RATIO = 0.25;
@@ -139,19 +141,31 @@ attrIncrease[ATTR_DEFENSE] = 0;     // defense is increased by defending
 attrIncrease[ATTR_AGILITY] = 0;     // agility is increased by rapid actions, one after another
 attrIncrease[ATTR_REFLEXES] = 0;    // reflexes are increased by precision actions, like attacking the enemy
                                     // in a weakpoint or defending right when the enemy attacks
+
+// skill and item slot lock status
+var skillSlotLock = [];
+skillSlotLock.length = 10;
+
+var itemSlotLock = [];
+itemSlotLock.length = 5;
+
+// afterbattle gains
+var itemsLooted = [];
+var skillsLearned = [];
+
 // attribute increase bases
 var AIB_ATTACK = 0.1;
 var AIB_DEFENSE = 0.2;
 var AIB_AGILITY = 0.05;
 var AIB_REFLEXES = 0.03;
 
-// objects
+// landmarks
 var landscape = null;
 var landscapeId = 0;
 
-var objectsOnLayer = [0, 0, 0]; // number of objects on layer
-var farthestObjects = [];       // farthest object position on layer
-var singletonIds = [];          // array of singleton object ids present on the field
+var landmarksOnLayer = [0, 0, 0];   // number of landmarks on layer
+var farthestLandmarks = [];         // farthest landmark position on layer
+var singletonIds = [];              // array of singleton landmark ids present on the field
 
 var collisionDistance = 40;
 
@@ -189,8 +203,11 @@ var musicPlayState = 0;
 
 var SFX_GUI_TINK = "sndGuiTink";
 var SFX_GUI_THUCK = "sndGuiThuck";
+var SFX_GUI_BOROK = "sndGuiBorok";
 var SFX_BATTLE_HERO = "sndHeroBattleSfx";
 var SFX_BATTLE_ENEMY = "sndEnemyBattleSfx";
+
+var masterVolume = 0.5;
 
 var LANG_ENG = 0;       // English language
 var LANG_RUS = 1;       // Русский язык
@@ -268,7 +285,7 @@ function getRandomObject(objectSet) {
 function initializeChapterData(chapterId) {
     switch (chapterId) {
         case CH00:
-            for (var i = 0; i < 17; i++) {
+            for (var i = 0; i < 19; i++) {
                 gst[chapterId][i] = 0;
             }
             break;
@@ -279,7 +296,20 @@ function initializeChapterData(chapterId) {
     }
 }
 
+function resetSlotLock() {
+    var i;
+    for (i = 0; i < skillSlotLock.length; i++) {
+        skillSlotLock[i] = false;
+    }
+    for (i = 0; i < itemSlotLock.length; i++) {
+        itemSlotLock[i] = false;
+    }
+}
+
 function loadLandscape(id) {
+    if (landscape != null) {
+        clearObjectType("Landscape");
+    }
     landscapeId = id;
     landscape = createLandscape(landscapeId);
     setEventMusic(null);
@@ -287,6 +317,8 @@ function loadLandscape(id) {
     setLandscapeMusic();
     singletonIds.length = 0;
     landscape.actualize();
+    landscape.resetTerrain();
+    registerObject(GUI_EVENT, landscape);
 }
 
 function resetGame() {
@@ -306,9 +338,8 @@ function resetGame() {
     setControlMode(CM_EVENT);
     initializeGui();
     loadLandscape(LSC_TITLE);
-    landscape.resetTerrain();
     moving = true;
-    registerObject(GUI_EVENT, landscape);
+    maneuvering = true;
 
     setEventMusic(MUS_TITLE_THEME);
     setMusicPlayState(MPS_EVENT);
@@ -331,6 +362,7 @@ function saveGame() {
         heroActiveAuraSkills: hero.activeAuraSkills,
         heroAvailableItems: hero.availableItems,
         heroActiveItems: hero.activeItems,
+        heroCodexEntries: hero.codexEntries,
         heroKarma: hero.karma,
 
         gameState: gst,
@@ -366,6 +398,7 @@ function loadGame() {
         hero.activeAuraSkills = save.heroActiveAuraSkills != null ? save.heroActiveAuraSkills : [];
         hero.availableItems = save.heroAvailableItems != null ? save.heroAvailableItems : [];
         hero.activeItems = save.heroActiveItems != null ? save.heroActiveItems : [];
+        hero.codexEntries = save.heroCodexEntries != null ? save.heroCodexEntries : [];
         hero.karma = save.heroKarma;
         registerObject(OBJECTS_MID, hero);
 
@@ -376,8 +409,6 @@ function loadGame() {
 
         var loadGameSequence = new Sequence();
         loadGameSequence.addAction(procureCodeFragmentAction(function () {
-            landscape.resetTerrain();
-            registerObject(GUI_EVENT, landscape);
             setControlMode(CM_FIELD);
         }));
         loadGameSequence.addAction(procureResumeAction());
@@ -431,7 +462,7 @@ function setEventMusic(newEventMusic) {
 }
 
 function playSfx(sfx) {
-    if ((sfx == SFX_GUI_TINK) || (sfx == SFX_GUI_THUCK)) {
+    if ((sfx == SFX_GUI_TINK) || (sfx == SFX_GUI_THUCK) || (sfx == SFX_GUI_BOROK)) {
         if (!getResource(sfx + "1").paused) {
             sfx += "2";
         } else {
@@ -439,6 +470,9 @@ function playSfx(sfx) {
         }
     }
     var sfxElement = getResource(sfx);
+    if (sfxElement.volume != masterVolume) {
+        sfxElement.volume = masterVolume;
+    }
     if (sfxElement.paused) {
         sfxElement.play();
         sfxElement.currentTime = 0;
@@ -447,6 +481,9 @@ function playSfx(sfx) {
 
 function playBattleSfx(character, src) {
     var sfxElement = character == hero ? getResource(SFX_BATTLE_HERO) : getResource(SFX_BATTLE_ENEMY);
+    if (sfxElement.volume != masterVolume) {
+        sfxElement.volume = masterVolume;
+    }
     sfxElement.src = src;
     sfxElement.play();
 }
@@ -475,6 +512,12 @@ document.onkeydown = function (event) {
             break;
         case 27:
             keyPressed = KEY_ESC;
+            break;
+        case 107:
+            keyPressed = KEY_PLUS;
+            break;
+        case 109:
+            keyPressed = KEY_MINUS;
             break;
         case 192:
             keyPressed = KEY_LANG;
@@ -544,6 +587,19 @@ function pathToLandscapeLayer(path) {
     }
 }
 
+function pathToObjectBackgroundLayer(path) {
+    switch (path) {
+        case FAR:
+            return OBJECTS_FAR_BG;
+        case MID:
+            return OBJECTS_MID_BG;
+        case NEAR:
+            return OBJECTS_NEAR_BG;
+        default:
+            return OBJECTS_NEAR_BG;
+    }
+}
+
 function pathToObjectLayer(path) {
     switch (path) {
         case FAR:
@@ -554,6 +610,19 @@ function pathToObjectLayer(path) {
             return OBJECTS_NEAR;
         default:
             return OBJECTS_NEAR;
+    }
+}
+
+function pathToObjectHeroLayer(path) {
+    switch (path) {
+        case FAR:
+            return OBJECTS_FAR_HERO;
+        case MID:
+            return OBJECTS_MID_HERO;
+        case NEAR:
+            return OBJECTS_NEAR_HERO;
+        default:
+            return OBJECTS_NEAR_HERO;
     }
 }
 
@@ -570,25 +639,12 @@ function pathToObjectFrontLayer(path) {
     }
 }
 
-function pathToDecorationLayer(path) {
-    switch (path) {
-        case FAR:
-            return DECORATIONS_FAR;
-        case MID:
-            return DECORATIONS_MID;
-        case NEAR:
-            return DECORATIONS_NEAR;
-        default:
-            return DECORATIONS_NEAR;
-    }
-}
-
 function getBasisHeight(path) {
     switch (path) {
         case FAR:
-            return H - 250;
+            return H - 300;
         case MID:
-            return H - 150;
+            return H - 175;
         case NEAR:
             return H - 50;
         default:
@@ -635,7 +691,7 @@ function getOptimalHeight(path, position) {
 }
 
 function getPathScale(path) {
-    return (2 + path) / 2;
+    return (2 + path) / 3;
 }
 
 function getBattleGaugeOffset(character) {
@@ -665,23 +721,23 @@ function getAgilityDifferenceCoefficient() {
     var adc = Math.sqrt(enemy.attrAgility / hero.attrAgility) * enemy.effAgility / hero.effAgility;
     if (adc < 1) {
         if (keyShift) {
-            if (currentSyncCoefficient > 1) {
-                currentSyncCoefficient -= 0.005;
+            if (currentSyncCoefficient * adc > 1) {
+                currentSyncCoefficient -= 0.005 * currentSyncCoefficient;
             } else {
-                currentSyncCoefficient += 0.005;
+                currentSyncCoefficient += 0.005 * currentSyncCoefficient;
             }
-            if (Math.abs(currentSyncCoefficient - 1) <= 0.01) { currentSyncCoefficient = 1; }
-        } else {
-            if (currentSyncCoefficient > adc) {
-                currentSyncCoefficient -= 0.005;
-            } else {
-                currentSyncCoefficient += 0.005;
-            }
-            if (Math.abs(currentSyncCoefficient - adc) <= 0.01) { currentSyncCoefficient = adc; }
+            if (Math.abs(currentSyncCoefficient * adc - 1) <= 0.01) { currentSyncCoefficient = 1 / adc; }
         }
-        adc = currentSyncCoefficient;
     }
-    return adc;
+    if (!keyShift) {
+        if (currentSyncCoefficient > 1) {
+            currentSyncCoefficient -= 0.005 * currentSyncCoefficient;
+        } else {
+            currentSyncCoefficient += 0.005 * currentSyncCoefficient;
+        }
+        if (Math.abs(currentSyncCoefficient - 1) <= 0.01) { currentSyncCoefficient = 1; }
+    }
+    return adc * currentSyncCoefficient;
 }
 
 function generateSurface(path, color, radiusBase) {
@@ -709,20 +765,30 @@ function decorateReaches(path, layerOffset, density, scaleModifier, offset, imag
         var decorationOffset = (Math.floor(Math.random() * (offset / 5)) + image.height + offset);
 
         var newDecoration = new Decoration(image, scale, path, decorationOffset, position);
-        registerObject(pathToDecorationLayer(path) + layerOffset, newDecoration);
+        registerObject(pathToObjectFrontLayer(path) + layerOffset, newDecoration);
     }
 }
 
-function registerImpact(attacker, target, attackPower, evadable, apGain, inflictData) {
+function registerImpact(attacker, target, attackPower, evadable, apGain, inflictData, impactAnimationData) {
     impacts.push({
         attacker: attacker,
         target: target,
         attackPower: attackPower,
-        evadable: evadable === undefined ? true : evadable,
-        apGain: apGain === undefined ? true : apGain,
-        defenseThreshold: inflictData === undefined ? null : inflictData.defenseThreshold,
-        statusArtifacts: inflictData === undefined ? null : inflictData.statusArtifacts,
-        statusName: inflictData === undefined ? null : inflictData.statusName
+        evadable: evadable == undefined ? true : evadable,
+        apGain: apGain == undefined ? true : apGain,
+        defenseThreshold: inflictData == undefined ? null : inflictData.defenseThreshold,
+        statusArtifacts: inflictData == undefined ? null : inflictData.statusArtifacts,
+        statusName: inflictData == undefined ? null : inflictData.statusName,
+        impactAnimationData: impactAnimationData == undefined
+            ?
+        {
+            animation: [getResource("imgEffectHit1-1"), getResource("imgEffectHit1-2"), getResource("imgEffectHit1-3")],
+            sfxSrc: "sound/sfx/hit.ogg",
+            framesPerImage: 3,
+            width: 35,
+            height: 35
+        }
+            : impactAnimationData
     });
 }
 
@@ -769,17 +835,51 @@ function handleBattleEnd() {
     }
     if (hero.hp > 0) {
         var karmaGained = enemy.getKarma();
+
+        var i;
+        var itemMessage = ["", ""];
+        if (itemsLooted.length > 0) {
+            var itemListEng = "";
+            var itemListRus = "";
+            for (i = 0; i < itemsLooted.length; i++) {
+                itemListEng += obtainItem(itemsLooted[i].id).name[LANG_ENG]
+                    + (itemsLooted[i].charges > 1 ? " x" + itemsLooted[i].charges : "");
+                itemListRus += obtainItem(itemsLooted[i].id).name[LANG_RUS]
+                    + (itemsLooted[i].charges > 1 ? " x" + itemsLooted[i].charges : "");
+                if (i < itemsLooted.length - 1) {
+                    itemListEng += ", ";
+                    itemListRus += ", ";
+                }
+            }
+            itemMessage = [TXT_BATTLE_RESULTS_5[LANG_ENG] + itemListEng, TXT_BATTLE_RESULTS_5[LANG_RUS] + itemListRus];
+        }
+
+        skillsLearned = skillsLearned.filter(function (skill) { return !hero.hasSkill(skill); });
+        var skillMessage = ["", ""];
+        if (skillsLearned.length > 0) {
+            var skillListEng = "";
+            var skillListRus = "";
+            for (i = 0; i < skillsLearned.length; i++) {
+                skillListEng += gainSkill(skillsLearned[i]).name[LANG_ENG];
+                skillListRus += gainSkill(skillsLearned[i]).name[LANG_RUS];
+                if (i < skillsLearned.length - 1) {
+                    skillListEng += ", ";
+                    skillListRus += ", ";
+                }
+            }
+            skillMessage = [TXT_BATTLE_RESULTS_6[LANG_ENG] + skillListEng, TXT_BATTLE_RESULTS_6[LANG_RUS] + skillListRus];
+        }
         var battleResultsMessage = [
             TXT_BATTLE_RESULTS_1[LANG_ENG] + Math.floor(attrIncrease[ATTR_ATTACK] * 100) + "%"
                 + TXT_BATTLE_RESULTS_2[LANG_ENG] + Math.floor(attrIncrease[ATTR_DEFENSE] * 100) + "%"
                 + TXT_BATTLE_RESULTS_3[LANG_ENG] + Math.floor(attrIncrease[ATTR_AGILITY] * 100) + "%"
                 + TXT_BATTLE_RESULTS_4[LANG_ENG] + Math.floor(attrIncrease[ATTR_REFLEXES] * 100) + "%"
-                + " <br> <br> " + TXT_KARMA[LANG_ENG] + " +" + karmaGained,
+                + " <br> <br> " + TXT_KARMA[LANG_ENG] + " +" + karmaGained + itemMessage[LANG_ENG] + skillMessage[LANG_ENG],
             TXT_BATTLE_RESULTS_1[LANG_RUS] + Math.floor(attrIncrease[ATTR_ATTACK] * 100) + "%"
                 + TXT_BATTLE_RESULTS_2[LANG_RUS] + Math.floor(attrIncrease[ATTR_DEFENSE] * 100) + "%"
                 + TXT_BATTLE_RESULTS_3[LANG_RUS] + Math.floor(attrIncrease[ATTR_AGILITY] * 100) + "%"
                 + TXT_BATTLE_RESULTS_4[LANG_RUS] + Math.floor(attrIncrease[ATTR_REFLEXES] * 100) + "%"
-                + " <br> <br> " + TXT_KARMA[LANG_RUS] + " +" + karmaGained
+                + " <br> <br> " + TXT_KARMA[LANG_RUS] + " +" + karmaGained + itemMessage[LANG_RUS] + skillMessage[LANG_RUS]
         ];
         battleEndSequence.addAction(procureDisplayCenteredMessageAction(WW_SMALL, battleResultsMessage, true));
         battleEndSequence.addAction(procureCodeFragmentAction(function () {
@@ -791,14 +891,46 @@ function handleBattleEnd() {
                 attrIncrease[i] = 0;
             }
             hero.addKarma(karmaGained);
-        }));
-        if (eventBattleEndSequence != null) {
+
+            var levelingSkillList = getLevelingSkills();
+            if (levelingSkillList.length > 0) {
+                battleEndSequence.addAction(procureDisplayCenteredMessageAction(WW_SMALL, TXT_BATTLE_RESULTS_SKILLS, true));
+                for (i = 0; i < levelingSkillList.length; i++) {
+                    var levelingSkillId = levelingSkillList[i];
+                    battleEndSequence.addAction(procureCodeFragmentAction(function (skillId) {
+                        hero.gainSkill(skillId);
+                    }, levelingSkillId));
+                }
+            }
             battleEndSequence.addAction(procureCodeFragmentAction(function () {
-                registerObject(GUI_EVENT, eventBattleEndSequence);
+                if (enemy.codexEntry != null) {
+                    hero.obtainCodexEntry(enemy.codexEntry);
+                }
             }));
-        } else {
-            battleEndSequence.addAction(procureResumeAction());
+            if (eventBattleEndSequence != null) {
+                battleEndSequence.addAction(procureCodeFragmentAction(function () {
+                    registerObject(GUI_EVENT, eventBattleEndSequence);
+                }));
+            } else {
+                battleEndSequence.addAction(procureResumeAction());
+            }
+        }));
+        for (i = 0; i < itemsLooted.length; i++) {
+            var itemRecord = itemsLooted[i];
+            battleEndSequence.addAction(procureCodeFragmentAction(function (itemRecord) {
+                hero.obtainItem(itemRecord.id, itemRecord.charges);
+            }, itemRecord));
         }
+        for (i = 0; i < skillsLearned.length; i++) {
+            var skillId = skillsLearned[i];
+            battleEndSequence.addAction(procureCodeFragmentAction(function (skillId) {
+                hero.gainSkill(skillId);
+            }, skillId));
+        }
+        battleEndSequence.addAction(procureCodeFragmentAction(function () {
+            itemsLooted.length = 0;
+            skillsLearned.length = 0;
+        }));
     } else {
         displayGui = false;
         battleEndSequence.addAction(procureDisplayCenteredMessageAction(WW_SMALL, TXT_DOMINIQUE_HAS_FALLEN, true)
@@ -895,11 +1027,13 @@ function deliverImpacts() {
                 }
             }
 
+            playBattleSfx(impacts[i].attacker, impacts[i].impactAnimationData.sfxSrc);
             registerObject(pathToObjectFrontLayer(impacts[i].target.path),
-                impacts[i].target.getEffectAction([
-                    getResource("imgEffectHit1-1"),
-                    getResource("imgEffectHit1-2"),
-                    getResource("imgEffectHit1-3")], 3, 35, 35));
+                impacts[i].target.getEffectAction(
+                    impacts[i].impactAnimationData.animation,
+                    impacts[i].impactAnimationData.framesPerImage,
+                    impacts[i].impactAnimationData.width,
+                    impacts[i].impactAnimationData.height));
 
             /*
              * ATTRIBUTE INCREASE:
@@ -923,6 +1057,7 @@ function deliverImpacts() {
                 attrIncrease[ATTR_REFLEXES] += enemyReflexesModifier * impacts[i].target.effDefense * AIB_REFLEXES;
             }
         } else {
+            playBattleSfx(impacts[i].attacker, "sound/sfx/miss.ogg");
             registerObject(GUI_COMMON, procureHpGaugeTextAction(impacts[i].target, TEXT_COLOR_INK, TXT_MISS));
             if (impacts[i].attacker != hero) {
                 enemyReflexesModifier = impacts[i].target.attrReflexes / impacts[i].attacker.attrReflexes;
@@ -1031,6 +1166,7 @@ function manageMusic() {
             break;
         case MPS_BATTLE_END:
             if (btlMusicElement.ended) {
+                setBattleMusic(null);
                 if (eventMusic == null) {
                     musicFade[MPS_LANDSCAPE] = 0;
                     musicPlayState = MPS_LANDSCAPE;
@@ -1059,9 +1195,10 @@ function manageMusic() {
             }
         }
     }
-    lscMusicElement.volume = musicFade[MPS_LANDSCAPE];
-    btlMusicElement.volume = musicFade[MPS_BATTLE];
-    evtMusicElement.volume = musicFade[MPS_EVENT];
+
+    lscMusicElement.volume = musicFade[MPS_LANDSCAPE] * masterVolume;
+    btlMusicElement.volume = musicFade[MPS_BATTLE] * masterVolume;
+    evtMusicElement.volume = musicFade[MPS_EVENT] * masterVolume;
 }
 
 function tick() {
@@ -1112,7 +1249,7 @@ function tick() {
 
                     // check whether hero needs to be relayered
                     if (object.type == "Hero") {
-                        var wishfulLayer = pathToObjectLayer(object.path);
+                        var wishfulLayer = pathToObjectHeroLayer(object.path);
                         if (i != wishfulLayer) {
                             registerObject(wishfulLayer, hero);
                             delete layers[i][j];
@@ -1120,11 +1257,11 @@ function tick() {
                     }
 
                     // check whether hero comes into contact with anything
-                    if (object.type == "FieldObject") {
+                    if (object.type == "Landmark") {
                         if ((object.path == hero.path) && (!object.finished)
                             && (Math.abs(object.position - hero.position) < collisionDistance)
                             && (Math.abs(getOptimalHeight(object.path, object.position) - hero.height)
-                            < collisionDistance))
+                            < collisionDistance * 2))
                         {
                             object.finished = true;
                             object.trigger();
@@ -1133,18 +1270,21 @@ function tick() {
                 }
             }
         }
-        if (i == LANDSCAPE_FAR) {
-            fc.beginPath();
-            fc.fillStyle = "#007700";
-            fc.fillRect(0, H - 250, W, H);
-        } else if (i == LANDSCAPE_MID) {
-            fc.beginPath();
-            fc.fillStyle = "#009900";
-            fc.fillRect(0, H - 150, W, H);
-        } else if (i == LANDSCAPE_NEAR) {
-            fc.beginPath();
-            fc.fillStyle = "#00AA00";
-            fc.fillRect(0, H - 50, W, H);
+
+        if (landscape != null) {
+            if (i == LANDSCAPE_FAR) {
+                fc.beginPath();
+                fc.fillStyle = landscape.terrainColorFar;
+                fc.fillRect(0, getBasisHeight(FAR), W, H);
+            } else if (i == LANDSCAPE_MID) {
+                fc.beginPath();
+                fc.fillStyle = landscape.terrainColorMid;
+                fc.fillRect(0, getBasisHeight(MID), W, H);
+            } else if (i == LANDSCAPE_NEAR) {
+                fc.beginPath();
+                fc.fillStyle = landscape.terrainColorNear;
+                fc.fillRect(0, getBasisHeight(NEAR), W, H);
+            }
         }
     }
 
@@ -1156,7 +1296,7 @@ function tick() {
 
     if (menuState == MS_NONE) {
         if (controlMode == CM_FIELD) {
-            hero.restoreSp(SP_RECOVERY_BASIS);
+            hero.restoreSp(hero.attrMaxSp * SP_RECOVERY_BASIS);
             hero.expendAp(AP_DIMINISHING_BASIS);
             if (hero.karma < 0) {
                 if (reboundTargetFrame == 0) {
@@ -1187,19 +1327,28 @@ function tick() {
             }
         } else if (controlMode == CM_BATTLE) {
             if ((hero.hp > 0) && (enemy.hp > 0)) {
-                hero.restoreSp(SP_RECOVERY_BASIS * getGlobalBattleGaugeShiftCoefficient());
+                hero.restoreSp(hero.attrMaxSp * SP_RECOVERY_BASIS * getGlobalBattleGaugeShiftCoefficient());
 
+                resetSlotLock();
                 hero.progressBattleGauge();
                 enemy.progressBattleGauge();
                 deliverImpacts();
                 enemy.behave(enemy, battleFrame);
                 if (keyPressed == KEY_ACTION) {
                     if (keyCtrl) {
-                        hero.useItem(itemChoice, 0);
-                    } else if (skillChoice < 7) {
-                        hero.useSkill(hero.skillSet[skillChoice], 0);
+                        if (!itemSlotLock[itemChoice]) {
+                            hero.useItem(itemChoice, 0);
+                        } else {
+                            playSfx(SFX_GUI_BOROK);
+                        }
+                    } else if (!skillSlotLock[skillChoice]) {
+                        if (skillChoice < 7) {
+                            hero.useSkill(hero.skillSet[skillChoice], 0);
+                        } else {
+                            hero.useAuraSkill(hero.skillSet[skillChoice], 0);
+                        }
                     } else {
-                        hero.useAuraSkill(hero.skillSet[skillChoice], 0);
+                        playSfx(SFX_GUI_BOROK);
                     }
                 }
                 battleFrame++;
@@ -1212,6 +1361,18 @@ function tick() {
     globalFrame++;
     if (globalFrame >= 100) {
         globalFrame = 0;
+    }
+
+    if ((keyPressed == KEY_PLUS) && (masterVolume < 1)) {
+        masterVolume += 0.05;
+        if (masterVolume > 1) {
+            masterVolume = 1;
+        }
+    } else if ((keyPressed == KEY_MINUS) && (masterVolume > 0)) {
+        masterVolume -= 0.05;
+        if (masterVolume < 0) {
+            masterVolume = 0;
+        }
     }
 
     keyPressed = KEY_NONE;
