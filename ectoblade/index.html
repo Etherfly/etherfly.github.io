@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d191f" />
+    <title>Ectoblade</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <script type="module" crossorigin src="./assets/index-DvagVGTK.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BjleEEuJ.css">
+</head>
+<body>
+<div id="game-container" aria-label="Ectoblade game arena"></div>
+<main id="overlay">
+    <section class="menu" aria-labelledby="menu-title">
+        <div class="eyebrow"><span class="brand-mark">✧</span> ECTOBLADE <span class="badge">PROTOTYPE</span></div>
+        <h1 id="menu-title">Become the blade.</h1>
+        <p id="menu-copy" class="intro">Five encounters. Ten hits to survive. Your mouse is your movement; your sword follows every turn.</p>
+        <div class="controls">
+            <div><kbd>MOUSE</kbd><p><strong>Move like a shade</strong><span>Shade is your cursor. WASD explores the area.</span></p></div>
+            <div><kbd>LMB</kbd><p><strong>Strike or cut</strong><span>Tap to slash; recover briefly after the third. Hold to ready, then move fast to cut.</span></p></div>
+            <div><kbd>RMB</kbd><p><strong>Parry or draw</strong><span>Press as a strike arrives; misses recover for 0.5s. Hold to trace a glyph.</span></p></div>
+        </div>
+        <div class="glyph-guide">
+            <div><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="14" /></svg><p><strong>Circle</strong><span>Area burst · 10s recharge</span></p></div>
+            <div><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 L30 33 L4 14 L36 14 L10 33 Z" /></svg><p><strong>Pentagram</strong><span>Five seeking blades · 15s</span></p></div>
+        </div>
+        <label class="sensitivity" for="sensitivity"><span>Mouse sensitivity</span><output id="sensitivity-value" for="sensitivity">1.00×</output></label>
+        <input id="sensitivity" type="range" min="0.25" max="3" step="0.05" value="1" />
+        <details class="audio-settings">
+            <summary>Sound settings</summary>
+            <label class="audio-level" for="master-volume"><span>Master volume</span><input id="master-volume" type="range" min="0" max="100" step="1" value="80" /><output id="master-volume-value" for="master-volume">80%</output></label>
+            <label class="audio-level" for="effects-volume"><span>Sound effects</span><input id="effects-volume" type="range" min="0" max="100" step="1" value="80" /><output id="effects-volume-value" for="effects-volume">80%</output></label>
+            <label class="audio-level" for="music-volume"><span>Music</span><input id="music-volume" type="range" min="0" max="100" step="1" value="35" /><output id="music-volume-value" for="music-volume">35%</output></label>
+            <label class="audio-mute"><input id="audio-mute" type="checkbox" /> Mute sound</label>
+        </details>
+        <div class="actions"><button id="primary-button" type="button">Enter the field</button><button id="restart-button" class="secondary" type="button" hidden>Restart run</button></div>
+        <p id="menu-status" role="status"></p>
+        <p class="footnote">Click to capture the mouse. <kbd>ESC</kbd> pauses and releases it. <kbd>R</kbd> restarts. <kbd>F8</kbd> skips waves/waits.<br>Close each glyph before releasing RMB. Flank raised guards; beams and nets hurt on contact.</p>
+    </section>
+</main>
+</body>
+</html>

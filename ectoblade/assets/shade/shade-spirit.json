@@ -1,0 +1,399 @@
+{
+  "frames": {
+    "spirit-SW-1.png": {
+      "frame": {
+        "x": 3,
+        "y": 3,
+        "w": 91,
+        "h": 117
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 56,
+        "y": 42,
+        "w": 91,
+        "h": 117
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "spirit-SW-2.png": {
+      "frame": {
+        "x": 3,
+        "y": 126,
+        "w": 91,
+        "h": 116
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 56,
+        "y": 42,
+        "w": 91,
+        "h": 116
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "spirit-NW-2.png": {
+      "frame": {
+        "x": 3,
+        "y": 248,
+        "w": 90,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 66,
+        "y": 43,
+        "w": 90,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "spirit-NW-1.png": {
+      "frame": {
+        "x": 3,
+        "y": 369,
+        "w": 85,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 68,
+        "y": 45,
+        "w": 85,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "spirit-E-2.png": {
+      "frame": {
+        "x": 3,
+        "y": 490,
+        "w": 90,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 49,
+        "y": 45,
+        "w": 90,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "spirit-N-2.png": {
+      "frame": {
+        "x": 94,
+        "y": 369,
+        "w": 103,
+        "h": 113
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 44,
+        "y": 49,
+        "w": 103,
+        "h": 113
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "spirit-W-2.png": {
+      "frame": {
+        "x": 99,
+        "y": 248,
+        "w": 80,
+        "h": 113
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 65,
+        "y": 45,
+        "w": 80,
+        "h": 113
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "spirit-W-1.png": {
+      "frame": {
+        "x": 185,
+        "y": 248,
+        "w": 69,
+        "h": 113
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 72,
+        "y": 45,
+        "w": 69,
+        "h": 113
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "spirit-E-1.png": {
+      "frame": {
+        "x": 260,
+        "y": 248,
+        "w": 67,
+        "h": 111
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 47,
+        "w": 67,
+        "h": 111
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "spirit-N-1.png": {
+      "frame": {
+        "x": 100,
+        "y": 3,
+        "w": 95,
+        "h": 109
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 47,
+        "y": 50,
+        "w": 95,
+        "h": 109
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "spirit-S-1.png": {
+      "frame": {
+        "x": 100,
+        "y": 118,
+        "w": 91,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 51,
+        "y": 56,
+        "w": 91,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "spirit-SE-2.png": {
+      "frame": {
+        "x": 197,
+        "y": 118,
+        "w": 90,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 48,
+        "y": 50,
+        "w": 90,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "spirit-NE-2.png": {
+      "frame": {
+        "x": 201,
+        "y": 3,
+        "w": 88,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 41,
+        "y": 50,
+        "w": 88,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "spirit-S-2.png": {
+      "frame": {
+        "x": 293,
+        "y": 117,
+        "w": 90,
+        "h": 107
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 57,
+        "w": 90,
+        "h": 107
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "spirit-SE-1.png": {
+      "frame": {
+        "x": 295,
+        "y": 3,
+        "w": 69,
+        "h": 107
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 55,
+        "y": 51,
+        "w": 69,
+        "h": 107
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "spirit-NE-1.png": {
+      "frame": {
+        "x": 370,
+        "y": 3,
+        "w": 80,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 44,
+        "y": 52,
+        "w": 80,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://github.com/odrick/free-tex-packer-cli",
+    "version": "0.3.0",
+    "image": "shade-spirit.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 453,
+      "h": 607
+    },
+    "scale": 1
+  }
+}

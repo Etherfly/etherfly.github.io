@@ -1,0 +1,183 @@
+{
+  "frames": {
+    "platform-1.png": {
+      "frame": {
+        "x": 3,
+        "y": 3,
+        "w": 265,
+        "h": 261
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 60,
+        "y": 55,
+        "w": 265,
+        "h": 261
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "platform-2.png": {
+      "frame": {
+        "x": 274,
+        "y": 3,
+        "w": 265,
+        "h": 237
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 60,
+        "y": 54,
+        "w": 265,
+        "h": 237
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-idle.png": {
+      "frame": {
+        "x": 545,
+        "y": 3,
+        "w": 219,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 149,
+        "y": 151,
+        "w": 219,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-charge.png": {
+      "frame": {
+        "x": 770,
+        "y": 3,
+        "w": 176,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 149,
+        "y": 151,
+        "w": 176,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-charge.png": {
+      "frame": {
+        "x": 952,
+        "y": 3,
+        "w": 154,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 147,
+        "y": 148,
+        "w": 154,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-idle.png": {
+      "frame": {
+        "x": 545,
+        "y": 92,
+        "w": 152,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 148,
+        "y": 148,
+        "w": 152,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "shield-active.png": {
+      "frame": {
+        "x": 703,
+        "y": 92,
+        "w": 82,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 156,
+        "y": 151,
+        "w": 82,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://github.com/odrick/free-tex-packer-cli",
+    "version": "0.3.0",
+    "image": "behemoth.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1109,
+      "h": 267
+    },
+    "scale": 1
+  }
+}
