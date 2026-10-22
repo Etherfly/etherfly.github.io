@@ -1,0 +1,855 @@
+{
+  "frames": {
+    "platform-1.png": {
+      "frame": {
+        "x": 3,
+        "y": 3,
+        "w": 338,
+        "h": 226
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 24,
+        "y": 64,
+        "w": 338,
+        "h": 226
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "platform-2.png": {
+      "frame": {
+        "x": 347,
+        "y": 3,
+        "w": 338,
+        "h": 222
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 24,
+        "y": 64,
+        "w": 338,
+        "h": 222
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-idle-E.png": {
+      "frame": {
+        "x": 691,
+        "y": 3,
+        "w": 182,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 158,
+        "y": 114,
+        "w": 182,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-idle-W.png": {
+      "frame": {
+        "x": 879,
+        "y": 3,
+        "w": 180,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 46,
+        "y": 114,
+        "w": 180,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-charge-E.png": {
+      "frame": {
+        "x": 1065,
+        "y": 3,
+        "w": 174,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 156,
+        "y": 114,
+        "w": 174,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-charge-W.png": {
+      "frame": {
+        "x": 1245,
+        "y": 3,
+        "w": 172,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 112,
+        "w": 172,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-idle-NE.png": {
+      "frame": {
+        "x": 691,
+        "y": 105,
+        "w": 158,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 146,
+        "y": 98,
+        "w": 158,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-idle-NW.png": {
+      "frame": {
+        "x": 855,
+        "y": 105,
+        "w": 158,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 80,
+        "y": 98,
+        "w": 158,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-charge-NE.png": {
+      "frame": {
+        "x": 1019,
+        "y": 105,
+        "w": 154,
+        "h": 112
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 144,
+        "y": 100,
+        "w": 154,
+        "h": 112
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-charge-NW.png": {
+      "frame": {
+        "x": 1423,
+        "y": 3,
+        "w": 154,
+        "h": 112
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 84,
+        "y": 100,
+        "w": 154,
+        "h": 112
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-idle-SE.png": {
+      "frame": {
+        "x": 1179,
+        "y": 107,
+        "w": 150,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 154,
+        "y": 118,
+        "w": 150,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-idle-SW.png": {
+      "frame": {
+        "x": 1019,
+        "y": 223,
+        "w": 150,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 78,
+        "y": 118,
+        "w": 150,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-charge-E.png": {
+      "frame": {
+        "x": 691,
+        "y": 225,
+        "w": 139,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 145,
+        "y": 110,
+        "w": 139,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-idle-E.png": {
+      "frame": {
+        "x": 836,
+        "y": 225,
+        "w": 139,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 145,
+        "y": 110,
+        "w": 139,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-charge-SE.png": {
+      "frame": {
+        "x": 347,
+        "y": 231,
+        "w": 134,
+        "h": 154
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 152,
+        "y": 116,
+        "w": 134,
+        "h": 154
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-charge-SW.png": {
+      "frame": {
+        "x": 487,
+        "y": 231,
+        "w": 134,
+        "h": 154
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 94,
+        "y": 116,
+        "w": 134,
+        "h": 154
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-charge-W.png": {
+      "frame": {
+        "x": 3,
+        "y": 235,
+        "w": 134,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 101,
+        "y": 110,
+        "w": 134,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-idle-W.png": {
+      "frame": {
+        "x": 143,
+        "y": 235,
+        "w": 134,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 101,
+        "y": 110,
+        "w": 134,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-charge-SE.png": {
+      "frame": {
+        "x": 3,
+        "y": 339,
+        "w": 120,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 153,
+        "y": 102,
+        "w": 120,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-idle-SE.png": {
+      "frame": {
+        "x": 129,
+        "y": 339,
+        "w": 120,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 153,
+        "y": 102,
+        "w": 120,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-charge-N.png": {
+      "frame": {
+        "x": 255,
+        "y": 339,
+        "w": 85,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 149,
+        "y": 94,
+        "w": 85,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-charge-NW.png": {
+      "frame": {
+        "x": 3,
+        "y": 453,
+        "w": 119,
+        "h": 111
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 112,
+        "y": 99,
+        "w": 119,
+        "h": 111
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-idle-NW.png": {
+      "frame": {
+        "x": 128,
+        "y": 453,
+        "w": 119,
+        "h": 111
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 112,
+        "y": 99,
+        "w": 119,
+        "h": 111
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-charge-NE.png": {
+      "frame": {
+        "x": 627,
+        "y": 329,
+        "w": 118,
+        "h": 111
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 151,
+        "y": 99,
+        "w": 118,
+        "h": 111
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-idle-NE.png": {
+      "frame": {
+        "x": 751,
+        "y": 329,
+        "w": 118,
+        "h": 111
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 151,
+        "y": 99,
+        "w": 118,
+        "h": 111
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-charge-SW.png": {
+      "frame": {
+        "x": 875,
+        "y": 329,
+        "w": 117,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 112,
+        "y": 102,
+        "w": 117,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-idle-SW.png": {
+      "frame": {
+        "x": 346,
+        "y": 391,
+        "w": 117,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 112,
+        "y": 102,
+        "w": 117,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-idle-N.png": {
+      "frame": {
+        "x": 253,
+        "y": 460,
+        "w": 85,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 149,
+        "y": 94,
+        "w": 85,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-charge-S.png": {
+      "frame": {
+        "x": 469,
+        "y": 391,
+        "w": 92,
+        "h": 172
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 144,
+        "y": 114,
+        "w": 92,
+        "h": 172
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-idle-S.png": {
+      "frame": {
+        "x": 344,
+        "y": 505,
+        "w": 92,
+        "h": 172
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 146,
+        "y": 116,
+        "w": 92,
+        "h": 172
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-charge-N.png": {
+      "frame": {
+        "x": 3,
+        "y": 570,
+        "w": 92,
+        "h": 152
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 144,
+        "y": 62,
+        "w": 92,
+        "h": 152
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "melee-idle-N.png": {
+      "frame": {
+        "x": 101,
+        "y": 570,
+        "w": 92,
+        "h": 152
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 146,
+        "y": 62,
+        "w": 92,
+        "h": 152
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "shield-active.png": {
+      "frame": {
+        "x": 199,
+        "y": 581,
+        "w": 92,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 147,
+        "y": 111,
+        "w": 92,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-charge-S.png": {
+      "frame": {
+        "x": 199,
+        "y": 683,
+        "w": 83,
+        "h": 110
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 150,
+        "y": 100,
+        "w": 83,
+        "h": 110
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ranged-idle-S.png": {
+      "frame": {
+        "x": 3,
+        "y": 728,
+        "w": 83,
+        "h": 110
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 150,
+        "y": 100,
+        "w": 83,
+        "h": 110
+      },
+      "sourceSize": {
+        "w": 384,
+        "h": 384
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://github.com/odrick/free-tex-packer-cli",
+    "version": "0.3.0",
+    "image": "behemoth.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1580,
+      "h": 841
+    },
+    "scale": 1
+  }
+}
