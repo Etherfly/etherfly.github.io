@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Negliss infantry tiers — artwork review</title>
+<style>
+* { box-sizing: border-box; } body { margin: 0; background: #10171d; color: #e1e9e6; font: 15px system-ui,sans-serif; }
+header { padding: 24px 28px; border-bottom: 1px solid #526167; background: #18232b; }
+h1 { font: 28px Georgia,serif; margin: 0 0 8px; } p { color: #afc1c4; margin: 8px 0; }
+.controls { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 20px; }
+label { display: flex; gap: 7px; align-items: center; } select,button { font: inherit; color: inherit; background: #253840; border: 1px solid #697f84; padding: 8px 12px; border-radius: 3px; }
+button { cursor: pointer; text-align: center; } main { padding: 20px 28px 48px; } section { margin: 0 0 32px; }
+h2 { font: 24px Georgia,serif; color: #c5ded7; } .scroll { overflow: auto; } .grid { display: grid; grid-template-columns: 100px repeat(8,var(--cell)); width: max-content; gap: 8px; align-items: center; }
+.direction { text-align: center; color: #b7c9cf; font-size: 13px; } .role { font-weight: 600; text-transform: capitalize; }
+figure { margin: 0; } canvas { display: block; width: var(--cell); height: var(--cell); image-rendering: pixelated;
+background-color: var(--bg,#34434a); background-image: linear-gradient(45deg,#ffffff07 25%,transparent 25%),linear-gradient(-45deg,#ffffff07 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#ffffff07 75%),linear-gradient(-45deg,transparent 75%,#ffffff07 75%); background-size: 16px 16px; background-position: 0 0,0 8px,8px -8px,-8px 0; }
+figcaption { min-height: 22px; text-align: center; font-size: 11px; color: #9fb4b8; } #status { color: #e0c99a; }
+</style>
+<header>
+<h1>Negliss infantry tiers</h1>
+<p>Standalone artwork review. These atlases are not selected by the game.</p>
+<div class="controls">
+<label>Tier <select id="tier"><option value="all">Compare all tiers</option><option value="1">I · Existing infantry</option><option value="2">II · Veteran</option><option value="3">III · Elite</option></select></label>
+<label>Pose <select id="pose"><option value="idle">Idle</option><option value="walk" selected>Walking loop</option><option value="attack">Attack poses</option></select></label>
+<label>Scale <select id="scale"><option value="64">Game · 0.5×</option><option value="128" selected>Native · 1×</option><option value="256">Enlarged · 2×</option></select></label>
+<label>Background <select id="background"><option value="#34434a">Slate</option><option value="#111111">Black</option><option value="#dddddd">Light grey</option><option value="#7e295b">Magenta contrast</option></select></label>
+<label><input id="anchor" type="checkbox" checked>Ground guides</label>
+<button id="play">Pause</button><button id="step">Next frame</button>
+</div>
+<p id="status">Loading atlases…</p>
+</header>
+<main id="review"></main>
+<script type="module">
+const dirs = ['E','SE','S','SW','W','NW','N','NE'], roles = ['melee','ranged','shielder','netwalker'];
+const names = {1:'I · Existing infantry',2:'II · Veteran infantry',3:'III · Elite infantry'};
+const atlases = {}, cells = [], $ = id => document.getElementById(id);
+let playing = true, elapsed = 0, previous = performance.now();
+function redraw() {
+    const step = Math.floor(elapsed / 150) % 4, beat = Math.floor(elapsed / 600) % 3;
+    for (const cell of cells) {
+        const pose = $('pose').value === 'walk' ? `walk-${step+1}` : $('pose').value === 'attack'
+            ? cell.role === 'melee' ? ['idle','charge','recovery'][beat] : cell.role === 'ranged' && beat ? 'charge' : 'idle' : 'idle';
+        const frame = atlases[cell.tier].json.frames[`${cell.role}-${pose}-${cell.direction}.png`];
+        const ctx = cell.canvas.getContext('2d'); ctx.clearRect(0,0,128,128); ctx.imageSmoothingEnabled = false;
+        if (!frame) { ctx.fillStyle = 'red'; ctx.fillText('MISSING FRAME',10,64); continue; }
+        const f = frame.frame, s = frame.spriteSourceSize;
+        ctx.drawImage(atlases[cell.tier].image,f.x,f.y,f.w,f.h,s?.x??0,s?.y??0,f.w,f.h);
+        if ($('anchor').checked) { ctx.strokeStyle = '#cbaa68'; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(59,104.5);ctx.lineTo(69,104.5);ctx.moveTo(64.5,101);ctx.lineTo(64.5,108);ctx.stroke(); }
+        cell.caption.textContent = pose;
+    }
+}
+function layout() {
+    cells.length = 0; $('review').replaceChildren();
+    document.documentElement.style.setProperty('--cell',`${$('scale').value}px`);
+    document.documentElement.style.setProperty('--bg',$('background').value);
+    for (const tier of $('tier').value === 'all' ? ['1','2','3'] : [$('tier').value]) {
+        const section = document.createElement('section'), title = document.createElement('h2'); title.textContent = names[tier]; section.append(title);
+        const scroll = document.createElement('div'); scroll.className='scroll'; const grid = document.createElement('div');grid.className='grid'; scroll.append(grid);section.append(scroll);$('review').append(section);
+        grid.append(document.createElement('div'));
+        for (const d of dirs) { const label=document.createElement('div');label.className='direction';label.textContent=d;grid.append(label); }
+        for (const role of roles) {
+            const label=document.createElement('div');label.className='role';label.textContent=role;grid.append(label);
+            for (const direction of dirs) {
+                const figure=document.createElement('figure'),canvas=document.createElement('canvas'),caption=document.createElement('figcaption');
+                canvas.width=128;canvas.height=128;canvas.dataset.frame=`${tier}:${role}:${direction}`;figure.append(canvas,caption);grid.append(figure);
+                cells.push({tier,role,direction,canvas,caption});
+            }
+        }
+    }
+    redraw();
+}
+try {
+    for (const tier of ['1','2','3']) {
+        const path=tier==='1'?'/assets/soldiers/negliss':`/assets/soldiers/tiers/negliss-tier-${tier}`;
+        const response=await fetch(path+'.json');if(!response.ok)throw new Error(`Missing ${path}.json`);
+        const json=await response.json(),image=new Image();image.src=path+'.png';await image.decode();
+        if(Object.keys(json.frames).length!==184)throw new Error(`Tier ${tier}: expected 184 frames`);
+        atlases[tier]={json,image};
+    }
+    $('status').textContent='All three atlases loaded · 184 frames per tier · 128×128 canvas · ground origin (64,104)';
+    document.body.dataset.ready='true';layout();
+    for(const id of ['tier','scale','background'])$(id).addEventListener('change',layout);
+    for(const id of ['pose','anchor'])$(id).addEventListener('change',redraw);
+    $('play').onclick=()=>{playing=!playing;$('play').textContent=playing?'Pause':'Play';};
+    $('step').onclick=()=>{playing=false;$('play').textContent='Play';elapsed+=150;redraw();};
+    function tick(now){if(playing&&!document.hidden){elapsed+=Math.min(100,now-previous);redraw();}previous=now;requestAnimationFrame(tick);}requestAnimationFrame(tick);
+} catch(error){$('status').textContent=String(error);document.body.dataset.error=String(error);}
+</script>
+</html>

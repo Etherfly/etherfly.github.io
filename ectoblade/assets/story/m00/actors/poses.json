@@ -1,0 +1,1078 @@
+{
+  "rifleman": {
+    "idle": {
+      "E": {
+        "frames": [
+          "rifleman-idle-E-0.png",
+          "rifleman-idle-E-1.png",
+          "rifleman-idle-E-2.png",
+          "rifleman-idle-E-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "SE": {
+        "frames": [
+          "rifleman-idle-SE-0.png",
+          "rifleman-idle-SE-1.png",
+          "rifleman-idle-SE-2.png",
+          "rifleman-idle-SE-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "S": {
+        "frames": [
+          "rifleman-idle-S-0.png",
+          "rifleman-idle-S-1.png",
+          "rifleman-idle-S-2.png",
+          "rifleman-idle-S-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "SW": {
+        "frames": [
+          "rifleman-idle-SW-0.png",
+          "rifleman-idle-SW-1.png",
+          "rifleman-idle-SW-2.png",
+          "rifleman-idle-SW-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "W": {
+        "frames": [
+          "rifleman-idle-W-0.png",
+          "rifleman-idle-W-1.png",
+          "rifleman-idle-W-2.png",
+          "rifleman-idle-W-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "NW": {
+        "frames": [
+          "rifleman-idle-NW-0.png",
+          "rifleman-idle-NW-1.png",
+          "rifleman-idle-NW-2.png",
+          "rifleman-idle-NW-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "N": {
+        "frames": [
+          "rifleman-idle-N-0.png",
+          "rifleman-idle-N-1.png",
+          "rifleman-idle-N-2.png",
+          "rifleman-idle-N-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "NE": {
+        "frames": [
+          "rifleman-idle-NE-0.png",
+          "rifleman-idle-NE-1.png",
+          "rifleman-idle-NE-2.png",
+          "rifleman-idle-NE-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      }
+    },
+    "run": {
+      "NW": {
+        "frames": [
+          "rifleman-run-NW-0.png",
+          "rifleman-run-NW-1.png",
+          "rifleman-run-NW-2.png",
+          "rifleman-run-NW-3.png",
+          "rifleman-run-NW-4.png",
+          "rifleman-run-NW-5.png"
+        ],
+        "duration": 90,
+        "loop": true
+      },
+      "NE": {
+        "frames": [
+          "rifleman-run-NE-0.png",
+          "rifleman-run-NE-1.png",
+          "rifleman-run-NE-2.png",
+          "rifleman-run-NE-3.png",
+          "rifleman-run-NE-4.png",
+          "rifleman-run-NE-5.png"
+        ],
+        "duration": 90,
+        "loop": true
+      },
+      "SE": {
+        "frames": [
+          "rifleman-run-SE-0.png",
+          "rifleman-run-SE-1.png",
+          "rifleman-run-SE-2.png",
+          "rifleman-run-SE-3.png",
+          "rifleman-run-SE-4.png",
+          "rifleman-run-SE-5.png"
+        ],
+        "duration": 90,
+        "loop": true
+      },
+      "SW": {
+        "frames": [
+          "rifleman-run-SW-0.png",
+          "rifleman-run-SW-1.png",
+          "rifleman-run-SW-2.png",
+          "rifleman-run-SW-3.png",
+          "rifleman-run-SW-4.png",
+          "rifleman-run-SW-5.png"
+        ],
+        "duration": 90,
+        "loop": true
+      },
+      "W": {
+        "frames": [
+          "rifleman-run-W-0.png",
+          "rifleman-run-W-1.png",
+          "rifleman-run-W-2.png",
+          "rifleman-run-W-3.png",
+          "rifleman-run-W-4.png",
+          "rifleman-run-W-5.png"
+        ],
+        "duration": 90,
+        "loop": true
+      },
+      "E": {
+        "frames": [
+          "rifleman-run-E-0.png",
+          "rifleman-run-E-1.png",
+          "rifleman-run-E-2.png",
+          "rifleman-run-E-3.png",
+          "rifleman-run-E-4.png",
+          "rifleman-run-E-5.png"
+        ],
+        "duration": 90,
+        "loop": true
+      },
+      "N": {
+        "frames": [
+          "rifleman-run-N-0.png",
+          "rifleman-run-N-1.png",
+          "rifleman-run-N-2.png",
+          "rifleman-run-N-3.png",
+          "rifleman-run-N-4.png",
+          "rifleman-run-N-5.png"
+        ],
+        "duration": 90,
+        "loop": true
+      },
+      "S": {
+        "frames": [
+          "rifleman-run-S-0.png",
+          "rifleman-run-S-1.png",
+          "rifleman-run-S-2.png",
+          "rifleman-run-S-3.png",
+          "rifleman-run-S-4.png",
+          "rifleman-run-S-5.png"
+        ],
+        "duration": 90,
+        "loop": true
+      }
+    },
+    "walk": {
+      "SW": {
+        "frames": [
+          "rifleman-walk-SW-0.png",
+          "rifleman-walk-SW-1.png",
+          "rifleman-walk-SW-2.png",
+          "rifleman-walk-SW-3.png"
+        ],
+        "duration": 150,
+        "loop": true
+      },
+      "SE": {
+        "frames": [
+          "rifleman-walk-SE-0.png",
+          "rifleman-walk-SE-1.png",
+          "rifleman-walk-SE-2.png",
+          "rifleman-walk-SE-3.png"
+        ],
+        "duration": 150,
+        "loop": true
+      },
+      "NW": {
+        "frames": [
+          "rifleman-walk-NW-0.png",
+          "rifleman-walk-NW-1.png",
+          "rifleman-walk-NW-2.png",
+          "rifleman-walk-NW-3.png"
+        ],
+        "duration": 150,
+        "loop": true
+      },
+      "NE": {
+        "frames": [
+          "rifleman-walk-NE-0.png",
+          "rifleman-walk-NE-1.png",
+          "rifleman-walk-NE-2.png",
+          "rifleman-walk-NE-3.png"
+        ],
+        "duration": 150,
+        "loop": true
+      },
+      "W": {
+        "frames": [
+          "rifleman-walk-W-0.png",
+          "rifleman-walk-W-1.png",
+          "rifleman-walk-W-2.png",
+          "rifleman-walk-W-3.png"
+        ],
+        "duration": 150,
+        "loop": true
+      },
+      "E": {
+        "frames": [
+          "rifleman-walk-E-0.png",
+          "rifleman-walk-E-1.png",
+          "rifleman-walk-E-2.png",
+          "rifleman-walk-E-3.png"
+        ],
+        "duration": 150,
+        "loop": true
+      },
+      "S": {
+        "frames": [
+          "rifleman-walk-S-0.png",
+          "rifleman-walk-S-1.png",
+          "rifleman-walk-S-2.png",
+          "rifleman-walk-S-3.png"
+        ],
+        "duration": 150,
+        "loop": true
+      },
+      "N": {
+        "frames": [
+          "rifleman-walk-N-0.png",
+          "rifleman-walk-N-1.png",
+          "rifleman-walk-N-2.png",
+          "rifleman-walk-N-3.png"
+        ],
+        "duration": 150,
+        "loop": true
+      }
+    },
+    "ready": {
+      "E": {
+        "frames": [
+          "rifleman-idle-E-0.png",
+          "rifleman-idle-E-1.png",
+          "rifleman-idle-E-2.png",
+          "rifleman-idle-E-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "SE": {
+        "frames": [
+          "rifleman-idle-SE-0.png",
+          "rifleman-idle-SE-1.png",
+          "rifleman-idle-SE-2.png",
+          "rifleman-idle-SE-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "S": {
+        "frames": [
+          "rifleman-idle-S-0.png",
+          "rifleman-idle-S-1.png",
+          "rifleman-idle-S-2.png",
+          "rifleman-idle-S-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "SW": {
+        "frames": [
+          "rifleman-idle-SW-0.png",
+          "rifleman-idle-SW-1.png",
+          "rifleman-idle-SW-2.png",
+          "rifleman-idle-SW-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "W": {
+        "frames": [
+          "rifleman-idle-W-0.png",
+          "rifleman-idle-W-1.png",
+          "rifleman-idle-W-2.png",
+          "rifleman-idle-W-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "NW": {
+        "frames": [
+          "rifleman-idle-NW-0.png",
+          "rifleman-idle-NW-1.png",
+          "rifleman-idle-NW-2.png",
+          "rifleman-idle-NW-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "N": {
+        "frames": [
+          "rifleman-idle-N-0.png",
+          "rifleman-idle-N-1.png",
+          "rifleman-idle-N-2.png",
+          "rifleman-idle-N-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "NE": {
+        "frames": [
+          "rifleman-idle-NE-0.png",
+          "rifleman-idle-NE-1.png",
+          "rifleman-idle-NE-2.png",
+          "rifleman-idle-NE-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      }
+    },
+    "panic": {
+      "E": {
+        "frames": [
+          "rifleman-idle-E-0.png",
+          "rifleman-idle-E-1.png",
+          "rifleman-idle-E-2.png",
+          "rifleman-idle-E-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "SE": {
+        "frames": [
+          "rifleman-idle-SE-0.png",
+          "rifleman-idle-SE-1.png",
+          "rifleman-idle-SE-2.png",
+          "rifleman-idle-SE-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "S": {
+        "frames": [
+          "rifleman-idle-S-0.png",
+          "rifleman-idle-S-1.png",
+          "rifleman-idle-S-2.png",
+          "rifleman-idle-S-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "SW": {
+        "frames": [
+          "rifleman-idle-SW-0.png",
+          "rifleman-idle-SW-1.png",
+          "rifleman-idle-SW-2.png",
+          "rifleman-idle-SW-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "W": {
+        "frames": [
+          "rifleman-idle-W-0.png",
+          "rifleman-idle-W-1.png",
+          "rifleman-idle-W-2.png",
+          "rifleman-idle-W-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "NW": {
+        "frames": [
+          "rifleman-idle-NW-0.png",
+          "rifleman-idle-NW-1.png",
+          "rifleman-idle-NW-2.png",
+          "rifleman-idle-NW-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "N": {
+        "frames": [
+          "rifleman-idle-N-0.png",
+          "rifleman-idle-N-1.png",
+          "rifleman-idle-N-2.png",
+          "rifleman-idle-N-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "NE": {
+        "frames": [
+          "rifleman-idle-NE-0.png",
+          "rifleman-idle-NE-1.png",
+          "rifleman-idle-NE-2.png",
+          "rifleman-idle-NE-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      }
+    },
+    "aim": {
+      "E": {
+        "frames": [
+          "rifleman-aim-E-0.png"
+        ],
+        "duration": 1000,
+        "loop": false
+      },
+      "SE": {
+        "frames": [
+          "rifleman-aim-SE-0.png"
+        ],
+        "duration": 1000,
+        "loop": false
+      },
+      "S": {
+        "frames": [
+          "rifleman-aim-S-0.png"
+        ],
+        "duration": 1000,
+        "loop": false
+      },
+      "SW": {
+        "frames": [
+          "rifleman-aim-SW-0.png"
+        ],
+        "duration": 1000,
+        "loop": false
+      },
+      "W": {
+        "frames": [
+          "rifleman-aim-W-0.png"
+        ],
+        "duration": 1000,
+        "loop": false
+      },
+      "NW": {
+        "frames": [
+          "rifleman-aim-NW-0.png"
+        ],
+        "duration": 1000,
+        "loop": false
+      },
+      "N": {
+        "frames": [
+          "rifleman-aim-N-0.png"
+        ],
+        "duration": 1000,
+        "loop": false
+      },
+      "NE": {
+        "frames": [
+          "rifleman-aim-NE-0.png"
+        ],
+        "duration": 1000,
+        "loop": false
+      }
+    },
+    "fire": {
+      "E": {
+        "frames": [
+          "rifleman-fire-E-0.png",
+          "rifleman-fire-E-1.png"
+        ],
+        "duration": 55,
+        "loop": true
+      },
+      "SE": {
+        "frames": [
+          "rifleman-fire-SE-0.png",
+          "rifleman-fire-SE-1.png"
+        ],
+        "duration": 55,
+        "loop": true
+      },
+      "S": {
+        "frames": [
+          "rifleman-fire-S-0.png",
+          "rifleman-fire-S-1.png"
+        ],
+        "duration": 55,
+        "loop": true
+      },
+      "SW": {
+        "frames": [
+          "rifleman-fire-SW-0.png",
+          "rifleman-fire-SW-1.png"
+        ],
+        "duration": 55,
+        "loop": true
+      },
+      "W": {
+        "frames": [
+          "rifleman-fire-W-0.png",
+          "rifleman-fire-W-1.png"
+        ],
+        "duration": 55,
+        "loop": true
+      },
+      "NW": {
+        "frames": [
+          "rifleman-fire-NW-0.png",
+          "rifleman-fire-NW-1.png"
+        ],
+        "duration": 55,
+        "loop": true
+      },
+      "N": {
+        "frames": [
+          "rifleman-fire-N-0.png",
+          "rifleman-fire-N-1.png"
+        ],
+        "duration": 55,
+        "loop": true
+      },
+      "NE": {
+        "frames": [
+          "rifleman-fire-NE-0.png",
+          "rifleman-fire-NE-1.png"
+        ],
+        "duration": 55,
+        "loop": true
+      }
+    }
+  },
+  "officer": {
+    "idle": {
+      "N": {
+        "frames": [
+          "officer-idle-N-0.png",
+          "officer-idle-N-1.png",
+          "officer-idle-N-2.png",
+          "officer-idle-N-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "S": {
+        "frames": [
+          "officer-idle-S-0.png",
+          "officer-idle-S-1.png",
+          "officer-idle-S-2.png",
+          "officer-idle-S-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "W": {
+        "frames": [
+          "officer-idle-W-0.png",
+          "officer-idle-W-1.png",
+          "officer-idle-W-2.png",
+          "officer-idle-W-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      }
+    },
+    "run": {
+      "S": {
+        "frames": [
+          "officer-run-S-0.png",
+          "officer-run-S-1.png",
+          "officer-run-S-2.png",
+          "officer-run-S-3.png",
+          "officer-run-S-4.png",
+          "officer-run-S-5.png"
+        ],
+        "duration": 90,
+        "loop": true
+      },
+      "W": {
+        "frames": [
+          "officer-run-W-0.png",
+          "officer-run-W-1.png",
+          "officer-run-W-2.png",
+          "officer-run-W-3.png",
+          "officer-run-W-4.png",
+          "officer-run-W-5.png"
+        ],
+        "duration": 90,
+        "loop": true
+      },
+      "N": {
+        "frames": [
+          "officer-run-N-0.png",
+          "officer-run-N-1.png",
+          "officer-run-N-2.png",
+          "officer-run-N-3.png",
+          "officer-run-N-4.png",
+          "officer-run-N-5.png"
+        ],
+        "duration": 90,
+        "loop": true
+      }
+    },
+    "walk": {
+      "N": {
+        "frames": [
+          "officer-walk-N-0.png",
+          "officer-walk-N-1.png",
+          "officer-walk-N-2.png",
+          "officer-walk-N-3.png"
+        ],
+        "duration": 150,
+        "loop": true
+      },
+      "S": {
+        "frames": [
+          "officer-walk-S-0.png",
+          "officer-walk-S-1.png",
+          "officer-walk-S-2.png",
+          "officer-walk-S-3.png"
+        ],
+        "duration": 150,
+        "loop": true
+      },
+      "W": {
+        "frames": [
+          "officer-walk-W-0.png",
+          "officer-walk-W-1.png",
+          "officer-walk-W-2.png",
+          "officer-walk-W-3.png"
+        ],
+        "duration": 150,
+        "loop": true
+      }
+    },
+    "gadget": {
+      "N": {
+        "frames": [
+          "officer-gadget-N-0.png",
+          "officer-gadget-N-1.png",
+          "officer-gadget-N-2.png",
+          "officer-gadget-N-3.png",
+          "officer-gadget-N-4.png"
+        ],
+        "duration": 140,
+        "loop": false
+      }
+    },
+    "gesture": {
+      "W": {
+        "frames": [
+          "officer-gesture-W-0.png",
+          "officer-gesture-W-1.png",
+          "officer-gesture-W-2.png",
+          "officer-gesture-W-3.png",
+          "officer-gesture-W-4.png"
+        ],
+        "duration": 240,
+        "loop": false
+      },
+      "S": {
+        "frames": [
+          "officer-gesture-S-0.png",
+          "officer-gesture-S-1.png",
+          "officer-gesture-S-2.png",
+          "officer-gesture-S-3.png",
+          "officer-gesture-S-4.png"
+        ],
+        "duration": 240,
+        "loop": false
+      }
+    },
+    "ready": {
+      "N": {
+        "frames": [
+          "officer-idle-N-0.png",
+          "officer-idle-N-1.png",
+          "officer-idle-N-2.png",
+          "officer-idle-N-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "S": {
+        "frames": [
+          "officer-idle-S-0.png",
+          "officer-idle-S-1.png",
+          "officer-idle-S-2.png",
+          "officer-idle-S-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "W": {
+        "frames": [
+          "officer-idle-W-0.png",
+          "officer-idle-W-1.png",
+          "officer-idle-W-2.png",
+          "officer-idle-W-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      }
+    }
+  },
+  "elder": {
+    "idle": {
+      "S": {
+        "frames": [
+          "elder-idle-S-0.png",
+          "elder-idle-S-1.png",
+          "elder-idle-S-2.png",
+          "elder-idle-S-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      }
+    },
+    "fall": {
+      "S": {
+        "frames": [
+          "elder-fall-S-0.png",
+          "elder-fall-S-1.png",
+          "elder-fall-S-2.png",
+          "elder-fall-S-3.png",
+          "elder-fall-S-4.png",
+          "elder-fall-S-5.png",
+          "elder-fall-S-6.png",
+          "elder-fall-S-7.png"
+        ],
+        "duration": 65.0,
+        "loop": false
+      }
+    },
+    "dead": {
+      "S": {
+        "frames": [
+          "elder-dead-S-0.png"
+        ],
+        "duration": 1000,
+        "loop": false
+      }
+    },
+    "gesture": {
+      "S": {
+        "frames": [
+          "elder-gesture-S-0.png",
+          "elder-gesture-S-1.png",
+          "elder-gesture-S-2.png",
+          "elder-gesture-S-3.png",
+          "elder-gesture-S-4.png"
+        ],
+        "duration": 240,
+        "loop": false
+      }
+    },
+    "ready": {
+      "S": {
+        "frames": [
+          "elder-idle-S-0.png",
+          "elder-idle-S-1.png",
+          "elder-idle-S-2.png",
+          "elder-idle-S-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      }
+    }
+  },
+  "apprentice": {
+    "idle": {
+      "N": {
+        "frames": [
+          "apprentice-idle-N-0.png",
+          "apprentice-idle-N-1.png",
+          "apprentice-idle-N-2.png",
+          "apprentice-idle-N-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "S": {
+        "frames": [
+          "apprentice-idle-S-0.png",
+          "apprentice-idle-S-1.png",
+          "apprentice-idle-S-2.png",
+          "apprentice-idle-S-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      }
+    },
+    "fall": {
+      "N": {
+        "frames": [
+          "apprentice-fall-N-0.png",
+          "apprentice-fall-N-1.png",
+          "apprentice-fall-N-2.png",
+          "apprentice-fall-N-3.png",
+          "apprentice-fall-N-4.png",
+          "apprentice-fall-N-5.png"
+        ],
+        "duration": 75.0,
+        "loop": false
+      }
+    },
+    "dead": {
+      "N": {
+        "frames": [
+          "apprentice-dead-N-0.png"
+        ],
+        "duration": 1000,
+        "loop": false
+      }
+    },
+    "pray": {
+      "N": {
+        "frames": [
+          "apprentice-pray-N-0.png",
+          "apprentice-pray-N-1.png",
+          "apprentice-pray-N-2.png",
+          "apprentice-pray-N-3.png",
+          "apprentice-pray-N-4.png"
+        ],
+        "duration": 150,
+        "loop": false
+      }
+    },
+    "run": {
+      "N": {
+        "frames": [
+          "apprentice-run-N-0.png",
+          "apprentice-run-N-1.png",
+          "apprentice-run-N-2.png",
+          "apprentice-run-N-3.png",
+          "apprentice-run-N-4.png",
+          "apprentice-run-N-5.png"
+        ],
+        "duration": 90,
+        "loop": true
+      }
+    },
+    "ready": {
+      "N": {
+        "frames": [
+          "apprentice-idle-N-0.png",
+          "apprentice-idle-N-1.png",
+          "apprentice-idle-N-2.png",
+          "apprentice-idle-N-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "S": {
+        "frames": [
+          "apprentice-idle-S-0.png",
+          "apprentice-idle-S-1.png",
+          "apprentice-idle-S-2.png",
+          "apprentice-idle-S-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      }
+    }
+  },
+  "villager-a": {
+    "idle": {
+      "N": {
+        "frames": [
+          "villager-a-idle-N-0.png",
+          "villager-a-idle-N-1.png",
+          "villager-a-idle-N-2.png",
+          "villager-a-idle-N-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "NE": {
+        "frames": [
+          "villager-a-idle-NE-0.png",
+          "villager-a-idle-NE-1.png",
+          "villager-a-idle-NE-2.png",
+          "villager-a-idle-NE-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      }
+    },
+    "fall": {
+      "NE": {
+        "frames": [
+          "villager-a-fall-NE-0.png",
+          "villager-a-fall-NE-1.png",
+          "villager-a-fall-NE-2.png",
+          "villager-a-fall-NE-3.png",
+          "villager-a-fall-NE-4.png",
+          "villager-a-fall-NE-5.png",
+          "villager-a-fall-NE-6.png"
+        ],
+        "duration": 25.714285714285715,
+        "loop": false
+      },
+      "N": {
+        "frames": [
+          "villager-a-fall-N-0.png",
+          "villager-a-fall-N-1.png",
+          "villager-a-fall-N-2.png",
+          "villager-a-fall-N-3.png",
+          "villager-a-fall-N-4.png",
+          "villager-a-fall-N-5.png",
+          "villager-a-fall-N-6.png"
+        ],
+        "duration": 25.714285714285715,
+        "loop": false
+      }
+    },
+    "dead": {
+      "NE": {
+        "frames": [
+          "villager-a-dead-NE-0.png"
+        ],
+        "duration": 1000,
+        "loop": false
+      },
+      "N": {
+        "frames": [
+          "villager-a-dead-N-0.png"
+        ],
+        "duration": 1000,
+        "loop": false
+      }
+    },
+    "ready": {
+      "N": {
+        "frames": [
+          "villager-a-idle-N-0.png",
+          "villager-a-idle-N-1.png",
+          "villager-a-idle-N-2.png",
+          "villager-a-idle-N-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "NE": {
+        "frames": [
+          "villager-a-idle-NE-0.png",
+          "villager-a-idle-NE-1.png",
+          "villager-a-idle-NE-2.png",
+          "villager-a-idle-NE-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      }
+    }
+  },
+  "villager-b": {
+    "idle": {
+      "N": {
+        "frames": [
+          "villager-b-idle-N-0.png",
+          "villager-b-idle-N-1.png",
+          "villager-b-idle-N-2.png",
+          "villager-b-idle-N-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "NE": {
+        "frames": [
+          "villager-b-idle-NE-0.png",
+          "villager-b-idle-NE-1.png",
+          "villager-b-idle-NE-2.png",
+          "villager-b-idle-NE-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      }
+    },
+    "fall": {
+      "NE": {
+        "frames": [
+          "villager-b-fall-NE-0.png",
+          "villager-b-fall-NE-1.png",
+          "villager-b-fall-NE-2.png",
+          "villager-b-fall-NE-3.png",
+          "villager-b-fall-NE-4.png",
+          "villager-b-fall-NE-5.png",
+          "villager-b-fall-NE-6.png"
+        ],
+        "duration": 25.714285714285715,
+        "loop": false
+      },
+      "N": {
+        "frames": [
+          "villager-b-fall-N-0.png",
+          "villager-b-fall-N-1.png",
+          "villager-b-fall-N-2.png",
+          "villager-b-fall-N-3.png",
+          "villager-b-fall-N-4.png",
+          "villager-b-fall-N-5.png",
+          "villager-b-fall-N-6.png"
+        ],
+        "duration": 25.714285714285715,
+        "loop": false
+      }
+    },
+    "dead": {
+      "NE": {
+        "frames": [
+          "villager-b-dead-NE-0.png"
+        ],
+        "duration": 1000,
+        "loop": false
+      },
+      "N": {
+        "frames": [
+          "villager-b-dead-N-0.png"
+        ],
+        "duration": 1000,
+        "loop": false
+      }
+    },
+    "ready": {
+      "N": {
+        "frames": [
+          "villager-b-idle-N-0.png",
+          "villager-b-idle-N-1.png",
+          "villager-b-idle-N-2.png",
+          "villager-b-idle-N-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      },
+      "NE": {
+        "frames": [
+          "villager-b-idle-NE-0.png",
+          "villager-b-idle-NE-1.png",
+          "villager-b-idle-NE-2.png",
+          "villager-b-idle-NE-3.png"
+        ],
+        "duration": 250,
+        "loop": true
+      }
+    }
+  },
+  "villager-c": {
+    "dead": {
+      "N": {
+        "frames": [
+          "villager-c-dead-N-0.png"
+        ],
+        "duration": 1000,
+        "loop": false
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+<defs>
+<linearGradient id="brass" x2=".8" y2="1"><stop stop-color="#dfd1ac"/><stop offset=".36" stop-color="#847456"/><stop offset=".62" stop-color="#bfab7d"/><stop offset="1" stop-color="#60543e"/></linearGradient>
+<linearGradient id="jade"><stop stop-color="#dcfff3"/><stop offset=".5" stop-color="#8acfc8"/><stop offset="1" stop-color="#23596a"/></linearGradient>
+</defs>
+<!-- A single broken brass ring, behind the title strip. -->
+<g fill="none" stroke="url(#brass)" stroke-width="7">
+<path d="M53 146A108 108 0 0 1 108 65M122 59A108 108 0 0 1 150 53M182 55A108 108 0 0 1 248 98M257 113A108 108 0 0 1 267 158M265 183A108 108 0 0 1 213 254M196 263A108 108 0 0 1 161 268M137 266A108 108 0 0 1 67 217M59 199A108 108 0 0 1 52 169"/>
+</g>
+<path d="M48 146A113 113 0 0 1 105 61M121 54A113 113 0 0 1 150 48M185 50A113 113 0 0 1 252 94M261 111A113 113 0 0 1 272 158M270 185A113 113 0 0 1 216 259M196 268A113 113 0 0 1 161 273M136 271A113 113 0 0 1 63 220M54 201A113 113 0 0 1 47 169" fill="none" stroke="#e9d7b0" stroke-opacity=".55"/>
+<!-- Two small faceted crystals sit in the ring's upper and lower arcs. -->
+<g stroke="#b5e9df" stroke-width=".7">
+<path d="m185 29 8 28-17 41-7-25Z" fill="url(#jade)"/>
+<path d="m185 29-7 39-9 5Z" fill="#bfeee2"/><path d="m178 68 15-11-17 41Z" fill="#387e8d"/>
+<path d="m145 224 7 25-15 41-8-26Z" fill="url(#jade)"/>
+<path d="m145 224-8 35-8 5Z" fill="#bfeee2"/><path d="m137 259 15-10-15 41Z" fill="#387e8d"/>
+</g>
+</svg>

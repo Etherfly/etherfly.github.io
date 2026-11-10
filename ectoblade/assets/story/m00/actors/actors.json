@@ -1,0 +1,6879 @@
+{
+  "frames": {
+    "elder-dead-S-0.png": {
+      "frame": {
+        "x": 3,
+        "y": 3,
+        "w": 115,
+        "h": 56
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 39,
+        "y": 88,
+        "w": 115,
+        "h": 56
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-fall-S-5.png": {
+      "frame": {
+        "x": 124,
+        "y": 3,
+        "w": 112,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 39,
+        "y": 88,
+        "w": 112,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-fall-S-4.png": {
+      "frame": {
+        "x": 242,
+        "y": 3,
+        "w": 111,
+        "h": 72
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 40,
+        "y": 78,
+        "w": 111,
+        "h": 72
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-fall-S-3.png": {
+      "frame": {
+        "x": 124,
+        "y": 61,
+        "w": 104,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 45,
+        "y": 74,
+        "w": 104,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-c-dead-N-0.png": {
+      "frame": {
+        "x": 3,
+        "y": 65,
+        "w": 94,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 49,
+        "y": 67,
+        "w": 94,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-E-0.png": {
+      "frame": {
+        "x": 359,
+        "y": 3,
+        "w": 90,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 63,
+        "w": 90,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-W-0.png": {
+      "frame": {
+        "x": 234,
+        "y": 81,
+        "w": 90,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 63,
+        "w": 90,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-fall-S-0.png": {
+      "frame": {
+        "x": 234,
+        "y": 181,
+        "w": 89,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 62,
+        "w": 89,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-fall-S-1.png": {
+      "frame": {
+        "x": 103,
+        "y": 147,
+        "w": 85,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 55,
+        "y": 60,
+        "w": 85,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-gesture-W-0.png": {
+      "frame": {
+        "x": 194,
+        "y": 147,
+        "w": 34,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 78,
+        "y": 65,
+        "w": 34,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-idle-W-0.png": {
+      "frame": {
+        "x": 194,
+        "y": 247,
+        "w": 32,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 66,
+        "w": 32,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-gesture-W-4.png": {
+      "frame": {
+        "x": 3,
+        "y": 156,
+        "w": 85,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 66,
+        "y": 65,
+        "w": 85,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-gesture-S-4.png": {
+      "frame": {
+        "x": 94,
+        "y": 248,
+        "w": 84,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 59,
+        "w": 84,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-fall-N-3.png": {
+      "frame": {
+        "x": 3,
+        "y": 254,
+        "w": 84,
+        "h": 29
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 50,
+        "y": 126,
+        "w": 84,
+        "h": 29
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-fall-S-2.png": {
+      "frame": {
+        "x": 3,
+        "y": 289,
+        "w": 83,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 56,
+        "y": 62,
+        "w": 83,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-gesture-W-3.png": {
+      "frame": {
+        "x": 455,
+        "y": 3,
+        "w": 83,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 66,
+        "y": 65,
+        "w": 83,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-gesture-S-0.png": {
+      "frame": {
+        "x": 544,
+        "y": 3,
+        "w": 82,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 55,
+        "y": 59,
+        "w": 82,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-gesture-S-1.png": {
+      "frame": {
+        "x": 455,
+        "y": 101,
+        "w": 82,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 61,
+        "w": 82,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-dead-NE-0.png": {
+      "frame": {
+        "x": 330,
+        "y": 104,
+        "w": 82,
+        "h": 51
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 62,
+        "y": 96,
+        "w": 82,
+        "h": 51
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-fall-NE-0.png": {
+      "frame": {
+        "x": 418,
+        "y": 103,
+        "w": 31,
+        "h": 87
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 93,
+        "y": 72,
+        "w": 31,
+        "h": 87
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-gesture-S-3.png": {
+      "frame": {
+        "x": 330,
+        "y": 161,
+        "w": 80,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 59,
+        "w": 80,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-idle-W-1.png": {
+      "frame": {
+        "x": 416,
+        "y": 196,
+        "w": 32,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 79,
+        "y": 66,
+        "w": 32,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-aim-E-0.png": {
+      "frame": {
+        "x": 329,
+        "y": 262,
+        "w": 80,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 63,
+        "w": 80,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-NE-0.png": {
+      "frame": {
+        "x": 232,
+        "y": 279,
+        "w": 80,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 62,
+        "w": 80,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-idle-NE-2.png": {
+      "frame": {
+        "x": 184,
+        "y": 346,
+        "w": 42,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 78,
+        "y": 65,
+        "w": 42,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-idle-NE-3.png": {
+      "frame": {
+        "x": 184,
+        "y": 447,
+        "w": 42,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 78,
+        "y": 65,
+        "w": 42,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-pray-N-2.png": {
+      "frame": {
+        "x": 184,
+        "y": 548,
+        "w": 42,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 63,
+        "w": 42,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-NW-0.png": {
+      "frame": {
+        "x": 92,
+        "y": 349,
+        "w": 80,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 35,
+        "y": 62,
+        "w": 80,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-E-4.png": {
+      "frame": {
+        "x": 3,
+        "y": 392,
+        "w": 80,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 59,
+        "y": 63,
+        "w": 80,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-aim-W-0.png": {
+      "frame": {
+        "x": 89,
+        "y": 449,
+        "w": 79,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 40,
+        "y": 63,
+        "w": 79,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-gesture-S-2.png": {
+      "frame": {
+        "x": 3,
+        "y": 492,
+        "w": 79,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 61,
+        "w": 79,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-gesture-S-3.png": {
+      "frame": {
+        "x": 88,
+        "y": 549,
+        "w": 79,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 63,
+        "y": 65,
+        "w": 79,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-gesture-S-4.png": {
+      "frame": {
+        "x": 3,
+        "y": 591,
+        "w": 79,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 63,
+        "y": 65,
+        "w": 79,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-N-0.png": {
+      "frame": {
+        "x": 3,
+        "y": 688,
+        "w": 46,
+        "h": 110
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 45,
+        "w": 46,
+        "h": 110
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-NW-3.png": {
+      "frame": {
+        "x": 3,
+        "y": 804,
+        "w": 62,
+        "h": 101
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 65,
+        "w": 62,
+        "h": 101
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-NW-0.png": {
+      "frame": {
+        "x": 55,
+        "y": 688,
+        "w": 67,
+        "h": 100
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 65,
+        "w": 67,
+        "h": 100
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-dead-N-0.png": {
+      "frame": {
+        "x": 88,
+        "y": 646,
+        "w": 79,
+        "h": 26
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 50,
+        "y": 129,
+        "w": 79,
+        "h": 26
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-NE-1.png": {
+      "frame": {
+        "x": 3,
+        "y": 911,
+        "w": 66,
+        "h": 100
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 65,
+        "w": 66,
+        "h": 100
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-N-3.png": {
+      "frame": {
+        "x": 71,
+        "y": 794,
+        "w": 47,
+        "h": 100
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 47,
+        "h": 100
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-NE-0.png": {
+      "frame": {
+        "x": 3,
+        "y": 1017,
+        "w": 62,
+        "h": 99
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 65,
+        "w": 62,
+        "h": 99
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-N-0.png": {
+      "frame": {
+        "x": 3,
+        "y": 1122,
+        "w": 58,
+        "h": 99
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 62,
+        "y": 65,
+        "w": 58,
+        "h": 99
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-N-1.png": {
+      "frame": {
+        "x": 3,
+        "y": 1227,
+        "w": 58,
+        "h": 99
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 62,
+        "y": 65,
+        "w": 58,
+        "h": 99
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-N-1.png": {
+      "frame": {
+        "x": 3,
+        "y": 1332,
+        "w": 46,
+        "h": 99
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 64,
+        "w": 46,
+        "h": 99
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-aim-N-0.png": {
+      "frame": {
+        "x": 3,
+        "y": 1437,
+        "w": 46,
+        "h": 99
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 56,
+        "w": 46,
+        "h": 99
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-NW-4.png": {
+      "frame": {
+        "x": 3,
+        "y": 1542,
+        "w": 69,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 65,
+        "w": 69,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-SE-3.png": {
+      "frame": {
+        "x": 55,
+        "y": 1332,
+        "w": 67,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 63,
+        "w": 67,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-S-1.png": {
+      "frame": {
+        "x": 55,
+        "y": 1436,
+        "w": 60,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 60,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-N-3.png": {
+      "frame": {
+        "x": 67,
+        "y": 1122,
+        "w": 58,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 62,
+        "y": 65,
+        "w": 58,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-N-4.png": {
+      "frame": {
+        "x": 71,
+        "y": 1017,
+        "w": 58,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 62,
+        "y": 65,
+        "w": 58,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-N-1.png": {
+      "frame": {
+        "x": 67,
+        "y": 1226,
+        "w": 58,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 62,
+        "y": 65,
+        "w": 58,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-N-0.png": {
+      "frame": {
+        "x": 75,
+        "y": 900,
+        "w": 47,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 64,
+        "w": 47,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-N-4.png": {
+      "frame": {
+        "x": 124,
+        "y": 794,
+        "w": 44,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 70,
+        "y": 64,
+        "w": 44,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-walk-N-1.png": {
+      "frame": {
+        "x": 128,
+        "y": 678,
+        "w": 38,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 78,
+        "y": 63,
+        "w": 38,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-NW-2.png": {
+      "frame": {
+        "x": 172,
+        "y": 678,
+        "w": 67,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 65,
+        "w": 67,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-SE-0.png": {
+      "frame": {
+        "x": 128,
+        "y": 898,
+        "w": 67,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 63,
+        "w": 67,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-NE-1.png": {
+      "frame": {
+        "x": 174,
+        "y": 781,
+        "w": 62,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 65,
+        "w": 62,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-NW-3.png": {
+      "frame": {
+        "x": 232,
+        "y": 379,
+        "w": 62,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 65,
+        "w": 62,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-S-3.png": {
+      "frame": {
+        "x": 232,
+        "y": 482,
+        "w": 60,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 60,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-W-5.png": {
+      "frame": {
+        "x": 232,
+        "y": 585,
+        "w": 72,
+        "h": 87
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 63,
+        "w": 72,
+        "h": 87
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-N-3.png": {
+      "frame": {
+        "x": 298,
+        "y": 482,
+        "w": 58,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 62,
+        "y": 65,
+        "w": 58,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-run-N-0.png": {
+      "frame": {
+        "x": 300,
+        "y": 379,
+        "w": 49,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 72,
+        "y": 65,
+        "w": 49,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-run-N-1.png": {
+      "frame": {
+        "x": 355,
+        "y": 362,
+        "w": 49,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 65,
+        "w": 49,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-run-N-3.png": {
+      "frame": {
+        "x": 3,
+        "y": 1646,
+        "w": 49,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 70,
+        "y": 64,
+        "w": 49,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-walk-N-3.png": {
+      "frame": {
+        "x": 3,
+        "y": 1749,
+        "w": 44,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 72,
+        "y": 64,
+        "w": 44,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-NW-1.png": {
+      "frame": {
+        "x": 3,
+        "y": 1852,
+        "w": 74,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 65,
+        "w": 74,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-E-1.png": {
+      "frame": {
+        "x": 3,
+        "y": 1954,
+        "w": 78,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 61,
+        "y": 63,
+        "w": 78,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-aim-NE-0.png": {
+      "frame": {
+        "x": 87,
+        "y": 1954,
+        "w": 75,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 65,
+        "w": 75,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-aim-NW-0.png": {
+      "frame": {
+        "x": 168,
+        "y": 1954,
+        "w": 74,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 41,
+        "y": 65,
+        "w": 74,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-S-0.png": {
+      "frame": {
+        "x": 248,
+        "y": 1954,
+        "w": 64,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 64,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-aim-S-0.png": {
+      "frame": {
+        "x": 318,
+        "y": 1954,
+        "w": 61,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 61,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-N-2.png": {
+      "frame": {
+        "x": 385,
+        "y": 1954,
+        "w": 58,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 62,
+        "y": 65,
+        "w": 58,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-E-1.png": {
+      "frame": {
+        "x": 53,
+        "y": 1749,
+        "w": 68,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 68,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-E-3.png": {
+      "frame": {
+        "x": 121,
+        "y": 1851,
+        "w": 68,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 68,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-NE-3.png": {
+      "frame": {
+        "x": 58,
+        "y": 1646,
+        "w": 67,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 72,
+        "y": 65,
+        "w": 67,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-SE-2.png": {
+      "frame": {
+        "x": 127,
+        "y": 1748,
+        "w": 67,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 63,
+        "w": 67,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-idle-W-2.png": {
+      "frame": {
+        "x": 83,
+        "y": 1851,
+        "w": 30,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 79,
+        "y": 66,
+        "w": 30,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-SW-0.png": {
+      "frame": {
+        "x": 195,
+        "y": 1850,
+        "w": 67,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 63,
+        "w": 67,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-SW-1.png": {
+      "frame": {
+        "x": 78,
+        "y": 1540,
+        "w": 67,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 63,
+        "w": 67,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-E-2.png": {
+      "frame": {
+        "x": 121,
+        "y": 1436,
+        "w": 66,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 63,
+        "w": 66,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-W-2.png": {
+      "frame": {
+        "x": 131,
+        "y": 1642,
+        "w": 66,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 63,
+        "w": 66,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-idle-NE-2.png": {
+      "frame": {
+        "x": 151,
+        "y": 1538,
+        "w": 46,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 64,
+        "w": 46,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-run-N-4.png": {
+      "frame": {
+        "x": 200,
+        "y": 1744,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 65,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-idle-NE-3.png": {
+      "frame": {
+        "x": 128,
+        "y": 1330,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 64,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-W-3.png": {
+      "frame": {
+        "x": 131,
+        "y": 1121,
+        "w": 71,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 63,
+        "w": 71,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-E-5.png": {
+      "frame": {
+        "x": 131,
+        "y": 1222,
+        "w": 70,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 69,
+        "y": 63,
+        "w": 70,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-W-3.png": {
+      "frame": {
+        "x": 179,
+        "y": 1323,
+        "w": 70,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 50,
+        "y": 63,
+        "w": 70,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-E-0.png": {
+      "frame": {
+        "x": 207,
+        "y": 1222,
+        "w": 69,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 70,
+        "y": 63,
+        "w": 69,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-SE-4.png": {
+      "frame": {
+        "x": 282,
+        "y": 1222,
+        "w": 67,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 63,
+        "w": 67,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-SE-5.png": {
+      "frame": {
+        "x": 355,
+        "y": 1222,
+        "w": 67,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 63,
+        "w": 67,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-SE-1.png": {
+      "frame": {
+        "x": 193,
+        "y": 1424,
+        "w": 67,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 63,
+        "w": 67,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-E-0.png": {
+      "frame": {
+        "x": 255,
+        "y": 1323,
+        "w": 66,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 63,
+        "w": 66,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-W-3.png": {
+      "frame": {
+        "x": 135,
+        "y": 1001,
+        "w": 64,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 62,
+        "w": 64,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-W-2.png": {
+      "frame": {
+        "x": 201,
+        "y": 884,
+        "w": 63,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 55,
+        "y": 62,
+        "w": 63,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-idle-NE-0.png": {
+      "frame": {
+        "x": 242,
+        "y": 781,
+        "w": 48,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 64,
+        "w": 48,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-idle-NE-1.png": {
+      "frame": {
+        "x": 270,
+        "y": 678,
+        "w": 47,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 64,
+        "w": 47,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-run-N-2.png": {
+      "frame": {
+        "x": 310,
+        "y": 585,
+        "w": 46,
+        "h": 87
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 65,
+        "w": 46,
+        "h": 87
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-idle-NE-0.png": {
+      "frame": {
+        "x": 205,
+        "y": 985,
+        "w": 44,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 78,
+        "y": 65,
+        "w": 44,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-idle-NE-1.png": {
+      "frame": {
+        "x": 208,
+        "y": 1086,
+        "w": 44,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 65,
+        "w": 44,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-walk-N-0.png": {
+      "frame": {
+        "x": 255,
+        "y": 985,
+        "w": 41,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 62,
+        "w": 41,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-fall-NE-0.png": {
+      "frame": {
+        "x": 270,
+        "y": 882,
+        "w": 39,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 90,
+        "y": 67,
+        "w": 39,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-SW-1.png": {
+      "frame": {
+        "x": 302,
+        "y": 779,
+        "w": 67,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 63,
+        "w": 67,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-SW-2.png": {
+      "frame": {
+        "x": 323,
+        "y": 678,
+        "w": 67,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 63,
+        "w": 67,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-W-1.png": {
+      "frame": {
+        "x": 258,
+        "y": 1086,
+        "w": 67,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 63,
+        "w": 67,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-W-0.png": {
+      "frame": {
+        "x": 302,
+        "y": 983,
+        "w": 66,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 63,
+        "w": 66,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-NW-1.png": {
+      "frame": {
+        "x": 331,
+        "y": 879,
+        "w": 65,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 65,
+        "w": 65,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-W-0.png": {
+      "frame": {
+        "x": 375,
+        "y": 778,
+        "w": 64,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 63,
+        "w": 64,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-W-1.png": {
+      "frame": {
+        "x": 331,
+        "y": 1083,
+        "w": 64,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 63,
+        "w": 64,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-NE-2.png": {
+      "frame": {
+        "x": 374,
+        "y": 979,
+        "w": 62,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 65,
+        "w": 62,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-S-0.png": {
+      "frame": {
+        "x": 428,
+        "y": 878,
+        "w": 60,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 60,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-idle-S-2.png": {
+      "frame": {
+        "x": 401,
+        "y": 1079,
+        "w": 39,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 58,
+        "w": 39,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-fall-N-0.png": {
+      "frame": {
+        "x": 442,
+        "y": 978,
+        "w": 39,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 78,
+        "y": 63,
+        "w": 39,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-idle-S-1.png": {
+      "frame": {
+        "x": 362,
+        "y": 465,
+        "w": 38,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 59,
+        "w": 38,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-gadget-N-2.png": {
+      "frame": {
+        "x": 362,
+        "y": 565,
+        "w": 38,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 63,
+        "w": 38,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-gadget-N-3.png": {
+      "frame": {
+        "x": 396,
+        "y": 665,
+        "w": 36,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 78,
+        "y": 63,
+        "w": 36,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-idle-W-3.png": {
+      "frame": {
+        "x": 438,
+        "y": 665,
+        "w": 30,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 79,
+        "y": 66,
+        "w": 30,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-W-1.png": {
+      "frame": {
+        "x": 454,
+        "y": 765,
+        "w": 78,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 63,
+        "w": 78,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-NE-4.png": {
+      "frame": {
+        "x": 406,
+        "y": 465,
+        "w": 73,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 66,
+        "y": 65,
+        "w": 73,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-NE-5.png": {
+      "frame": {
+        "x": 406,
+        "y": 564,
+        "w": 67,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 72,
+        "y": 65,
+        "w": 67,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-W-2.png": {
+      "frame": {
+        "x": 474,
+        "y": 663,
+        "w": 67,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 63,
+        "w": 67,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-E-0.png": {
+      "frame": {
+        "x": 479,
+        "y": 564,
+        "w": 66,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 74,
+        "y": 67,
+        "w": 66,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-E-1.png": {
+      "frame": {
+        "x": 551,
+        "y": 564,
+        "w": 64,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 65,
+        "w": 64,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-NE-3.png": {
+      "frame": {
+        "x": 410,
+        "y": 362,
+        "w": 64,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 65,
+        "w": 64,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-fall-N-2.png": {
+      "frame": {
+        "x": 415,
+        "y": 295,
+        "w": 47,
+        "h": 60
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 83,
+        "w": 47,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-SE-2.png": {
+      "frame": {
+        "x": 454,
+        "y": 200,
+        "w": 67,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 63,
+        "w": 67,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-SW-4.png": {
+      "frame": {
+        "x": 527,
+        "y": 200,
+        "w": 67,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 63,
+        "w": 67,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-SW-5.png": {
+      "frame": {
+        "x": 600,
+        "y": 200,
+        "w": 67,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 63,
+        "w": 67,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-SW-3.png": {
+      "frame": {
+        "x": 673,
+        "y": 200,
+        "w": 66,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 67,
+        "w": 66,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-SW-1.png": {
+      "frame": {
+        "x": 745,
+        "y": 200,
+        "w": 65,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 68,
+        "w": 65,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-SE-0.png": {
+      "frame": {
+        "x": 543,
+        "y": 104,
+        "w": 78,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 72,
+        "y": 65,
+        "w": 78,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-SW-0.png": {
+      "frame": {
+        "x": 627,
+        "y": 104,
+        "w": 76,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 44,
+        "y": 65,
+        "w": 76,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-NE-0.png": {
+      "frame": {
+        "x": 632,
+        "y": 3,
+        "w": 62,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 65,
+        "w": 62,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-NW-0.png": {
+      "frame": {
+        "x": 700,
+        "y": 3,
+        "w": 62,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 65,
+        "w": 62,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-gesture-S-2.png": {
+      "frame": {
+        "x": 709,
+        "y": 102,
+        "w": 73,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 66,
+        "y": 64,
+        "w": 73,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-SW-2.png": {
+      "frame": {
+        "x": 788,
+        "y": 102,
+        "w": 67,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 63,
+        "w": 67,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-S-0.png": {
+      "frame": {
+        "x": 768,
+        "y": 3,
+        "w": 60,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 60,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-S-1.png": {
+      "frame": {
+        "x": 834,
+        "y": 3,
+        "w": 60,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 60,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-fall-NE-3.png": {
+      "frame": {
+        "x": 468,
+        "y": 295,
+        "w": 58,
+        "h": 59
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 61,
+        "y": 75,
+        "w": 58,
+        "h": 59
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-S-3.png": {
+      "frame": {
+        "x": 480,
+        "y": 360,
+        "w": 60,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 60,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-fall-N-4.png": {
+      "frame": {
+        "x": 532,
+        "y": 295,
+        "w": 78,
+        "h": 56
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 57,
+        "y": 87,
+        "w": 78,
+        "h": 56
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-S-5.png": {
+      "frame": {
+        "x": 485,
+        "y": 459,
+        "w": 60,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 60,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-NE-0.png": {
+      "frame": {
+        "x": 546,
+        "y": 357,
+        "w": 59,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 64,
+        "w": 59,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-NE-1.png": {
+      "frame": {
+        "x": 551,
+        "y": 456,
+        "w": 58,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 65,
+        "w": 58,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-NE-2.png": {
+      "frame": {
+        "x": 611,
+        "y": 357,
+        "w": 58,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 65,
+        "w": 58,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-NE-3.png": {
+      "frame": {
+        "x": 675,
+        "y": 357,
+        "w": 57,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 65,
+        "w": 57,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-fall-N-2.png": {
+      "frame": {
+        "x": 616,
+        "y": 295,
+        "w": 44,
+        "h": 56
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 90,
+        "w": 44,
+        "h": 56
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-fall-N-3.png": {
+      "frame": {
+        "x": 666,
+        "y": 295,
+        "w": 52,
+        "h": 55
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 65,
+        "y": 79,
+        "w": 52,
+        "h": 55
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-fall-N-3.png": {
+      "frame": {
+        "x": 724,
+        "y": 295,
+        "w": 47,
+        "h": 55
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 67,
+        "y": 81,
+        "w": 47,
+        "h": 55
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-gesture-W-1.png": {
+      "frame": {
+        "x": 615,
+        "y": 456,
+        "w": 54,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 55,
+        "y": 66,
+        "w": 54,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-walk-S-3.png": {
+      "frame": {
+        "x": 203,
+        "y": 1525,
+        "w": 45,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 63,
+        "w": 45,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-walk-S-1.png": {
+      "frame": {
+        "x": 203,
+        "y": 1624,
+        "w": 40,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 74,
+        "y": 64,
+        "w": 40,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-gadget-N-4.png": {
+      "frame": {
+        "x": 249,
+        "y": 1624,
+        "w": 36,
+        "h": 93
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 78,
+        "y": 64,
+        "w": 36,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-SW-3.png": {
+      "frame": {
+        "x": 254,
+        "y": 1525,
+        "w": 67,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 63,
+        "w": 67,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-E-2.png": {
+      "frame": {
+        "x": 291,
+        "y": 1424,
+        "w": 65,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 64,
+        "w": 65,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-E-3.png": {
+      "frame": {
+        "x": 327,
+        "y": 1323,
+        "w": 65,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 66,
+        "w": 65,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-gesture-W-2.png": {
+      "frame": {
+        "x": 251,
+        "y": 1723,
+        "w": 64,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 45,
+        "y": 67,
+        "w": 64,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-NW-2.png": {
+      "frame": {
+        "x": 291,
+        "y": 1623,
+        "w": 62,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 65,
+        "w": 62,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-NW-1.png": {
+      "frame": {
+        "x": 327,
+        "y": 1522,
+        "w": 61,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 56,
+        "y": 65,
+        "w": 61,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-NW-3.png": {
+      "frame": {
+        "x": 362,
+        "y": 1421,
+        "w": 60,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 57,
+        "y": 65,
+        "w": 60,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-S-2.png": {
+      "frame": {
+        "x": 398,
+        "y": 1323,
+        "w": 60,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 60,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-S-4.png": {
+      "frame": {
+        "x": 464,
+        "y": 1323,
+        "w": 60,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 60,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-S-2.png": {
+      "frame": {
+        "x": 530,
+        "y": 1323,
+        "w": 60,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 60,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-walk-N-0.png": {
+      "frame": {
+        "x": 268,
+        "y": 1821,
+        "w": 58,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 62,
+        "y": 65,
+        "w": 58,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-NW-0.png": {
+      "frame": {
+        "x": 321,
+        "y": 1721,
+        "w": 57,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 60,
+        "y": 65,
+        "w": 57,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-NW-2.png": {
+      "frame": {
+        "x": 359,
+        "y": 1620,
+        "w": 57,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 59,
+        "y": 65,
+        "w": 57,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-gadget-N-1.png": {
+      "frame": {
+        "x": 394,
+        "y": 1519,
+        "w": 41,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 65,
+        "w": 41,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-idle-S-3.png": {
+      "frame": {
+        "x": 428,
+        "y": 1421,
+        "w": 39,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 60,
+        "w": 39,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-S-2.png": {
+      "frame": {
+        "x": 332,
+        "y": 1819,
+        "w": 54,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 74,
+        "y": 63,
+        "w": 54,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-S-1.png": {
+      "frame": {
+        "x": 384,
+        "y": 1718,
+        "w": 53,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 74,
+        "y": 63,
+        "w": 53,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-idle-S-2.png": {
+      "frame": {
+        "x": 422,
+        "y": 1617,
+        "w": 50,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 62,
+        "w": 50,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-gesture-S-0.png": {
+      "frame": {
+        "x": 449,
+        "y": 1519,
+        "w": 49,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 72,
+        "y": 65,
+        "w": 49,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-gadget-N-0.png": {
+      "frame": {
+        "x": 504,
+        "y": 1519,
+        "w": 48,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 72,
+        "y": 66,
+        "w": 48,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-idle-N-0.png": {
+      "frame": {
+        "x": 473,
+        "y": 1421,
+        "w": 47,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 64,
+        "w": 47,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-idle-N-2.png": {
+      "frame": {
+        "x": 526,
+        "y": 1421,
+        "w": 47,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 64,
+        "w": 47,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-idle-N-3.png": {
+      "frame": {
+        "x": 392,
+        "y": 1815,
+        "w": 47,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 64,
+        "w": 47,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-walk-N-2.png": {
+      "frame": {
+        "x": 443,
+        "y": 1714,
+        "w": 42,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 64,
+        "w": 42,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-idle-S-0.png": {
+      "frame": {
+        "x": 478,
+        "y": 1616,
+        "w": 39,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 62,
+        "w": 39,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-walk-W-0.png": {
+      "frame": {
+        "x": 445,
+        "y": 1811,
+        "w": 30,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 82,
+        "y": 66,
+        "w": 30,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-aim-SE-0.png": {
+      "frame": {
+        "x": 449,
+        "y": 1908,
+        "w": 71,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 72,
+        "y": 65,
+        "w": 71,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-E-3.png": {
+      "frame": {
+        "x": 481,
+        "y": 1811,
+        "w": 70,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 69,
+        "y": 63,
+        "w": 70,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-W-0.png": {
+      "frame": {
+        "x": 491,
+        "y": 1713,
+        "w": 70,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 63,
+        "w": 70,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-aim-SW-0.png": {
+      "frame": {
+        "x": 557,
+        "y": 1616,
+        "w": 69,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 51,
+        "y": 65,
+        "w": 69,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-fall-NE-1.png": {
+      "frame": {
+        "x": 523,
+        "y": 1616,
+        "w": 28,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 90,
+        "y": 72,
+        "w": 28,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-SW-2.png": {
+      "frame": {
+        "x": 558,
+        "y": 1518,
+        "w": 66,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 66,
+        "w": 66,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-NW-5.png": {
+      "frame": {
+        "x": 579,
+        "y": 1421,
+        "w": 62,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 65,
+        "w": 62,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-N-2.png": {
+      "frame": {
+        "x": 630,
+        "y": 1517,
+        "w": 58,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 62,
+        "y": 65,
+        "w": 58,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-N-5.png": {
+      "frame": {
+        "x": 526,
+        "y": 1907,
+        "w": 58,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 62,
+        "y": 65,
+        "w": 58,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-gesture-S-1.png": {
+      "frame": {
+        "x": 557,
+        "y": 1809,
+        "w": 57,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 67,
+        "y": 66,
+        "w": 57,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-S-3.png": {
+      "frame": {
+        "x": 590,
+        "y": 1712,
+        "w": 55,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 64,
+        "w": 55,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-N-2.png": {
+      "frame": {
+        "x": 651,
+        "y": 1712,
+        "w": 53,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 65,
+        "y": 65,
+        "w": 53,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-N-3.png": {
+      "frame": {
+        "x": 710,
+        "y": 1712,
+        "w": 53,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 65,
+        "y": 65,
+        "w": 53,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-pray-N-0.png": {
+      "frame": {
+        "x": 769,
+        "y": 1712,
+        "w": 50,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 65,
+        "w": 50,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-idle-S-1.png": {
+      "frame": {
+        "x": 632,
+        "y": 1613,
+        "w": 50,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 64,
+        "w": 50,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-idle-N-1.png": {
+      "frame": {
+        "x": 688,
+        "y": 1613,
+        "w": 47,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 65,
+        "w": 47,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-pray-N-1.png": {
+      "frame": {
+        "x": 428,
+        "y": 1179,
+        "w": 44,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 74,
+        "y": 65,
+        "w": 44,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-walk-S-0.png": {
+      "frame": {
+        "x": 446,
+        "y": 1078,
+        "w": 44,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 64,
+        "w": 44,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-walk-W-1.png": {
+      "frame": {
+        "x": 487,
+        "y": 978,
+        "w": 44,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 74,
+        "y": 66,
+        "w": 44,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-walk-W-3.png": {
+      "frame": {
+        "x": 496,
+        "y": 864,
+        "w": 44,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 68,
+        "w": 44,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-idle-S-2.png": {
+      "frame": {
+        "x": 538,
+        "y": 762,
+        "w": 41,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 63,
+        "w": 41,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-idle-N-0.png": {
+      "frame": {
+        "x": 547,
+        "y": 663,
+        "w": 41,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 65,
+        "w": 41,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-idle-N-1.png": {
+      "frame": {
+        "x": 590,
+        "y": 1905,
+        "w": 41,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 65,
+        "w": 41,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-fall-N-0.png": {
+      "frame": {
+        "x": 620,
+        "y": 1808,
+        "w": 40,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 65,
+        "w": 40,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-idle-N-0.png": {
+      "frame": {
+        "x": 637,
+        "y": 1904,
+        "w": 38,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 62,
+        "w": 38,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-fall-NE-4.png": {
+      "frame": {
+        "x": 666,
+        "y": 2000,
+        "w": 61,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 58,
+        "y": 84,
+        "w": 61,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-idle-N-3.png": {
+      "frame": {
+        "x": 666,
+        "y": 1808,
+        "w": 37,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 79,
+        "y": 63,
+        "w": 37,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-walk-W-2.png": {
+      "frame": {
+        "x": 681,
+        "y": 1904,
+        "w": 29,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 81,
+        "y": 66,
+        "w": 29,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-S-0.png": {
+      "frame": {
+        "x": 709,
+        "y": 1808,
+        "w": 55,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 74,
+        "y": 65,
+        "w": 55,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-N-1.png": {
+      "frame": {
+        "x": 716,
+        "y": 1903,
+        "w": 51,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 66,
+        "y": 66,
+        "w": 51,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-N-0.png": {
+      "frame": {
+        "x": 770,
+        "y": 1808,
+        "w": 50,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 68,
+        "y": 65,
+        "w": 50,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-fall-N-2.png": {
+      "frame": {
+        "x": 733,
+        "y": 1998,
+        "w": 65,
+        "h": 46
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 57,
+        "y": 98,
+        "w": 65,
+        "h": 46
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-N-5.png": {
+      "frame": {
+        "x": 773,
+        "y": 1903,
+        "w": 48,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 70,
+        "y": 63,
+        "w": 48,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-fall-NE-4.png": {
+      "frame": {
+        "x": 804,
+        "y": 1998,
+        "w": 57,
+        "h": 46
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 60,
+        "y": 82,
+        "w": 57,
+        "h": 46
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-S-1.png": {
+      "frame": {
+        "x": 478,
+        "y": 1174,
+        "w": 45,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 69,
+        "y": 68,
+        "w": 45,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-idle-N-2.png": {
+      "frame": {
+        "x": 496,
+        "y": 1074,
+        "w": 41,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 66,
+        "w": 41,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-idle-N-3.png": {
+      "frame": {
+        "x": 537,
+        "y": 960,
+        "w": 41,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 66,
+        "w": 41,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-idle-S-0.png": {
+      "frame": {
+        "x": 546,
+        "y": 858,
+        "w": 40,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 66,
+        "w": 40,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-idle-S-1.png": {
+      "frame": {
+        "x": 585,
+        "y": 759,
+        "w": 40,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 65,
+        "w": 40,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-idle-S-3.png": {
+      "frame": {
+        "x": 594,
+        "y": 663,
+        "w": 40,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 65,
+        "w": 40,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-idle-N-2.png": {
+      "frame": {
+        "x": 621,
+        "y": 555,
+        "w": 38,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 64,
+        "w": 38,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-SE-1.png": {
+      "frame": {
+        "x": 529,
+        "y": 1169,
+        "w": 75,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 65,
+        "y": 63,
+        "w": 75,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-dead-NE-0.png": {
+      "frame": {
+        "x": 543,
+        "y": 1263,
+        "w": 75,
+        "h": 54
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 66,
+        "y": 84,
+        "w": 75,
+        "h": 54
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-dead-N-0.png": {
+      "frame": {
+        "x": 624,
+        "y": 1263,
+        "w": 73,
+        "h": 53
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 56,
+        "y": 90,
+        "w": 73,
+        "h": 53
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-SE-0.png": {
+      "frame": {
+        "x": 596,
+        "y": 1323,
+        "w": 69,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 69,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-E-2.png": {
+      "frame": {
+        "x": 647,
+        "y": 1417,
+        "w": 68,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 68,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-SW-0.png": {
+      "frame": {
+        "x": 671,
+        "y": 1322,
+        "w": 66,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 69,
+        "w": 66,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-SE-2.png": {
+      "frame": {
+        "x": 694,
+        "y": 1511,
+        "w": 62,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 68,
+        "w": 62,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-NE-2.png": {
+      "frame": {
+        "x": 721,
+        "y": 1416,
+        "w": 62,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 65,
+        "w": 62,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-SE-1.png": {
+      "frame": {
+        "x": 741,
+        "y": 1605,
+        "w": 61,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 74,
+        "y": 68,
+        "w": 61,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-idle-S-0.png": {
+      "frame": {
+        "x": 762,
+        "y": 1510,
+        "w": 50,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 66,
+        "w": 50,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-idle-S-3.png": {
+      "frame": {
+        "x": 808,
+        "y": 1604,
+        "w": 50,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 65,
+        "w": 50,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-run-N-5.png": {
+      "frame": {
+        "x": 825,
+        "y": 1698,
+        "w": 48,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 70,
+        "y": 64,
+        "w": 48,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-N-2.png": {
+      "frame": {
+        "x": 826,
+        "y": 1792,
+        "w": 44,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 64,
+        "w": 44,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-S-4.png": {
+      "frame": {
+        "x": 827,
+        "y": 1886,
+        "w": 44,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 78,
+        "y": 67,
+        "w": 44,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-walk-S-2.png": {
+      "frame": {
+        "x": 876,
+        "y": 1792,
+        "w": 44,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 74,
+        "y": 64,
+        "w": 44,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-fall-NE-3.png": {
+      "frame": {
+        "x": 867,
+        "y": 1980,
+        "w": 52,
+        "h": 63
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 65,
+        "y": 87,
+        "w": 52,
+        "h": 63
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-idle-N-0.png": {
+      "frame": {
+        "x": 877,
+        "y": 1886,
+        "w": 40,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 64,
+        "w": 40,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-idle-N-2.png": {
+      "frame": {
+        "x": 923,
+        "y": 1886,
+        "w": 39,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 65,
+        "w": 39,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-dead-N-0.png": {
+      "frame": {
+        "x": 925,
+        "y": 1980,
+        "w": 70,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 56,
+        "y": 106,
+        "w": 70,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-idle-N-1.png": {
+      "frame": {
+        "x": 543,
+        "y": 1055,
+        "w": 38,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 65,
+        "w": 38,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-idle-N-3.png": {
+      "frame": {
+        "x": 584,
+        "y": 953,
+        "w": 38,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 65,
+        "w": 38,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-idle-N-1.png": {
+      "frame": {
+        "x": 610,
+        "y": 854,
+        "w": 37,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 78,
+        "y": 64,
+        "w": 37,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-W-4.png": {
+      "frame": {
+        "x": 631,
+        "y": 758,
+        "w": 79,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 63,
+        "w": 79,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-SE-3.png": {
+      "frame": {
+        "x": 653,
+        "y": 650,
+        "w": 62,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 70,
+        "w": 62,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-S-5.png": {
+      "frame": {
+        "x": 665,
+        "y": 555,
+        "w": 49,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 74,
+        "y": 68,
+        "w": 49,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-S-3.png": {
+      "frame": {
+        "x": 675,
+        "y": 456,
+        "w": 45,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 69,
+        "w": 45,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-pray-N-3.png": {
+      "frame": {
+        "x": 720,
+        "y": 548,
+        "w": 42,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 69,
+        "w": 42,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-SE-3.png": {
+      "frame": {
+        "x": 726,
+        "y": 456,
+        "w": 67,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 63,
+        "w": 67,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-idle-SE-0.png": {
+      "frame": {
+        "x": 738,
+        "y": 356,
+        "w": 62,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 74,
+        "y": 71,
+        "w": 62,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-fall-N-4.png": {
+      "frame": {
+        "x": 799,
+        "y": 295,
+        "w": 39,
+        "h": 49
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 69,
+        "y": 89,
+        "w": 39,
+        "h": 49
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-S-2.png": {
+      "frame": {
+        "x": 816,
+        "y": 200,
+        "w": 46,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 70,
+        "y": 69,
+        "w": 46,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-SW-3.png": {
+      "frame": {
+        "x": 861,
+        "y": 102,
+        "w": 67,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 63,
+        "w": 67,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-run-SW-0.png": {
+      "frame": {
+        "x": 900,
+        "y": 3,
+        "w": 67,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 63,
+        "w": 67,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-fall-NE-1.png": {
+      "frame": {
+        "x": 587,
+        "y": 1047,
+        "w": 28,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 89,
+        "y": 76,
+        "w": 28,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-W-1.png": {
+      "frame": {
+        "x": 610,
+        "y": 1136,
+        "w": 55,
+        "h": 81
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 74,
+        "w": 55,
+        "h": 81
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-W-3.png": {
+      "frame": {
+        "x": 621,
+        "y": 1047,
+        "w": 52,
+        "h": 81
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 70,
+        "y": 75,
+        "w": 52,
+        "h": 81
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-W-2.png": {
+      "frame": {
+        "x": 628,
+        "y": 948,
+        "w": 42,
+        "h": 81
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 74,
+        "w": 42,
+        "h": 81
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-fall-N-0.png": {
+      "frame": {
+        "x": 653,
+        "y": 850,
+        "w": 41,
+        "h": 81
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 74,
+        "w": 41,
+        "h": 81
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-S-0.png": {
+      "frame": {
+        "x": 676,
+        "y": 937,
+        "w": 47,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 72,
+        "y": 68,
+        "w": 47,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-fall-N-1.png": {
+      "frame": {
+        "x": 700,
+        "y": 850,
+        "w": 43,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 71,
+        "w": 43,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-fall-N-1.png": {
+      "frame": {
+        "x": 716,
+        "y": 742,
+        "w": 42,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 78,
+        "y": 70,
+        "w": 42,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-W-0.png": {
+      "frame": {
+        "x": 749,
+        "y": 640,
+        "w": 46,
+        "h": 78
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 74,
+        "w": 46,
+        "h": 78
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-pray-N-4.png": {
+      "frame": {
+        "x": 789,
+        "y": 547,
+        "w": 41,
+        "h": 78
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 77,
+        "w": 41,
+        "h": 78
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-W-4.png": {
+      "frame": {
+        "x": 799,
+        "y": 447,
+        "w": 60,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 73,
+        "w": 60,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-fall-NE-2.png": {
+      "frame": {
+        "x": 836,
+        "y": 350,
+        "w": 53,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 69,
+        "y": 74,
+        "w": 53,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "officer-run-W-5.png": {
+      "frame": {
+        "x": 671,
+        "y": 1134,
+        "w": 41,
+        "h": 74
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 76,
+        "y": 74,
+        "w": 41,
+        "h": 74
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-fall-NE-2.png": {
+      "frame": {
+        "x": 703,
+        "y": 1214,
+        "w": 54,
+        "h": 67
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 67,
+        "y": 86,
+        "w": 54,
+        "h": 67
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-fall-N-1.png": {
+      "frame": {
+        "x": 679,
+        "y": 1023,
+        "w": 40,
+        "h": 66
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 89,
+        "w": 40,
+        "h": 66
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-fall-N-4.png": {
+      "frame": {
+        "x": 88,
+        "y": 646,
+        "w": 79,
+        "h": 26
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 50,
+        "y": 129,
+        "w": 79,
+        "h": 26
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "apprentice-fall-N-5.png": {
+      "frame": {
+        "x": 88,
+        "y": 646,
+        "w": 79,
+        "h": 26
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 50,
+        "y": 129,
+        "w": 79,
+        "h": 26
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-fall-S-6.png": {
+      "frame": {
+        "x": 3,
+        "y": 3,
+        "w": 115,
+        "h": 56
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 39,
+        "y": 88,
+        "w": 115,
+        "h": 56
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "elder-fall-S-7.png": {
+      "frame": {
+        "x": 3,
+        "y": 3,
+        "w": 115,
+        "h": 56
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 39,
+        "y": 88,
+        "w": 115,
+        "h": 56
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-E-1.png": {
+      "frame": {
+        "x": 329,
+        "y": 262,
+        "w": 80,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 73,
+        "y": 63,
+        "w": 80,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-N-1.png": {
+      "frame": {
+        "x": 3,
+        "y": 1437,
+        "w": 46,
+        "h": 99
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 75,
+        "y": 56,
+        "w": 46,
+        "h": 99
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-NE-1.png": {
+      "frame": {
+        "x": 87,
+        "y": 1954,
+        "w": 75,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 77,
+        "y": 65,
+        "w": 75,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-NW-1.png": {
+      "frame": {
+        "x": 168,
+        "y": 1954,
+        "w": 74,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 41,
+        "y": 65,
+        "w": 74,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-S-1.png": {
+      "frame": {
+        "x": 318,
+        "y": 1954,
+        "w": 61,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 71,
+        "y": 63,
+        "w": 61,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-SE-1.png": {
+      "frame": {
+        "x": 449,
+        "y": 1908,
+        "w": 71,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 72,
+        "y": 65,
+        "w": 71,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-SW-1.png": {
+      "frame": {
+        "x": 557,
+        "y": 1616,
+        "w": 69,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 51,
+        "y": 65,
+        "w": 69,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rifleman-fire-W-1.png": {
+      "frame": {
+        "x": 89,
+        "y": 449,
+        "w": 79,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 40,
+        "y": 63,
+        "w": 79,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-fall-N-5.png": {
+      "frame": {
+        "x": 624,
+        "y": 1263,
+        "w": 73,
+        "h": 53
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 56,
+        "y": 90,
+        "w": 73,
+        "h": 53
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-fall-N-6.png": {
+      "frame": {
+        "x": 624,
+        "y": 1263,
+        "w": 73,
+        "h": 53
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 56,
+        "y": 90,
+        "w": 73,
+        "h": 53
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-fall-NE-5.png": {
+      "frame": {
+        "x": 543,
+        "y": 1263,
+        "w": 75,
+        "h": 54
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 66,
+        "y": 84,
+        "w": 75,
+        "h": 54
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-a-fall-NE-6.png": {
+      "frame": {
+        "x": 543,
+        "y": 1263,
+        "w": 75,
+        "h": 54
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 66,
+        "y": 84,
+        "w": 75,
+        "h": 54
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-fall-N-5.png": {
+      "frame": {
+        "x": 925,
+        "y": 1980,
+        "w": 70,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 56,
+        "y": 106,
+        "w": 70,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-fall-N-6.png": {
+      "frame": {
+        "x": 925,
+        "y": 1980,
+        "w": 70,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 56,
+        "y": 106,
+        "w": 70,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-fall-NE-5.png": {
+      "frame": {
+        "x": 330,
+        "y": 104,
+        "w": 82,
+        "h": 51
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 62,
+        "y": 96,
+        "w": 82,
+        "h": 51
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "villager-b-fall-NE-6.png": {
+      "frame": {
+        "x": 330,
+        "y": 104,
+        "w": 82,
+        "h": 51
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 62,
+        "y": 96,
+        "w": 82,
+        "h": 51
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://github.com/odrick/free-tex-packer-cli",
+    "version": "0.3.0",
+    "image": "actors.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 998,
+      "h": 2048
+    },
+    "scale": 1
+  }
+}
